@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artem - We Designerz</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background: #ffffff;
+            color: #121212;
+            line-height: 1.6;
+        }
+
+        .title {
+            font-size: 14px;
+            font-weight: 400;
+            /* Regular */
+            line-height: 18px;
+            letter-spacing: 0.4px;
+        }
+
+        .text {
+            font-size: 12px;
+            font-weight: 300;
+            /* Light */
+            line-height: 18px;
+            letter-spacing: 0;
+        }
+
+        .sidebar {
+            position: fixed;
+            left: 0;
+            top: 0;
+            width: 164px;
+            height: 100vh;
+            background: #ffffff;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            padding-top: 70px;
+            padding-bottom: 70px;
+            padding-left: 36px;
+            padding-right: 70px;
+            z-index: 100;
+        }
+
+        .logo {
+            width: 36px;
+            height: 36px;
+            display: flex;
+            align-items: left;
+            justify-content: center;
+            margin-bottom: 28px;
+        }
+
+        .logo,
+        .hero-image img {
+            user-select: none;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            pointer-events: none;
+        }
+
+        .nav-links {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            align-items: flex-start;
+        }
+
+        .nav-links a {
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 18px;
+            letter-spacing: 0.4px;
+            color: #121212;
+            text-decoration: none;
+            transition: color 0.2s ease;
+        }
+
+        .nav-links a:hover {
+            color: #666666;
+        }
+
+        .nav-links a:active,
+        .nav-links a.active {
+            color: #666666;
+        }
+
+        .main-content {
+            margin-left: 164px;
+            padding: 70px 70px;
+        }
+
+        .hero {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 36px;
+            margin-bottom: 100px;
+        }
+
+        .hero-image {
+            aspect-ratio: 1 / 1;
+            overflow: hidden;
+            width: 100%;
+            filter: contrast(0.9);
+        }
+
+        .hero-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: top;
+        }
+
+        /* Заголовки - Title */
+        .hero-text h1,
+        .nav-links a,
+        .section h2 {
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 18px;
+            letter-spacing: 0.4px;
+        }
+
+        /* Текст - Text */
+        .hero-text p,
+        .section-item p,
+        .section-item h3 {
+            font-size: 12px;
+            font-weight: 300;
+            line-height: 18px;
+            letter-spacing: 0;
+        }
+
+        .hero-text h1 {
+            margin-bottom: 14px;
+        }
+
+        .hero-text p {
+            margin-bottom: 14px;
+        }
+
+        .hero-text a {
+            color: #121212;
+            text-decoration: none;
+            transition: color 0.2s ease;
+        }
+
+        .hero-text a:hover {
+            color: #666666;
+        }
+
+        .sections {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: auto;
+        }
+
+        .section-item {
+            margin-bottom: 14px;
+        }
+
+        .section h2 {
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 18px;
+            letter-spacing: 0.4px;
+            margin-bottom: 14px;
+        }
+
+        @media (max-width: 1199px) {
+            .sidebar {
+                padding-right: 36px;
+            }
+
+            .main-content {
+                margin-left: 96px;
+                /* 164 - 34 = 130 */
+            }
+
+            .sections {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 36px;
+            }
+        }
+
+        @media (max-width: 767px) {
+            .sidebar {
+                width: 128px;
+                padding: 36px;
+            }
+
+            .main-content {
+                margin-left: 130px;
+                padding: 36px 36px 36px 0;
+            }
+
+            .hero {
+                grid-template-columns: 1fr;
+                gap: 36px;
+                margin-bottom: 36px;
+            }
+
+            .hero-image {
+                aspect-ratio: 5/4;
+            }
+
+            .sections {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 36px;
+            }
+        }
+
+        @media (max-width: 479px) {
+            .sidebar {
+                position: fixed;
+                left: 0;
+                right: 0;
+                top: auto;
+                bottom: 0;
+                width: 100%;
+                height: auto;
+                flex-direction: row;
+                align-items: center;
+                justify-content: space-between;
+                padding: 18px;
+                background: #ffffff;
+                border-top: 1px solid #f0f0f0;
+                /* опционально, для визуального отделения */
+            }
+
+            .logo {
+                margin-bottom: 0;
+            }
+
+            .nav-links {
+                flex-direction: row;
+                gap: 18px;
+            }
+
+            .main-content {
+                margin-left: 0;
+                padding: 18px;
+                padding-bottom: 109px;
+            }
+
+            .hero {
+                grid-template-columns: 1fr;
+                gap: 36px;
+                margin-top: 18px;
+                margin-bottom: 36px;
+            }
+
+            .hero-image {
+                aspect-ratio: 5/4;
+            }
+
+            .sections {
+                grid-template-columns: 1fr;
+                gap: 36px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="sidebar">
+        <img src="./assets/images/ArtLogo.svg" alt="Art Logo" class="logo">
+        <nav class="nav-links">
+            <a href="#projects">Projects</a>
+            <a href="#about">About</a>
+        </nav>
+    </div>
+
+    <div class="main-content">
+        <div class="hero">
+            <div class="hero-text">
+                <h1>Hey, I'm Artem. You can call me Tema.</h1>
+                <p>I design digital products focused on solving real user problems. My approach combines user research,
+                    systematic thinking, and practical solutions that deliver measurable results.</p>
+                <p>I work as a UX/Product Designer, running We Designerz and sharing design insights on YouTube.</p>
+                <p>Before focusing on UX, I spent years in media: produced videos, edited films with millions of views,
+                    grew a Telegram channel to 500k subscribers, and created websites that still generate significant
+                    revenue. This background gives me a unique perspective on how digital products actually function in
+                    people's lives.</p>
+                <p>I hold degrees in Economics from MUH and RANEPA, which gave me a systematic approach to
+                    problem-solving. My design expertise comes from years of hands-on work — building, testing, and
+                    refining digital products.</p>
+                <p>If you need a designer who combines user research, systematic thinking, and proven delivery — let's
+                    talk. <a href="mailto:art.androsov@gmail.com">art.androsov@gmail.com</a></p>
+            </div>
+            <div class="hero-image">
+                <img src="./assets/images/Artem.jpg" alt="Artem Portrait">
+            </div>
+        </div>
+
+        <div class="sections">
+            <div class="section">
+                <h2>Education</h2>
+                <div class="section-item">
+                    <h3>Google UX Design Professional Certificate</h3>
+                    <p>Courses In Progress<br>Expected completion: 2026</p>
+                </div>
+                <div class="section-item">
+                    <h3>RANEPA</h3>
+                    <p>Bachelor of Economics<br>2019 - 2023</p>
+                </div>
+                <div class="section-item">
+                    <h3>Moscow University for the Humanities</h3>
+                    <p>Banking<br>2015 - 2018</p>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>Experience</h2>
+                <div class="section-item">
+                    <h3>We Designerz</h3>
+                    <p>UX / Product Designer<br>YouTube Creator<br>June 2025 - present</p>
+                </div>
+                <div class="section-item">
+                    <h3>YouTube Media</h3>
+                    <p>Producer / Editor / SMM<br>2020 - 2024</p>
+                </div>
+                <div class="section-item">
+                    <h3>Retail & Sales</h3>
+                    <p>Sales Manager<br>2016 - 2020</p>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>Skills</h2>
+                <div class="section-item">
+                    <p>User-centered Design<br>Design Thinking<br>Empathy Mapping<br>User Research<br>User
+                        Testing<br>Wireframing<br>High-fidelity Prototyping<br>Inclusive Design &
+                        Accessibility<br>Information Architecture & Analysis<br>Systemic Thinking<br>Community
+                        Management<br>Video Production<br>Content Strategy<br>Design & Branding</p>
+                </div>
+                <div class="section-item">
+                    <h3>Figma</h3>
+                    <p>Adobe CC (Pr, Ae, Ps, Ai)<br>DaVinci Resolve<br>Final Cut Pro<br>AI Tools & Prompt Engineering
+                    </p>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>Awards</h2>
+                <div class="section-item">
+                    <h3>Content & reach</h3>
+                    <p>25M+ views for top-tier YouTube creators<br>500,000+ subscribers on Telegram<br>300,000+ views
+                        on We Designerz YouTube channel</p>
+                </div>
+                <div class="section-item">
+                    <h3>Commerce</h3>
+                    <p>100,000+ merch design sales<br>Profitable website architecture</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
