@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOYO & BONDAR - Artem Androsov</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background: #ffffff;
+            color: #121212;
+            line-height: 1.6;
+        }
+
+        .sidebar {
+            position: fixed;
+            left: 0;
+            top: 0;
+            width: 164px;
+            height: 100vh;
+            background: #ffffff;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            padding-top: 70px;
+            padding-bottom: 70px;
+            padding-left: 36px;
+            padding-right: 70px;
+            z-index: 100;
+        }
+
+        .logo {
+            width: 36px;
+            height: 36px;
+            display: flex;
+            align-items: left;
+            justify-content: center;
+            margin-bottom: 28px;
+            user-select: none;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            pointer-events: none;
+        }
+
+        .nav-links {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            align-items: flex-start;
+        }
+
+        .nav-links a {
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 18px;
+            letter-spacing: 0.4px;
+            color: #121212;
+            text-decoration: none;
+            transition: color 0.2s ease;
+        }
+
+        .nav-links a:hover {
+            color: #666666;
+        }
+
+        .nav-links a:active,
+        .nav-links a.active {
+            color: #666666;
+        }
+
+        .main-content {
+            margin-left: 164px;
+            padding: 70px;
+        }
+
+        .project-title {
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 18px;
+            letter-spacing: 0.4px;
+            margin-bottom: 18px;
+        }
+
+        .project-info {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 70px;
+            margin-bottom: 70px;
+        }
+
+        .info-column h2 {
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 18px;
+            letter-spacing: 0.4px;
+            margin-bottom: 14px;
+        }
+
+        .info-column p {
+            font-size: 12px;
+            font-weight: 300;
+            line-height: 18px;
+            letter-spacing: 0;
+            margin-bottom: 12px;
+        }
+
+        .info-column p:last-child {
+            margin-bottom: 0;
+        }
+
+        .project-images {
+            display: flex;
+            flex-direction: column;
+            gap: 36px;
+        }
+
+        .image-row-single,
+        .image-row-double {
+            width: 100%;
+        }
+
+        .image-row-single img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .image-row-double {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 36px;
+        }
+
+        .image-row-double img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .project-results {
+            margin-top: 70px;
+            padding-top: 70px;
+            border-top: 1px solid #f0f0f0;
+        }
+
+        .project-results h2 {
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 18px;
+            letter-spacing: 0.4px;
+            margin-bottom: 18px;
+        }
+
+        .results-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 36px;
+        }
+
+        .result-item {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+
+        .result-number {
+            font-size: 24px;
+            font-weight: 400;
+            line-height: 30px;
+            color: #121212;
+        }
+
+        .result-label {
+            font-size: 12px;
+            font-weight: 400;
+            line-height: 16px;
+            color: #121212;
+        }
+
+        .result-description {
+            font-size: 12px;
+            font-weight: 300;
+            line-height: 16px;
+            color: #666666;
+        }
+
+        @media (max-width: 1199px) {
+            .sidebar {
+                padding-right: 36px;
+            }
+
+            .main-content {
+                margin-left: 96px;
+            }
+
+            .results-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 1023px) {
+            .project-info {
+                grid-template-columns: 1fr;
+                gap: 36px;
+            }
+        }
+
+        @media (max-width: 767px) {
+            .sidebar {
+                width: 128px;
+                padding: 36px;
+            }
+
+            .main-content {
+                margin-left: 130px;
+                padding: 36px 36px 36px 0;
+            }
+
+            .project-info {
+                grid-template-columns: 1fr;
+                gap: 36px;
+                margin-bottom: 36px;
+            }
+
+            .image-row-double {
+                grid-template-columns: 1fr;
+            }
+
+            .results-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 24px;
+            }
+        }
+
+        @media (max-width: 479px) {
+            .sidebar {
+                position: fixed;
+                left: 0;
+                right: 0;
+                top: auto;
+                bottom: 0;
+                width: 100%;
+                height: auto;
+                flex-direction: row;
+                align-items: center;
+                justify-content: space-between;
+                padding: 18px;
+                background: #ffffff;
+                border-top: 1px solid #f0f0f0;
+            }
+
+            .logo {
+                margin-bottom: 0;
+            }
+
+            .nav-links {
+                flex-direction: row;
+                gap: 18px;
+            }
+
+            .main-content {
+                margin-left: 0;
+                padding: 18px;
+                padding-bottom: 109px;
+            }
+
+            .project-title {
+                margin-top: 18px;
+            }
+
+            .project-images {
+                gap: 18px;
+            }
+
+            .image-row-double {
+                gap: 18px;
+            }
+
+            .results-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="sidebar">
+        <img src="../assets/images/ArtLogo.svg" alt="Art Logo" class="logo">
+        <nav class="nav-links">
+            <a href="../index.html" class="active">Projects</a>
+            <a href="../about.html">About</a>
+        </nav>
+    </div>
+
+    <div class="main-content">
+        <h1 class="project-title">LOYO & BONDAR</h1>
+
+        <div class="project-info">
+            <div class="info-column">
+                <h2>Why</h2>
+                <p>LOYO & BONDAR are building massive infrastructure on Bali: 100,000+ m² of real estate, 12 residential
+                    complexes, 5 own factories. At every level — investors, partners, buyers — the company needs
+                    materials that speak the language of the audience and reflect the level of business. They came to us
+                    by recommendation.</p>
+            </div>
+            <div class="info-column">
+                <h2>What</h2>
+                <p>Presentations for three audiences: partners, investors, clients. Print media, banners, outdoor
+                    advertising, social networks, offers, mailings. Parallel to current tasks — 100+ slides in the first
+                    week of work.</p>
+            </div>
+            <div class="info-column">
+                <h2>How</h2>
+                <p>The development business never stops. New object, new investor, new event — every time fresh
+                    materials are needed quickly and without loss of quality. We worked as an internal design team: we
+                    knew the product, understood the audience, kept the pace.</p>
+            </div>
+        </div>
+
+        <div class="project-images">
+            <div class="image-row-single">
+                <img src="../assets/images/loyobondar-1.jpg" alt="LOYO & BONDAR visual support">
+            </div>
+        </div>
+
+        <div class="project-results">
+            <h2>Results</h2>
+            <div class="results-grid">
+                <div class="result-item">
+                    <div class="result-number">100+</div>
+                    <div class="result-label">Slides</div>
+                    <div class="result-description">In the first week of work</div>
+                </div>
+                <div class="result-item">
+                    <div class="result-number">100K m²</div>
+                    <div class="result-label">Client scale</div>
+                    <div class="result-description">Under construction and ready real estate on Bali</div>
+                </div>
+                <div class="result-item">
+                    <div class="result-number">3</div>
+                    <div class="result-label">Audiences</div>
+                    <div class="result-description">Investors, partners, buyers — each with their own language</div>
+                </div>
+                <div class="result-item">
+                    <div class="result-number">Support</div>
+                    <div class="result-label">Format</div>
+                    <div class="result-description">Continuous collaboration in real-time mode</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
