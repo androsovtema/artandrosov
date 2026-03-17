@@ -291,74 +291,183 @@
 </head>
 
 <body>
-    <div class="sidebar">
-        <a href="../index.html"><img src="../assets/images/ArtLogo.svg" alt="Art Logo" class="logo"></a>
-        <nav class="nav-links">
-            <a href="../index.html" class="active">Projects</a>
+    <header class="header">
+        <a class="logo" href="../index.html" aria-label="Art Androsov — home">
+            <img src="../assets/logos/WDLogo.svg" alt="" class="logo-desktop" aria-hidden="true">
+            <img src="../assets/logos/WDLogoMobile.svg" alt="" class="logo-mobile" aria-hidden="true">
+        </a>
+        <nav class="nav">
+            <a href="../projects.html">Projects</a>
             <a href="../about.html">About</a>
+            <button class="btn-start">Hire me</button>
         </nav>
-    </div>
+        <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false">
+            <span></span><span></span><span></span>
+        </button>
+    </header>
+    <script>
+        (function () {
+            if (window.scrollY > 100) {
+                document.querySelector('.header').classList.add('scrolled');
+            }
+        })();
+    </script>
 
-    <div class="main-content">
-        <h1 class="project-title">Eazy Energy</h1>
-
-        <div class="project-info">
-            <div class="info-column">
-                <h2>Why</h2>
-                <p>Alexey Stolyarov and Gabar are bloggers with multimillion-dollar audiences who were launching their
-                    own energy drink in an oversaturated market. I had worked with them for four years before that and
-                    understood their audience from the inside. When the task came to create a brand, the choice of team
-                    was obvious.</p>
-            </div>
-            <div class="info-column">
-                <h2>What</h2>
-                <p>Full brand launch: logo, brand book, 6 can designs for each flavor, Tilda website with the ability to
-                    independently update content, design of refrigerators and packaging, management of social networks.
-                    Merch — backpacks, T-shirts, panamas, socks, badges, stickers. Design of a tour across Russian cities
-                    and sponsorship of racing events: stands, banners, outdoor advertising on the track.</p>
-            </div>
-            <div class="info-column">
-                <h2>How</h2>
-                <p>Years of work with the client gave us the main thing — an understanding of how this brand speaks and
-                    who listens to it. The design was built not around an abstract "youth energy drink", but around
-                    specific people and their relationship with the audience. Every element — from the can to the merch
-                    — had to look organic in the hands of the subscriber.</p>
-            </div>
+    <main>
+        <div class="back-nav">
+            <a href="../projects.html" class="back-link">Back to projects</a>
         </div>
 
-        <div class="project-images">
-            <div class="image-row-single">
-                <img src="../assets/images/eazyenergy-1.jpg" alt="Eazy Energy packaging design">
-            </div>
-        </div>
+        <section class="project-hero" id="hero">
+            <div class="section-label">Case study</div>
+            <h1>Eazy Energy</h1>
+            <p class="project-brief">Launching an energy drink brand in an oversaturated market — where the only real
+                advantage is knowing your audience better than anyone else. I had four years inside the creators' teams
+                before this project even started. That's what made the difference.</p>
 
-        <div class="project-results">
-            <h2>Results</h2>
-            <div class="results-grid">
-                <div class="result-item">
-                    <div class="result-number">6</div>
-                    <div class="result-label">Drink flavors</div>
-                    <div class="result-description">6 unique designs in a unified system</div>
+            <div class="project-meta">
+                <div class="meta-item">
+                    <span class="meta-label">Period</span>
+                    <span class="meta-value">2023–2025</span>
                 </div>
-                <div class="result-item">
-                    <div class="result-number">3</div>
-                    <div class="result-label">Years of collaboration</div>
-                    <div class="result-description">From launch to scaling</div>
+                <div class="meta-item">
+                    <span class="meta-label">My role</span>
+                    <span class="meta-value">Product, Art Direction</span>
                 </div>
-                <div class="result-item">
-                    <div class="result-number">7</div>
-                    <div class="result-label">Tour cities</div>
-                    <div class="result-description">Meetings with subscribers, giveaways, grand prize — Ford Mustang
+                <div class="meta-item">
+                    <span class="meta-label">Areas</span>
+                    <div class="meta-tags">
+                        <span class="meta-tag">Product Strategy</span>
+                        <span class="meta-tag">Brand Positioning</span>
+                        <span class="meta-tag">Art Direction</span>
+                        <span class="meta-tag">Merch</span>
+                        <span class="meta-tag">Event Design</span>
                     </div>
                 </div>
-                <div class="result-item">
-                    <div class="result-number">All Russia</div>
-                    <div class="result-label">Sales geography</div>
-                    <div class="result-description">Online and offline</div>
+            </div>
+        </section>
+
+        <section class="project-concept" id="concept">
+            <div class="www-grid">
+                <div class="www-column">
+                    <h2 class="www-title">Why</h2>
+                    <p class="www-text">Aleksey Stolyarov and Gabar are two YouTube creators with multi-million
+                        audiences who decided to launch their own energy drink. The market is flooded — Monster, Burn,
+                        dozens of local brands. Winning here isn't about having the best formula or the loudest
+                        packaging. It's about precision: knowing exactly who buys this, why they'd pick it over
+                        everything else on the shelf, and what the brand needs to communicate to make that click. I had
+                        spent four years inside their world. No brief could replicate that.</p>
+                </div>
+                <div class="www-column">
+                    <h2 class="www-title">What</h2>
+                    <p class="www-text">I defined the brand positioning and audience segmentation — which subscriber
+                        segments we're targeting, what they value, and how the product should speak to each flavor's
+                        distinct personality. I set the visual direction for all six can designs and directed a graphic
+                        designer who brought them to production. Beyond packaging: I led the creative direction for
+                        merch (backpacks, tees, socks, badges), a 7-city tour across Russia, and sponsorship of racing
+                        events — every touchpoint had to feel native to the audience, not like branded merchandise.</p>
+                </div>
+                <div class="www-column">
+                    <h2 class="www-title">How</h2>
+                    <p class="www-text">Every product decision went through one filter: would a Stolyarov or Gabar
+                        subscriber feel this was made for them specifically — or does it feel generic? That's not a
+                        design question, it's a product question. I used four years of direct audience observation as
+                        research no agency could buy. Each element — from the can print to the race track branding — was
+                        grounded in that understanding. The visual execution followed the strategy, not the other way
+                        around.</p>
                 </div>
             </div>
+        </section>
+
+        <section class="project-gallery" id="gallery">
+            <div class="section-label">Process & outcome</div>
+            <h2>What it looks like</h2>
+
+            <div class="gallery-grid">
+                <div class="gallery-item gallery-featured">
+                    <img src="../assets/images/carousel/7. eazyenergy1.jpg" alt="Eazy Energy — packaging" loading="lazy"
+                        decoding="async">
+                </div>
+                <div class="gallery-item">
+                    <img src="../assets/images/projects/eazyenergy/can.jpg" alt="Eazy Energy — can design"
+                        loading="lazy" decoding="async">
+                </div>
+                <div class="gallery-item">
+                    <img src="../assets/images/projects/eazyenergy/sketch.jpg" alt="Eazy Energy — sketches"
+                        loading="lazy" decoding="async">
+                </div>
+                <div class="gallery-item gallery-wide">
+                    <img src="../assets/images/projects/eazyenergy/shelf.jpg" alt="Eazy Energy — on shelf"
+                        loading="lazy" decoding="async">
+                </div>
+                <div class="gallery-item">
+                    <img src="../assets/images/projects/eazyenergy/flavors.jpg" alt="Eazy Energy — flavors"
+                        loading="lazy" decoding="async">
+                </div>
+                <div class="gallery-item">
+                    <img src="../assets/images/projects/eazyenergy/mockup.jpg" alt="Eazy Energy — mockup" loading="lazy"
+                        decoding="async">
+                </div>
+            </div>
+        </section>
+
+        <section class="project-results" id="results">
+            <div class="section-label">Results</div>
+            <h2>What we delivered</h2>
+
+            <div class="metrics-grid">
+                <div class="metric-card">
+                    <span class="metric-number">6</span>
+                    <span class="metric-label">Flavor identities</span>
+                    <p class="metric-description">6 distinct can designs within one coherent visual system</p>
+                </div>
+                <div class="metric-card">
+                    <span class="metric-number">2</span>
+                    <span class="metric-label">Audience segments</span>
+                    <p class="metric-description">Stolyarov's and Gabar's subscribers — one product, two communities,
+                        one brand logic</p>
+                </div>
+                <div class="metric-card">
+                    <span class="metric-number">7</span>
+                    <span class="metric-label">Cities</span>
+                    <p class="metric-description">Tour across Russia — fan meetups, giveaways, a Ford Mustang as the
+                        grand prize</p>
+                </div>
+                <div class="metric-card">
+                    <span class="metric-number">3 years</span>
+                    <span class="metric-label">Collaboration</span>
+                    <p class="metric-description">From launch to scaling — nationwide online and offline sales</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="next-project" id="next">
+            <div class="section-label">Next project</div>
+            <a href="ceskylev.html" class="next-project-link">
+                <span class="next-project-name">Cesky Lev</span>
+                <span class="next-project-arrow">→</span>
+            </a>
+        </section>
+
+        <section class="cta-section" id="cta">
+            <h2>Launching a new product?</h2>
+            <p class="contact-subtitle contact-subtitle-margin">
+                Tell me about the challenge — I'll tell you where to start.
+            </p>
+            <a href="https://t.me/androsovart" target="_blank" class="btn-primary" rel="noopener noreferrer">Get in
+                touch</a>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-logo">Art Androsov</div>
+        <div class="footer-links">
+            <a href="https://t.me/androsovart" target="_blank" rel="noopener noreferrer">Telegram</a>
+            <a href="https://www.youtube.com/@wedesignerz/" target="_blank" rel="noopener noreferrer">YouTube</a>
         </div>
-    </div>
+    </footer>
+
+    <script src="../main.js"></script>
 </body>
 
 </html>
