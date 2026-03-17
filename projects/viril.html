@@ -291,72 +291,162 @@
 </head>
 
 <body>
-    <div class="sidebar">
-        <a href="../index.html"><img src="../assets/images/ArtLogo.svg" alt="Art Logo" class="logo"></a>
-        <nav class="nav-links">
-            <a href="../index.html" class="active">Projects</a>
+    <header class="header">
+        <a class="logo" href="../index.html" aria-label="Art Androsov — home">
+            <img src="../assets/logos/WDLogo.svg" alt="" class="logo-desktop" aria-hidden="true">
+            <img src="../assets/logos/WDLogoMobile.svg" alt="" class="logo-mobile" aria-hidden="true">
+        </a>
+        <nav class="nav">
+            <a href="../projects.html">Projects</a>
             <a href="../about.html">About</a>
+            <button class="btn-start">Hire me</button>
         </nav>
-    </div>
+        <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false">
+            <span></span><span></span><span></span>
+        </button>
+    </header>
+    <script>
+        (function () {
+            if (window.scrollY > 100) {
+                document.querySelector('.header').classList.add('scrolled');
+            }
+        })();
+    </script>
 
-    <div class="main-content">
-        <h1 class="project-title">Viril</h1>
-
-        <div class="project-info">
-            <div class="info-column">
-                <h2>Why</h2>
-                <p>A client from Europe came with an idea — a product for men's potency — and a blank slate. No name, no
-                    visual language, no understanding of how to communicate in a niche where most brands either shout or
-                    hide. They needed a partner who would walk the entire journey from the first letter to the final
-                    screen.</p>
-            </div>
-            <div class="info-column">
-                <h2>What</h2>
-                <p>The name Viril, brand platform: voice, tone of communication, values. Visual system: colors, fonts,
-                    logic. Full UX/UI design of the site in Figma — desktop and mobile versions in English and Spanish.
-                    16 screens in each version, not counting modal windows, pop-ups and states.</p>
-            </div>
-            <div class="info-column">
-                <h2>How</h2>
-                <p>The niche required a balance — serious enough to inspire trust, modern enough not to look like a
-                    pharmacy reference book. I worked from strategy to details: first I found the brand's voice, then
-                    built the visual language, and only then proceeded to the screens. The design turned out to be
-                    laconic — and in 2026 it looks as relevant as on the day of delivery.</p>
-            </div>
+    <main>
+        <div class="back-nav">
+            <a href="../projects.html" class="back-link">Back to projects</a>
         </div>
 
-        <div class="project-images">
-            <div class="image-row-single">
-                <img src="../assets/images/viril-1.jpg" alt="Viril brand design">
-            </div>
-        </div>
+        <section class="project-hero" id="hero">
+            <div class="section-label">Case study</div>
+            <h1>EmTech Invest × Davos</h1>
+            <p class="project-brief">An elite investment event at Davos during WEF 2026. I defined the product vision,
+                audience segmentation, and visual language — then directed a graphic designer to execute across 66
+                participants, 6 weeks, zero room for error.</p>
 
-        <div class="project-results">
-            <h2>Results</h2>
-            <div class="results-grid">
-                <div class="result-item">
-                    <div class="result-number">64</div>
-                    <div class="result-label">Screens</div>
-                    <div class="result-description">16 × 4 versions: EN/ES, desktop/mobile</div>
+            <div class="project-meta">
+                <div class="meta-item">
+                    <span class="meta-label">Date</span>
+                    <span class="meta-value">January 2026</span>
                 </div>
-                <div class="result-item">
-                    <div class="result-number">1</div>
-                    <div class="result-label">Designer</div>
-                    <div class="result-description">Naming, branding, UX and UI — one person from start to finish</div>
+                <div class="meta-item">
+                    <span class="meta-label">My role</span>
+                    <span class="meta-value">Product, Art Direction</span>
                 </div>
-                <div class="result-item">
-                    <div class="result-number">5 weeks</div>
-                    <div class="result-label">Timeline</div>
-                    <div class="result-description">Full cycle from concept to final mockup</div>
+                <div class="meta-item">
+                    <span class="meta-label">Client</span>
+                    <span class="meta-value">MaYu / EmTech Invest</span>
                 </div>
-                <div class="result-item">
-                    <div class="result-number">0</div>
-                    <div class="result-label">Source materials</div>
-                    <div class="result-description">Brand built from scratch</div>
+                <div class="meta-item">
+                    <span class="meta-label">Areas</span>
+                    <div class="meta-tags">
+                        <span class="meta-tag">Product Strategy</span>
+                        <span class="meta-tag">Visual System</span>
+                        <span class="meta-tag">Event Design</span>
+                        <span class="meta-tag">Art Direction</span>
+                    </div>
                 </div>
             </div>
+        </section>
+
+        <section class="project-concept" id="concept">
+            <div class="www-grid">
+                <div class="www-column">
+                    <h2 class="www-title">Why</h2>
+                    <p class="www-text">EmTech Invest is a closed annual gathering of tech leaders, investors, and
+                        C-suite executives held in Davos alongside the World Economic Forum. MaYu handled the logistics
+                        and brought me in for the visual product. With an audience from 50+ countries, any inconsistency
+                        in communication would read as a signal about the organizers' professionalism. The stakes were
+                        clear from day one.</p>
+                </div>
+                <div class="www-column">
+                    <h2 class="www-title">What</h2>
+                    <p class="www-text">I defined the event's visual concept and communication voice — how it should
+                        look, sound, and feel across three distinct audiences: attendees, sponsors, and press. I built
+                        the system framework and directed a graphic designer to execute within it: 66 individual
+                        participant profiles, press wall, banners, badges, website assets, and social content across the
+                        full event lifecycle — before, during, and after.</p>
+                </div>
+                <div class="www-column">
+                    <h2 class="www-title">How</h2>
+                    <p class="www-text">The real product challenge wasn't design — it was resilience. Participants
+                        swapped photos, edited their bios, dropped out due to illness — all while production was already
+                        underway. I structured the workflow so that every incoming change had a clear path through the
+                        system without stalling other deliverables. When you have 66 stakeholders with individual
+                        expectations, the only way to deliver consistently is to build a process that absorbs chaos, not
+                        fights it.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="project-gallery" id="gallery">
+            <div class="section-label">Process & outcome</div>
+            <h2>What it looks like</h2>
+
+            <div class="gallery-grid">
+                <div class="gallery-item gallery-featured">
+                    <img src="../assets/images/carousel/wef2025_1.jpg" alt="EmTech Invest × Davos — event design"
+                        loading="lazy" decoding="async">
+                </div>
+            </div>
+        </section>
+
+        <section class="project-results" id="results">
+            <div class="section-label">Results</div>
+            <h2>What we delivered</h2>
+
+            <div class="metrics-grid">
+                <div class="metric-card">
+                    <span class="metric-number">66</span>
+                    <span class="metric-label">Participant profiles</span>
+                    <p class="metric-description">Each formatted individually within a consistent visual system</p>
+                </div>
+                <div class="metric-card">
+                    <span class="metric-number">3</span>
+                    <span class="metric-label">Audiences</span>
+                    <p class="metric-description">Attendees, sponsors, press — distinct communication logic for each</p>
+                </div>
+                <div class="metric-card">
+                    <span class="metric-number">6 weeks</span>
+                    <span class="metric-label">Timeline</span>
+                    <p class="metric-description">From kickoff to the last post-event content piece</p>
+                </div>
+                <div class="metric-card">
+                    <span class="metric-number">WEF 2026</span>
+                    <span class="metric-label">Context</span>
+                    <p class="metric-description">Davos, Grand Hotel Belvedere, elite audience from 50+ countries</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="next-project" id="next">
+            <div class="section-label">Next project</div>
+            <a href="loyobondar.html" class="next-project-link">
+                <span class="next-project-name">LOYO & BONDAR</span>
+                <span class="next-project-arrow">→</span>
+            </a>
+        </section>
+
+        <section class="cta-section" id="cta">
+            <h2>Need a product thinker on your team?</h2>
+            <p class="contact-subtitle contact-subtitle-margin">
+                Tell me about the challenge — I'll tell you where to start.
+            </p>
+            <a href="https://t.me/androsovart" target="_blank" class="btn-primary" rel="noopener noreferrer">Get in
+                touch</a>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-logo">Art Androsov</div>
+        <div class="footer-links">
+            <a href="https://t.me/androsovart" target="_blank" rel="noopener noreferrer">Telegram</a>
+            <a href="https://www.youtube.com/@wedesignerz/" target="_blank" rel="noopener noreferrer">YouTube</a>
         </div>
-    </div>
+    </footer>
+
+    <script src="../main.js"></script>
 </body>
 
 </html>
