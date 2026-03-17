@@ -1,0 +1,717 @@
+/* ===================================================
+   PROJECT PAGE STYLES
+   Shared styles for all individual project pages
+   =================================================== */
+
+/* ===== HEADER ===== */
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 28px 48px;
+    background: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    transition: padding 0.3s ease, background 0.3s ease, box-shadow 0.3s ease;
+}
+
+.header.scrolled {
+    padding: 18px 48px;
+    background: rgba(255, 255, 255, 0.95);
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.06);
+}
+
+/* Logo */
+.header .logo {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    text-decoration: none;
+}
+
+.header .logo-desktop {
+    height: 22px;
+    width: auto;
+}
+
+.header .logo-mobile {
+    display: none;
+    height: 28px;
+    width: auto;
+}
+
+/* Navigation */
+.nav {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+}
+
+.nav a {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 0.4px;
+    color: #121212;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.nav a:hover {
+    color: #666666;
+}
+
+.btn-start {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 0.4px;
+    padding: 10px 24px;
+    background: #121212;
+    color: #ffffff;
+    border: none;
+    border-radius: 100px;
+    cursor: pointer;
+    transition: background 0.2s ease, transform 0.15s ease;
+}
+
+.btn-start:hover {
+    background: #333333;
+}
+
+.btn-start:active {
+    transform: scale(0.97);
+}
+
+/* Burger */
+.burger {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 4px;
+    z-index: 110;
+}
+
+.burger span {
+    display: block;
+    width: 24px;
+    height: 2px;
+    background: #121212;
+    border-radius: 2px;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.burger.active span:nth-child(1) {
+    transform: translateY(7px) rotate(45deg);
+}
+
+.burger.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.burger.active span:nth-child(3) {
+    transform: translateY(-7px) rotate(-45deg);
+}
+
+/* ===== BACK NAVIGATION ===== */
+.back-nav {
+    padding: 120px 48px 0;
+}
+
+.back-link {
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 18px;
+    color: #666666;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.back-link:hover {
+    color: #121212;
+}
+
+/* ===== MAIN ===== */
+main {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+/* ===== SECTION LABEL ===== */
+.section-label {
+    font-size: 11px;
+    font-weight: 400;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: #999999;
+    margin-bottom: 12px;
+}
+
+/* ===== PROJECT HERO ===== */
+.project-hero {
+    padding: 48px 48px 0;
+}
+
+.project-hero h1 {
+    font-size: 42px;
+    font-weight: 500;
+    line-height: 1.15;
+    letter-spacing: -0.5px;
+    color: #121212;
+    margin-bottom: 20px;
+}
+
+.project-brief {
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 1.65;
+    color: #444444;
+    max-width: 720px;
+    margin-bottom: 48px;
+}
+
+/* Project Meta */
+.project-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 36px 60px;
+    padding-top: 32px;
+    border-top: 1px solid #f0f0f0;
+}
+
+.meta-item {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.meta-label {
+    font-size: 11px;
+    font-weight: 400;
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+    color: #999999;
+}
+
+.meta-value {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    color: #121212;
+}
+
+.meta-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+}
+
+.meta-tag {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+    padding: 4px 12px;
+    background: #f5f5f5;
+    border-radius: 100px;
+    color: #444444;
+}
+
+/* ===== WHY / WHAT / HOW ===== */
+.project-concept {
+    padding: 80px 48px 0;
+}
+
+.www-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 48px;
+}
+
+.www-title {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 18px;
+    letter-spacing: 0.4px;
+    margin-bottom: 16px;
+    color: #121212;
+}
+
+.www-text {
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 1.7;
+    color: #444444;
+}
+
+/* ===== GALLERY ===== */
+.project-gallery {
+    padding: 80px 48px 0;
+}
+
+.project-gallery h2 {
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 1.2;
+    margin-bottom: 32px;
+    color: #121212;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+}
+
+.gallery-item {
+    border-radius: 8px;
+    overflow: hidden;
+    background: #f5f5f5;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.gallery-featured {
+    grid-column: 1 / -1;
+}
+
+.gallery-wide {
+    grid-column: 1 / -1;
+}
+
+/* ===== RESULTS / METRICS ===== */
+.project-results {
+    padding: 80px 48px 0;
+}
+
+.project-results h2 {
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 1.2;
+    margin-bottom: 32px;
+    color: #121212;
+}
+
+.metrics-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+}
+
+.metric-card {
+    padding: 28px;
+    background: #fafafa;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.metric-number {
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 1.2;
+    color: #121212;
+}
+
+.metric-label {
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 18px;
+    color: #121212;
+}
+
+.metric-description {
+    font-size: 13px;
+    font-weight: 300;
+    line-height: 1.5;
+    color: #888888;
+    margin-top: 4px;
+}
+
+/* ===== NEXT PROJECT ===== */
+.next-project {
+    padding: 80px 48px 0;
+}
+
+.next-project-link {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 32px 0;
+    border-top: 1px solid #f0f0f0;
+    border-bottom: 1px solid #f0f0f0;
+    text-decoration: none;
+    transition: opacity 0.2s ease;
+}
+
+.next-project-link:hover {
+    opacity: 0.6;
+}
+
+.next-project-name {
+    font-size: 24px;
+    font-weight: 500;
+    color: #121212;
+}
+
+.next-project-arrow {
+    font-size: 24px;
+    color: #121212;
+}
+
+/* ===== CTA ===== */
+.cta-section {
+    padding: 100px 48px;
+    text-align: center;
+}
+
+.cta-section h2 {
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 1.2;
+    margin-bottom: 16px;
+    color: #121212;
+}
+
+.contact-subtitle {
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 1.6;
+    color: #666666;
+}
+
+.contact-subtitle-margin {
+    margin-bottom: 32px;
+}
+
+.btn-primary {
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 400;
+    padding: 14px 36px;
+    background: #121212;
+    color: #ffffff;
+    border-radius: 100px;
+    text-decoration: none;
+    transition: background 0.2s ease, transform 0.15s ease;
+}
+
+.btn-primary:hover {
+    background: #333333;
+}
+
+.btn-primary:active {
+    transform: scale(0.97);
+}
+
+/* ===== FOOTER ===== */
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 32px 48px;
+    border-top: 1px solid #f0f0f0;
+}
+
+.footer-logo {
+    font-size: 14px;
+    font-weight: 400;
+    color: #121212;
+}
+
+.footer-links {
+    display: flex;
+    gap: 24px;
+}
+
+.footer-links a {
+    font-size: 13px;
+    font-weight: 400;
+    color: #666666;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.footer-links a:hover {
+    color: #121212;
+}
+
+/* =============================================
+   RESPONSIVE
+   ============================================= */
+
+/* ---- Tablet landscape ---- */
+@media (max-width: 1199px) {
+    .header {
+        padding: 24px 36px;
+    }
+
+    .header.scrolled {
+        padding: 16px 36px;
+    }
+
+    .back-nav {
+        padding: 110px 36px 0;
+    }
+
+    .project-hero {
+        padding: 40px 36px 0;
+    }
+
+    .project-concept {
+        padding: 60px 36px 0;
+    }
+
+    .project-gallery {
+        padding: 60px 36px 0;
+    }
+
+    .project-results {
+        padding: 60px 36px 0;
+    }
+
+    .next-project {
+        padding: 60px 36px 0;
+    }
+
+    .cta-section {
+        padding: 80px 36px;
+    }
+
+    .footer {
+        padding: 28px 36px;
+    }
+
+    .metrics-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* ---- Tablet portrait ---- */
+@media (max-width: 1023px) {
+    .www-grid {
+        grid-template-columns: 1fr;
+        gap: 36px;
+    }
+
+    .project-hero h1 {
+        font-size: 34px;
+    }
+}
+
+/* ---- Mobile landscape ---- */
+@media (max-width: 767px) {
+    .header {
+        padding: 20px 24px;
+    }
+
+    .header.scrolled {
+        padding: 14px 24px;
+    }
+
+    .nav {
+        display: none;
+    }
+
+    .burger {
+        display: flex;
+    }
+
+    /* Mobile menu overlay */
+    .nav.open {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(255, 255, 255, 0.98);
+        backdrop-filter: blur(16px);
+        -webkit-backdrop-filter: blur(16px);
+        z-index: 105;
+        gap: 24px;
+    }
+
+    .nav.open a {
+        font-size: 20px;
+    }
+
+    .nav.open .btn-start {
+        font-size: 16px;
+        padding: 14px 32px;
+    }
+
+    .header .logo-desktop {
+        display: none;
+    }
+
+    .header .logo-mobile {
+        display: block;
+    }
+
+    .back-nav {
+        padding: 100px 24px 0;
+    }
+
+    .project-hero {
+        padding: 32px 24px 0;
+    }
+
+    .project-hero h1 {
+        font-size: 28px;
+    }
+
+    .project-brief {
+        font-size: 15px;
+        margin-bottom: 32px;
+    }
+
+    .project-meta {
+        gap: 24px 40px;
+    }
+
+    .project-concept {
+        padding: 48px 24px 0;
+    }
+
+    .project-gallery {
+        padding: 48px 24px 0;
+    }
+
+    .gallery-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .project-results {
+        padding: 48px 24px 0;
+    }
+
+    .metrics-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 16px;
+    }
+
+    .metric-card {
+        padding: 20px;
+    }
+
+    .next-project {
+        padding: 48px 24px 0;
+    }
+
+    .cta-section {
+        padding: 60px 24px;
+    }
+
+    .footer {
+        padding: 24px;
+    }
+}
+
+/* ---- Mobile portrait ---- */
+@media (max-width: 479px) {
+    .header {
+        padding: 16px 18px;
+    }
+
+    .header.scrolled {
+        padding: 12px 18px;
+    }
+
+    .back-nav {
+        padding: 80px 18px 0;
+    }
+
+    .project-hero {
+        padding: 24px 18px 0;
+    }
+
+    .project-hero h1 {
+        font-size: 24px;
+    }
+
+    .project-brief {
+        font-size: 14px;
+        margin-bottom: 24px;
+    }
+
+    .project-meta {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .project-concept {
+        padding: 40px 18px 0;
+    }
+
+    .www-text {
+        font-size: 13px;
+    }
+
+    .project-gallery {
+        padding: 40px 18px 0;
+    }
+
+    .project-gallery h2 {
+        font-size: 22px;
+    }
+
+    .gallery-grid {
+        gap: 10px;
+    }
+
+    .project-results {
+        padding: 40px 18px 0;
+    }
+
+    .project-results h2 {
+        font-size: 22px;
+    }
+
+    .metrics-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .metric-number {
+        font-size: 24px;
+    }
+
+    .next-project {
+        padding: 40px 18px 0;
+    }
+
+    .next-project-name {
+        font-size: 18px;
+    }
+
+    .cta-section {
+        padding: 48px 18px;
+    }
+
+    .cta-section h2 {
+        font-size: 24px;
+    }
+
+    .footer {
+        flex-direction: column;
+        gap: 16px;
+        text-align: center;
+        padding: 24px 18px;
+    }
+}

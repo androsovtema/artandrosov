@@ -4,300 +4,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Viril - Artem Androsov</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-            background: #ffffff;
-            color: #121212;
-            line-height: 1.6;
-        }
-
-        .sidebar {
-            position: fixed;
-            left: 0;
-            top: 0;
-            width: 164px;
-            height: 100vh;
-            background: #ffffff;
-            display: flex;
-            flex-direction: column;
-            align-items: flex-start;
-            padding-top: 70px;
-            padding-bottom: 70px;
-            padding-left: 36px;
-            padding-right: 70px;
-            z-index: 100;
-        }
-
-        .logo {
-            width: 36px;
-            height: 36px;
-            display: flex;
-            align-items: left;
-            justify-content: center;
-            margin-bottom: 28px;
-            user-select: none;
-            -webkit-user-select: none;
-            -moz-user-select: none;
-            pointer-events: none;
-        }
-
-        .nav-links {
-            display: flex;
-            flex-direction: column;
-            gap: 8px;
-            align-items: flex-start;
-        }
-
-        .nav-links a {
-            font-size: 14px;
-            font-weight: 400;
-            line-height: 18px;
-            letter-spacing: 0.4px;
-            color: #121212;
-            text-decoration: none;
-            transition: color 0.2s ease;
-        }
-
-        .nav-links a:hover {
-            color: #666666;
-        }
-
-        .nav-links a:active,
-        .nav-links a.active {
-            color: #666666;
-        }
-
-        .main-content {
-            margin-left: 164px;
-            padding: 70px;
-        }
-
-        .project-title {
-            font-size: 14px;
-            font-weight: 400;
-            line-height: 18px;
-            letter-spacing: 0.4px;
-            margin-bottom: 18px;
-        }
-
-        .project-info {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 70px;
-            margin-bottom: 70px;
-        }
-
-        .info-column h2 {
-            font-size: 14px;
-            font-weight: 400;
-            line-height: 18px;
-            letter-spacing: 0.4px;
-            margin-bottom: 14px;
-        }
-
-        .info-column p {
-            font-size: 12px;
-            font-weight: 300;
-            line-height: 18px;
-            letter-spacing: 0;
-            margin-bottom: 12px;
-        }
-
-        .info-column p:last-child {
-            margin-bottom: 0;
-        }
-
-        .project-images {
-            display: flex;
-            flex-direction: column;
-            gap: 36px;
-        }
-
-        .image-row-single,
-        .image-row-double {
-            width: 100%;
-        }
-
-        .image-row-single img {
-            width: 100%;
-            height: auto;
-            display: block;
-        }
-
-        .image-row-double {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 36px;
-        }
-
-        .image-row-double img {
-            width: 100%;
-            height: auto;
-            display: block;
-        }
-
-        .project-results {
-            margin-top: 70px;
-            padding-top: 70px;
-            border-top: 1px solid #f0f0f0;
-        }
-
-        .project-results h2 {
-            font-size: 14px;
-            font-weight: 400;
-            line-height: 18px;
-            letter-spacing: 0.4px;
-            margin-bottom: 18px;
-        }
-
-        .results-grid {
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            gap: 36px;
-        }
-
-        .result-item {
-            display: flex;
-            flex-direction: column;
-            gap: 8px;
-        }
-
-        .result-number {
-            font-size: 24px;
-            font-weight: 400;
-            line-height: 30px;
-            color: #121212;
-        }
-
-        .result-label {
-            font-size: 12px;
-            font-weight: 400;
-            line-height: 16px;
-            color: #121212;
-        }
-
-        .result-description {
-            font-size: 12px;
-            font-weight: 300;
-            line-height: 16px;
-            color: #666666;
-        }
-
-        @media (max-width: 1199px) {
-            .sidebar {
-                padding-right: 36px;
-            }
-
-            .main-content {
-                margin-left: 96px;
-            }
-
-            .results-grid {
-                grid-template-columns: repeat(2, 1fr);
-            }
-        }
-
-        @media (max-width: 1023px) {
-            .project-info {
-                grid-template-columns: 1fr;
-                gap: 36px;
-            }
-        }
-
-        @media (max-width: 767px) {
-            .sidebar {
-                width: 128px;
-                padding: 36px;
-            }
-
-            .main-content {
-                margin-left: 130px;
-                padding: 36px 36px 36px 0;
-            }
-
-            .project-info {
-                grid-template-columns: 1fr;
-                gap: 36px;
-                margin-bottom: 36px;
-            }
-
-            .image-row-double {
-                grid-template-columns: 1fr;
-            }
-
-            .results-grid {
-                grid-template-columns: repeat(2, 1fr);
-                gap: 24px;
-            }
-        }
-
-        @media (max-width: 479px) {
-            .sidebar {
-                position: fixed;
-                left: 0;
-                right: 0;
-                top: auto;
-                bottom: 0;
-                width: 100%;
-                height: auto;
-                flex-direction: row;
-                align-items: center;
-                justify-content: space-between;
-                padding: 18px;
-                background: #ffffff;
-                border-top: 1px solid #f0f0f0;
-            }
-
-            .logo {
-                margin-bottom: 0;
-            }
-
-            .nav-links {
-                flex-direction: row;
-                gap: 18px;
-            }
-
-            .main-content {
-                margin-left: 0;
-                padding: 18px;
-                padding-bottom: 109px;
-            }
-
-            .project-title {
-                margin-top: 18px;
-            }
-
-            .project-images {
-                gap: 18px;
-            }
-
-            .image-row-double {
-                gap: 18px;
-            }
-
-            .results-grid {
-                grid-template-columns: 1fr;
-            }
-        }
-    </style>
+    <title>WEF 2025 - Artem Androsov</title>
+    <link rel="stylesheet" href="../assets/css/base.css">
+    <link rel="stylesheet" href="../assets/css/project.css">
 </head>
 
 <body>
     <header class="header">
         <a class="logo" href="../index.html" aria-label="Art Androsov — home">
-            <img src="../assets/logos/WDLogo.svg" alt="" class="logo-desktop" aria-hidden="true">
-            <img src="../assets/logos/WDLogoMobile.svg" alt="" class="logo-mobile" aria-hidden="true">
+            <img src="../assets/images/ArtLogo.svg" alt="" class="logo-desktop" aria-hidden="true">
+            <img src="../assets/images/ArtLogo.svg" alt="" class="logo-mobile" aria-hidden="true">
         </a>
         <nav class="nav">
-            <a href="../projects.html">Projects</a>
+            <a href="../index.html">Projects</a>
             <a href="../about.html">About</a>
             <button class="btn-start">Hire me</button>
         </nav>
@@ -305,17 +24,10 @@
             <span></span><span></span><span></span>
         </button>
     </header>
-    <script>
-        (function () {
-            if (window.scrollY > 100) {
-                document.querySelector('.header').classList.add('scrolled');
-            }
-        })();
-    </script>
 
     <main>
         <div class="back-nav">
-            <a href="../projects.html" class="back-link">Back to projects</a>
+            <a href="../index.html" class="back-link">Back to projects</a>
         </div>
 
         <section class="project-hero" id="hero">
@@ -381,12 +93,12 @@
         </section>
 
         <section class="project-gallery" id="gallery">
-            <div class="section-label">Process & outcome</div>
+            <div class="section-label">Process &amp; outcome</div>
             <h2>What it looks like</h2>
 
             <div class="gallery-grid">
                 <div class="gallery-item gallery-featured">
-                    <img src="../assets/images/carousel/wef2025_1.jpg" alt="EmTech Invest × Davos — event design"
+                    <img src="../assets/images/wef2025.jpg" alt="EmTech Invest × Davos — event design"
                         loading="lazy" decoding="async">
                 </div>
             </div>
@@ -423,7 +135,7 @@
         <section class="next-project" id="next">
             <div class="section-label">Next project</div>
             <a href="loyobondar.html" class="next-project-link">
-                <span class="next-project-name">LOYO & BONDAR</span>
+                <span class="next-project-name">LOYO &amp; BONDAR</span>
                 <span class="next-project-arrow">→</span>
             </a>
         </section>

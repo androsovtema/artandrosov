@@ -5,195 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projects - Artem Androsov</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-            background: #ffffff;
-            color: #121212;
-            line-height: 1.6;
-        }
-
-        .sidebar {
-            position: fixed;
-            left: 0;
-            top: 0;
-            width: 164px;
-            height: 100vh;
-            background: #ffffff;
-            display: flex;
-            flex-direction: column;
-            align-items: flex-start;
-            padding-top: 70px;
-            padding-bottom: 70px;
-            padding-left: 36px;
-            padding-right: 70px;
-            z-index: 100;
-        }
-
-        .logo {
-            width: 36px;
-            height: 36px;
-            display: flex;
-            align-items: left;
-            justify-content: center;
-            margin-bottom: 28px;
-        }
-
-        .logo {
-            user-select: none;
-            -webkit-user-select: none;
-            -moz-user-select: none;
-            pointer-events: none;
-        }
-
-        .nav-links {
-            display: flex;
-            flex-direction: column;
-            gap: 8px;
-            align-items: flex-start;
-        }
-
-        .nav-links a {
-            font-size: 14px;
-            font-weight: 400;
-            line-height: 18px;
-            letter-spacing: 0.4px;
-            color: #121212;
-            text-decoration: none;
-            transition: color 0.2s ease;
-        }
-
-        .nav-links a:hover {
-            color: #666666;
-        }
-
-        .nav-links a:active,
-        .nav-links a.active {
-            color: #666666;
-        }
-
-        .main-content {
-            margin-left: 164px;
-            padding: 70px 70px;
-        }
-
-        .projects-grid {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 36px;
-        }
-
-        .project-card {
-            cursor: pointer;
-            transition: opacity 0.2s ease;
-        }
-
-        .project-card:hover {
-            opacity: 0.8;
-        }
-
-        .project-image {
-            aspect-ratio: 4 / 3;
-            overflow: hidden;
-            margin-bottom: 0;
-        }
-
-        .project-image img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            user-select: none;
-            -webkit-user-select: none;
-            -moz-user-select: none;
-            pointer-events: none;
-        }
-
-        .project-title {
-            font-size: 12px;
-            font-weight: 300;
-            line-height: 18px;
-            letter-spacing: 0;
-            color: #ffffff;
-            background: #000000;
-            padding-left: 12px;
-            padding-top: 6px;
-            padding-bottom: 6px;
-        }
-
-        @media (max-width: 1199px) {
-            .sidebar {
-                padding-right: 36px;
-            }
-
-            .main-content {
-                margin-left: 96px;
-            }
-
-            .projects-grid {
-                grid-template-columns: repeat(2, 1fr);
-            }
-        }
-
-        @media (max-width: 767px) {
-            .sidebar {
-                width: 128px;
-                padding: 36px;
-            }
-
-            .main-content {
-                margin-left: 130px;
-                padding: 36px 36px 36px 0;
-            }
-
-            .projects-grid {
-                grid-template-columns: 1fr;
-            }
-        }
-
-        @media (max-width: 479px) {
-            .sidebar {
-                position: fixed;
-                left: 0;
-                right: 0;
-                top: auto;
-                bottom: 0;
-                width: 100%;
-                height: auto;
-                flex-direction: row;
-                align-items: center;
-                justify-content: space-between;
-                padding: 18px;
-                background: #ffffff;
-                border-top: 1px solid #f0f0f0;
-            }
-
-            .logo {
-                margin-bottom: 0;
-            }
-
-            .nav-links {
-                flex-direction: row;
-                gap: 18px;
-            }
-
-            .main-content {
-                margin-left: 0;
-                padding: 18px;
-                padding-bottom: 109px;
-            }
-
-            .projects-grid {
-                grid-template-columns: 1fr;
-                margin-top: 18px;
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/sidebar.css">
+    <link rel="stylesheet" href="./assets/css/index.css">
 </head>
 
 <body>
@@ -207,7 +21,7 @@
 
     <div class="main-content">
         <div class="projects-grid">
-            <a href="./projects/wef2025.html" style="text-decoration: none; color: inherit;">
+            <a href="./projects/wef2025.html">
                 <div class="project-card">
                     <div class="project-image">
                         <img src="./assets/images/wef2025.jpg" alt="WEF 2025">
@@ -216,7 +30,7 @@
                 </div>
             </a>
 
-            <a href="./projects/viril.html" style="text-decoration: none; color: inherit;">
+            <a href="./projects/viril.html">
                 <div class="project-card">
                     <div class="project-image">
                         <img src="./assets/images/viril.jpg" alt="Viril">
@@ -225,7 +39,7 @@
                 </div>
             </a>
 
-            <a href="./projects/gabarshop.html" style="text-decoration: none; color: inherit;">
+            <a href="./projects/gabarshop.html">
                 <div class="project-card">
                     <div class="project-image">
                         <img src="./assets/images/gabarshop.jpg" alt="Gabarshop">
@@ -234,7 +48,7 @@
                 </div>
             </a>
 
-            <a href="./projects/eazyenergy.html" style="text-decoration: none; color: inherit;">
+            <a href="./projects/eazyenergy.html">
                 <div class="project-card">
                     <div class="project-image">
                         <img src="./assets/images/eazyenergy.jpg" alt="Eazy Energy">
@@ -243,16 +57,16 @@
                 </div>
             </a>
 
-            <a href="./projects/loyobondar.html" style="text-decoration: none; color: inherit;">
+            <a href="./projects/loyobondar.html">
                 <div class="project-card">
                     <div class="project-image">
-                        <img src="./assets/images/loyobondar.jpg" alt="LOYO & BONDAR">
+                        <img src="./assets/images/loyobondar.jpg" alt="LOYO &amp; BONDAR">
                     </div>
-                    <div class="project-title">LOYO & BONDAR</div>
+                    <div class="project-title">LOYO &amp; BONDAR</div>
                 </div>
             </a>
 
-            <a href="./projects/scoville.html" style="text-decoration: none; color: inherit;">
+            <a href="./projects/scoville.html">
                 <div class="project-card">
                     <div class="project-image">
                         <img src="./assets/images/scoville.jpg" alt="Scoville">
