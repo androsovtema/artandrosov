@@ -291,71 +291,163 @@
 </head>
 
 <body>
-    <div class="sidebar">
-        <a href="../index.html"><img src="../assets/images/ArtLogo.svg" alt="Art Logo" class="logo"></a>
-        <nav class="nav-links">
-            <a href="../index.html" class="active">Projects</a>
+    <header class="header">
+        <a class="logo" href="../index.html" aria-label="Art Androsov — home">
+            <img src="../assets/logos/WDLogo.svg" alt="" class="logo-desktop" aria-hidden="true">
+            <img src="../assets/logos/WDLogoMobile.svg" alt="" class="logo-mobile" aria-hidden="true">
+        </a>
+        <nav class="nav">
+            <a href="../projects.html">Projects</a>
             <a href="../about.html">About</a>
+            <button class="btn-start">Hire me</button>
         </nav>
-    </div>
+        <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false">
+            <span></span><span></span><span></span>
+        </button>
+    </header>
+    <script>
+        (function () {
+            if (window.scrollY > 100) {
+                document.querySelector('.header').classList.add('scrolled');
+            }
+        })();
+    </script>
 
-    <div class="main-content">
-        <h1 class="project-title">LOYO & BONDAR</h1>
-
-        <div class="project-info">
-            <div class="info-column">
-                <h2>Why</h2>
-                <p>LOYO & BONDAR are building massive infrastructure on Bali: 100,000+ m² of real estate, 12 residential
-                    complexes, 5 own factories. At every level — investors, partners, buyers — the company needs
-                    materials that speak the language of the audience and reflect the level of business. They came to us
-                    by recommendation.</p>
-            </div>
-            <div class="info-column">
-                <h2>What</h2>
-                <p>Presentations for three audiences: partners, investors, clients. Print media, banners, outdoor
-                    advertising, social networks, offers, mailings. Parallel to current tasks — 100+ slides in the first
-                    week of work.</p>
-            </div>
-            <div class="info-column">
-                <h2>How</h2>
-                <p>The development business never stops. New object, new investor, new event — every time fresh
-                    materials are needed quickly and without loss of quality. We worked as an internal design team: we
-                    knew the product, understood the audience, kept the pace.</p>
-            </div>
+    <main>
+        <div class="back-nav">
+            <a href="../projects.html" class="back-link">Back to projects</a>
         </div>
 
-        <div class="project-images">
-            <div class="image-row-single">
-                <img src="../assets/images/loyobondar-1.jpg" alt="LOYO & BONDAR visual support">
-            </div>
-        </div>
+        <section class="project-hero" id="hero">
+            <div class="section-label">Case study</div>
+            <h1>LOYO & BONDAR</h1>
+            <p class="project-brief">One of Bali's leading developers — 15 years on the market, 100,000+ m² of real
+                estate, three completely different audiences. I built the communication logic for each and directed a
+                graphic designer to keep up with a constant flow of high-stakes materials.</p>
 
-        <div class="project-results">
-            <h2>Results</h2>
-            <div class="results-grid">
-                <div class="result-item">
-                    <div class="result-number">100+</div>
-                    <div class="result-label">Slides</div>
-                    <div class="result-description">In the first week of work</div>
+            <div class="project-meta">
+                <div class="meta-item">
+                    <span class="meta-label">Period</span>
+                    <span class="meta-value">December 2025 — March 2026</span>
                 </div>
-                <div class="result-item">
-                    <div class="result-number">100K m²</div>
-                    <div class="result-label">Client scale</div>
-                    <div class="result-description">Under construction and ready real estate on Bali</div>
+                <div class="meta-item">
+                    <span class="meta-label">My role</span>
+                    <span class="meta-value">Product, Art Direction</span>
                 </div>
-                <div class="result-item">
-                    <div class="result-number">3</div>
-                    <div class="result-label">Audiences</div>
-                    <div class="result-description">Investors, partners, buyers — each with their own language</div>
-                </div>
-                <div class="result-item">
-                    <div class="result-number">Support</div>
-                    <div class="result-label">Format</div>
-                    <div class="result-description">Continuous collaboration in real-time mode</div>
+                <div class="meta-item">
+                    <span class="meta-label">Areas</span>
+                    <div class="meta-tags">
+                        <span class="meta-tag">Communication Strategy</span>
+                        <span class="meta-tag">Presentations</span>
+                        <span class="meta-tag">Art Direction</span>
+                        <span class="meta-tag">OOH</span>
+                        <span class="meta-tag">Social Media</span>
+                    </div>
                 </div>
             </div>
+        </section>
+
+        <section class="project-concept" id="concept">
+            <div class="www-grid">
+                <div class="www-column">
+                    <h2 class="www-title">Why</h2>
+                    <p class="www-text">LOYO & BONDAR operates at scale: 12 residential complexes, 5 factories, hundreds
+                        of millions in real estate across Bali. At every level of the business there's a different
+                        stakeholder — investors looking at ROI, partners evaluating reliability, buyers imagining a
+                        lifestyle. A single presentation for all three is a failed product. Each audience needs its own
+                        argument, its own visual language, its own reason to say yes.</p>
+                </div>
+                <div class="www-column">
+                    <h2 class="www-title">What</h2>
+                    <p class="www-text">I mapped the communication structure across all three audience segments and
+                        defined what each needed to see, hear, and feel. I built business presentations designed as
+                        sales tools — not slide decks, but conversion funnels in PowerPoint format. I also designed
+                        pitch materials for investors and partners, ad creatives, outdoor banners, social content, and
+                        email campaigns — all under continuous art direction over a graphic designer executing in real
+                        time.</p>
+                </div>
+                <div class="www-column">
+                    <h2 class="www-title">How</h2>
+                    <p class="www-text">Real estate development doesn't pause. A new property launches, a new investor
+                        arrives, an event comes up in three days — and every time, the materials need to be sharp and
+                        consistent without starting from scratch. I structured my direction so the designer could move
+                        fast without losing the system. Over 100 slides in the first week alone. The key wasn't speed —
+                        it was having a clear enough product logic that execution could scale without constant
+                        intervention.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="project-gallery" id="gallery">
+            <div class="section-label">Process & outcome</div>
+            <h2>What it looks like</h2>
+
+            <div class="gallery-grid">
+                <div class="gallery-item gallery-featured">
+                    <img src="../assets/images/carousel/loyobondar1.jpg"
+                        alt="LOYO & BONDAR — visual communication system" loading="lazy" decoding="async">
+                </div>
+            </div>
+        </section>
+
+        <section class="project-results" id="results">
+            <div class="section-label">Results</div>
+            <h2>What we delivered</h2>
+
+            <div class="metrics-grid">
+                <div class="metric-card">
+                    <span class="metric-number">3</span>
+                    <span class="metric-label">Audience segments</span>
+                    <p class="metric-description">Investors, partners, buyers — distinct communication logic for each
+                    </p>
+                </div>
+                <div class="metric-card">
+                    <span class="metric-number">100+</span>
+                    <span class="metric-label">Slides</span>
+                    <p class="metric-description">Delivered in the first week — without sacrificing consistency</p>
+                </div>
+                <div class="metric-card">
+                    <span class="metric-number">100K m²</span>
+                    <span class="metric-label">Client scale</span>
+                    <p class="metric-description">Active development across Bali — materials kept pace with the business
+                    </p>
+                </div>
+                <div class="metric-card">
+                    <span class="metric-number">Ongoing</span>
+                    <span class="metric-label">Format</span>
+                    <p class="metric-description">Embedded as the product and creative lead — not a one-off contractor
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="next-project" id="next">
+            <div class="section-label">Next project</div>
+            <a href="scoville.html" class="next-project-link">
+                <span class="next-project-name">Scoville</span>
+                <span class="next-project-arrow">→</span>
+            </a>
+        </section>
+
+        <section class="cta-section" id="cta">
+            <h2>Need someone who can manage complexity?</h2>
+            <p class="contact-subtitle contact-subtitle-margin">
+                Multiple audiences, tight deadlines, high stakes — tell me about it.
+            </p>
+            <a href="https://t.me/androsovart" target="_blank" class="btn-primary" rel="noopener noreferrer">Get in
+                touch</a>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-logo">Art Androsov</div>
+        <div class="footer-links">
+            <a href="https://t.me/androsovart" target="_blank" rel="noopener noreferrer">Telegram</a>
+            <a href="https://www.youtube.com/@wedesignerz/" target="_blank" rel="noopener noreferrer">YouTube</a>
         </div>
-    </div>
+    </footer>
+
+    <script src="../main.js"></script>
 </body>
 
 </html>
