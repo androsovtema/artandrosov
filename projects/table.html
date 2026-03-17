@@ -6,26 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Table - Artem Androsov</title>
     <link rel="stylesheet" href="../assets/css/base.css">
+    <link rel="stylesheet" href="../assets/css/sidebar.css">
     <link rel="stylesheet" href="../assets/css/project.css">
 </head>
 
 <body>
-    <header class="header">
-        <a class="logo" href="../index.html" aria-label="Art Androsov — home">
-            <img src="../assets/images/ArtLogo.svg" alt="" class="logo-desktop" aria-hidden="true">
-            <img src="../assets/images/ArtLogo.svg" alt="" class="logo-mobile" aria-hidden="true">
-        </a>
-        <nav class="nav">
-            <a href="../index.html">Projects</a>
+    <div class="sidebar">
+        <a href="../index.html"><img src="../assets/images/ArtLogo.svg" alt="Art Logo" class="logo"></a>
+        <nav class="nav-links">
+            <a href="../index.html" class="active">Projects</a>
             <a href="../about.html">About</a>
-            <button class="btn-start">Hire me</button>
         </nav>
-        <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false">
-            <span></span><span></span><span></span>
-        </button>
-    </header>
+    </div>
 
-    <main>
+    <div class="main-content">
         <div class="back-nav">
             <a href="../index.html" class="back-link">Back to projects</a>
         </div>
@@ -110,17 +104,15 @@
             <a href="https://t.me/androsovart" target="_blank" class="btn-primary" rel="noopener noreferrer">Get in
                 touch</a>
         </section>
-    </main>
 
-    <footer class="footer">
-        <div class="footer-logo">Art Androsov</div>
-        <div class="footer-links">
-            <a href="https://t.me/androsovart" target="_blank" rel="noopener noreferrer">Telegram</a>
-            <a href="https://www.youtube.com/@wedesignerz/" target="_blank" rel="noopener noreferrer">YouTube</a>
-        </div>
-    </footer>
-
-    <script src="../main.js"></script>
+        <footer class="footer">
+            <div class="footer-logo">Art Androsov</div>
+            <div class="footer-links">
+                <a href="https://t.me/androsovart" target="_blank" rel="noopener noreferrer">Telegram</a>
+                <a href="https://www.youtube.com/@wedesignerz/" target="_blank" rel="noopener noreferrer">YouTube</a>
+            </div>
+        </footer>
+    </div>
 </body>
 
 </html>
