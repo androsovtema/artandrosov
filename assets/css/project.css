@@ -220,6 +220,19 @@
     margin-top: 4px;
 }
 
+.project-shipped {
+    padding: 80px 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.shipped-text {
+    max-width: 640px;
+    font-size: 1rem;
+    line-height: 1.7;
+    opacity: 0.75;
+    margin-top: 16px;
+}
+
 /* ===== NEXT PROJECT ===== */
 .next-project {
     margin-bottom: 70px;
