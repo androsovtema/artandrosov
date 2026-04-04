@@ -10,17 +10,19 @@
 
 .project-card {
     cursor: pointer;
-    transition: opacity 0.2s ease;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .project-card:hover {
-    opacity: 0.8;
+    transform: translateY(-4px) scale(1.02);
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.1);
 }
 
 .project-image {
     aspect-ratio: 16 / 9;
     overflow: hidden;
-    margin-bottom: 0;
+    border-radius: 12px;
+    background: #f5f5f5;
 }
 
 .project-image img {
@@ -34,15 +36,13 @@
 }
 
 .project-title {
-    font-size: 12px;
-    font-weight: 300;
+    font-size: 13px;
+    font-weight: 400;
     line-height: 18px;
     letter-spacing: 0;
-    color: #ffffff;
-    background: #000000;
-    padding-left: 12px;
-    padding-top: 6px;
-    padding-bottom: 6px;
+    color: #888888;
+    padding-top: 10px;
+    padding-left: 2px;
 }
 
 /* ===== RESPONSIVE ===== */
