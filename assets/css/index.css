@@ -45,6 +45,36 @@
     padding-left: 2px;
 }
 
+.project-description {
+    font-size: 0.85rem;
+    line-height: 1.5;
+    color: var(--color-text-muted);
+    margin-top: 6px;
+    padding-left: 2px;
+}
+
+.project-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin-top: 8px;
+}
+
+.project-tag {
+    font-size: 0.7rem;
+    padding: 3px 10px;
+    border-radius: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    opacity: 0.6;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}
+
+.project-tag.pet {
+    border-color: rgba(0, 0, 0, 0.5);
+    opacity: 1;
+}
+
 /* ===== RESPONSIVE ===== */
 @media (max-width: 1199px) {
     .projects-grid {
