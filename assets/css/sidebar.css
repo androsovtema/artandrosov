@@ -52,12 +52,12 @@
 }
 
 .nav-links a:hover {
-    color: var(--color-text-tertiary);
+    color: var(--color-accent);
 }
 
 .nav-links a:active,
 .nav-links a.active {
-    color: var(--color-text-tertiary);
+    color: var(--color-accent);
 }
 
 /* ===== MAIN CONTENT ===== */

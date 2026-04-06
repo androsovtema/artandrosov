@@ -295,7 +295,7 @@
     font-size: var(--font-size-md);
     font-weight: var(--font-weight-regular);
     padding: 14px var(--space-2xl);
-    background: var(--color-text-primary);
+    background: var(--color-accent);
     color: var(--color-bg-page);
     border-radius: var(--radius-full);
     text-decoration: none;
@@ -303,7 +303,7 @@
 }
 
 .btn-primary:hover {
-    background: #333333;
+    background: #4A6343;
 }
 
 .btn-primary:active {

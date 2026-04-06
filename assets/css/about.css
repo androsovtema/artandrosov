@@ -79,7 +79,7 @@
 }
 
 .hero-text a:hover {
-    color: var(--color-text-tertiary);
+    color: var(--color-accent);
 }
 
 /* ===== SECTIONS ===== */
