@@ -1,0 +1,20 @@
+---
+import BaseLayout from './BaseLayout.astro';
+import Sidebar from '../components/Sidebar.astro';
+
+interface Props {
+  title: string;
+  description: string;
+  activePage: 'projects' | 'about';
+}
+
+const { title, description, activePage } = Astro.props;
+---
+
+<BaseLayout title={title} description={description}>
+  <link slot="head" rel="stylesheet" href="/assets/css/project.css">
+  <Sidebar activePage={activePage} />
+  <div class="main-content">
+    <slot />
+  </div>
+</BaseLayout>
