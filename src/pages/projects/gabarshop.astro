@@ -1,6 +1,16 @@
 ---
+import { Image } from 'astro:assets';
 import ProjectLayout from '../../layouts/ProjectLayout.astro';
 import Footer from '../../components/Footer.astro';
+
+import gabarshop1 from '../../assets/images/projects/gabarshop/gabarshop1.png';
+import gabarshop2 from '../../assets/images/projects/gabarshop/gabarshop2.png';
+import gabarshop3 from '../../assets/images/projects/gabarshop/gabarshop3.png';
+import gabarshop4 from '../../assets/images/projects/gabarshop/gabarshop4.png';
+import gabarshop5 from '../../assets/images/projects/gabarshop/gabarshop5.png';
+import gabarshop6 from '../../assets/images/projects/gabarshop/gabarshop6.png';
+import gabarshop7 from '../../assets/images/projects/gabarshop/gabarshop7.png';
+import gabarshop8 from '../../assets/images/projects/gabarshop/gabarshop8.png';
 ---
 
 <ProjectLayout
@@ -82,36 +92,28 @@ import Footer from '../../components/Footer.astro';
 
             <div class="gallery-grid">
                 <div class="gallery-item">
-                    <img src="/assets/images/projects/gabarshop/gabarshop1.jpg" alt="GABARSHOP — image 1"
-                        loading="lazy" decoding="async">
+                    <Image src={gabarshop1} alt="GABARSHOP — image 1" loading="lazy" decoding="async" />
                 </div>
                 <div class="gallery-item">
-                    <img src="/assets/images/projects/gabarshop/gabarshop2.jpg" alt="GABARSHOP — image 2"
-                        loading="lazy" decoding="async">
+                    <Image src={gabarshop2} alt="GABARSHOP — image 2" loading="lazy" decoding="async" />
                 </div>
                 <div class="gallery-item">
-                    <img src="/assets/images/projects/gabarshop/gabarshop3.jpg" alt="GABARSHOP — image 3"
-                        loading="lazy" decoding="async">
+                    <Image src={gabarshop3} alt="GABARSHOP — image 3" loading="lazy" decoding="async" />
                 </div>
                 <div class="gallery-item">
-                    <img src="/assets/images/projects/gabarshop/gabarshop4.jpg" alt="GABARSHOP — image 4"
-                        loading="lazy" decoding="async">
+                    <Image src={gabarshop4} alt="GABARSHOP — image 4" loading="lazy" decoding="async" />
                 </div>
                 <div class="gallery-item">
-                    <img src="/assets/images/projects/gabarshop/gabarshop5.jpg" alt="GABARSHOP — image 5"
-                        loading="lazy" decoding="async">
+                    <Image src={gabarshop5} alt="GABARSHOP — image 5" loading="lazy" decoding="async" />
                 </div>
                 <div class="gallery-item">
-                    <img src="/assets/images/projects/gabarshop/gabarshop6.jpg" alt="GABARSHOP — image 6"
-                        loading="lazy" decoding="async">
+                    <Image src={gabarshop6} alt="GABARSHOP — image 6" loading="lazy" decoding="async" />
                 </div>
                 <div class="gallery-item">
-                    <img src="/assets/images/projects/gabarshop/gabarshop7.jpg" alt="GABARSHOP — image 7"
-                        loading="lazy" decoding="async">
+                    <Image src={gabarshop7} alt="GABARSHOP — image 7" loading="lazy" decoding="async" />
                 </div>
                 <div class="gallery-item">
-                    <img src="/assets/images/projects/gabarshop/gabarshop8.jpg" alt="GABARSHOP — image 8"
-                        loading="lazy" decoding="async">
+                    <Image src={gabarshop8} alt="GABARSHOP — image 8" loading="lazy" decoding="async" />
                 </div>
             </div>
         </section>

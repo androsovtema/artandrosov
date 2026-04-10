@@ -1,6 +1,15 @@
 ---
+import { Image } from 'astro:assets';
 import ProjectLayout from '../../layouts/ProjectLayout.astro';
 import Footer from '../../components/Footer.astro';
+
+import eazyenergy1 from '../../assets/images/projects/eazyenergy/eazyenergy1.png';
+import eazyenergy2 from '../../assets/images/projects/eazyenergy/eazyenergy2.png';
+import eazyenergy3 from '../../assets/images/projects/eazyenergy/eazyenergy3.png';
+import eazyenergy4 from '../../assets/images/projects/eazyenergy/eazyenergy4.png';
+import eazyenergy5 from '../../assets/images/projects/eazyenergy/eazyenergy5.png';
+import eazyenergy6 from '../../assets/images/projects/eazyenergy/eazyenergy6.png';
+import eazyenergy7 from '../../assets/images/projects/eazyenergy/eazyenergy7.png';
 ---
 
 <ProjectLayout
@@ -86,32 +95,25 @@ import Footer from '../../components/Footer.astro';
 
             <div class="gallery-grid">
                 <div class="gallery-item">
-                    <img src="/assets/images/projects/eazyenergy/eazyenergy1.jpg" alt="Eazy Energy — image 1"
-                        loading="lazy" decoding="async">
+                    <Image src={eazyenergy1} alt="Eazy Energy — image 1" loading="lazy" decoding="async" />
                 </div>
                 <div class="gallery-item">
-                    <img src="/assets/images/projects/eazyenergy/eazyenergy2.jpg" alt="Eazy Energy — image 2"
-                        loading="lazy" decoding="async">
+                    <Image src={eazyenergy2} alt="Eazy Energy — image 2" loading="lazy" decoding="async" />
                 </div>
                 <div class="gallery-item">
-                    <img src="/assets/images/projects/eazyenergy/eazyenergy3.jpg" alt="Eazy Energy — image 3"
-                        loading="lazy" decoding="async">
+                    <Image src={eazyenergy3} alt="Eazy Energy — image 3" loading="lazy" decoding="async" />
                 </div>
                 <div class="gallery-item">
-                    <img src="/assets/images/projects/eazyenergy/eazyenergy4.jpg" alt="Eazy Energy — image 4"
-                        loading="lazy" decoding="async">
+                    <Image src={eazyenergy4} alt="Eazy Energy — image 4" loading="lazy" decoding="async" />
                 </div>
                 <div class="gallery-item">
-                    <img src="/assets/images/projects/eazyenergy/eazyenergy5.jpg" alt="Eazy Energy — image 5"
-                        loading="lazy" decoding="async">
+                    <Image src={eazyenergy5} alt="Eazy Energy — image 5" loading="lazy" decoding="async" />
                 </div>
                 <div class="gallery-item">
-                    <img src="/assets/images/projects/eazyenergy/eazyenergy6.jpg" alt="Eazy Energy — image 6"
-                        loading="lazy" decoding="async">
+                    <Image src={eazyenergy6} alt="Eazy Energy — image 6" loading="lazy" decoding="async" />
                 </div>
                 <div class="gallery-item">
-                    <img src="/assets/images/projects/eazyenergy/eazyenergy7.jpg" alt="Eazy Energy — image 7"
-                        loading="lazy" decoding="async">
+                    <Image src={eazyenergy7} alt="Eazy Energy — image 7" loading="lazy" decoding="async" />
                 </div>
             </div>
         </section>

@@ -1,6 +1,16 @@
 ---
+import { Image } from 'astro:assets';
 import BaseLayout from '../layouts/BaseLayout.astro';
 import Sidebar from '../components/Sidebar.astro';
+
+import virilCover from '../assets/images/projects/viril/viril_cover.png';
+import talentCover from '../assets/images/projects/talent/talent-cover.png';
+import ourwallCover from '../assets/images/projects/ourwall/ourwall_cover.png';
+import gabarshopCover from '../assets/images/projects/gabarshop/gabarshop_cover.png';
+import imtechinvestCover from '../assets/images/projects/emtechinvest/imtechinvest_cover.png';
+import loyobondarCover from '../assets/images/projects/loyobondar/loyobondar_cover.png';
+import eazyenergyCover from '../assets/images/projects/eazyenergy/eazyenergy_cover.png';
+import scovilleCover from '../assets/images/projects/scoville/scoville_cover.png';
 ---
 
 <BaseLayout
@@ -15,7 +25,7 @@ import Sidebar from '../components/Sidebar.astro';
           <a href="/projects/viril">
               <div class="project-card">
                   <div class="project-image">
-                      <img src="/assets/images/projects/viril/viril_cover.jpg" alt="Viril">
+                      <Image src={virilCover} alt="Viril" />
                   </div>
                   <div class="project-title">Viril</div>
                   <p class="project-description">A men's health brand built from a blank page — naming, brand
@@ -31,7 +41,7 @@ import Sidebar from '../components/Sidebar.astro';
           <a href="/projects/talent">
               <div class="project-card">
                   <div class="project-image">
-                      <img src="/assets/images/projects/talent/talent-cover.jpg" alt="Talent">
+                      <Image src={talentCover} alt="Talent" />
                   </div>
                   <div class="project-title">Talent</div>
                   <p class="project-description">A licensing platform for creators — images, video, audio, and scripts
@@ -45,12 +55,12 @@ import Sidebar from '../components/Sidebar.astro';
               </div>
           </a>
 
-          <a href="/projects/wall">
+          <a href="/projects/ourwall">
               <div class="project-card">
                   <div class="project-image">
-                      <img src="/assets/images/projects/thewall/thewall_cover.jpg" alt="The Wall">
+                      <Image src={ourwallCover} alt="Our Wall" />
                   </div>
-                  <div class="project-title">The Wall</div>
+                  <div class="project-title">Our Wall</div>
                   <p class="project-description">An anonymous social network where thoughts appear and disappear.
                       Built, attacked, rebuilt, and live — with 1,084 users who found it from a single YouTube video.
                   </p>
@@ -65,7 +75,7 @@ import Sidebar from '../components/Sidebar.astro';
           <a href="/projects/gabarshop">
               <div class="project-card">
                   <div class="project-image">
-                      <img src="/assets/images/projects/gabarshop/gabarshop_cover.jpg" alt="Gabarshop">
+                      <Image src={gabarshopCover} alt="Gabarshop" />
                   </div>
                   <div class="project-title">Gabarshop</div>
                   <p class="project-description">A creator merch store I built, ran, and never fully left. Four years
@@ -81,7 +91,7 @@ import Sidebar from '../components/Sidebar.astro';
           <a href="/projects/wef2025">
               <div class="project-card">
                   <div class="project-image">
-                      <img src="/assets/images/projects/emtechinvest/imtechinvest_cover.jpg" alt="WEF 2025">
+                      <Image src={imtechinvestCover} alt="WEF 2025" />
                   </div>
                   <div class="project-title">WEF 2025</div>
                   <p class="project-description">An elite investment event at Davos with no brand guidelines and 66
@@ -97,7 +107,7 @@ import Sidebar from '../components/Sidebar.astro';
           <a href="/projects/loyobondar">
               <div class="project-card">
                   <div class="project-image">
-                      <img src="/assets/images/projects/loyobondar/loyobondar_cover.jpg" alt="LOYO &amp; BONDAR">
+                      <Image src={loyobondarCover} alt="LOYO &amp; BONDAR" />
                   </div>
                   <div class="project-title">LOYO &amp; BONDAR</div>
                   <p class="project-description">A premium Bali developer with four marketing stakeholders and no
@@ -113,7 +123,7 @@ import Sidebar from '../components/Sidebar.astro';
           <a href="/projects/eazy-energy">
               <div class="project-card">
                   <div class="project-image">
-                      <img src="/assets/images/projects/eazyenergy/eazyenergy_cover.jpg" alt="Eazy Energy">
+                      <Image src={eazyenergyCover} alt="Eazy Energy" />
                   </div>
                   <div class="project-title">Eazy Energy</div>
                   <p class="project-description">An energy drink brand launched on the intersection of manufacturing
@@ -130,7 +140,7 @@ import Sidebar from '../components/Sidebar.astro';
           <a href="/projects/scoville">
               <div class="project-card">
                   <div class="project-image">
-                      <img src="/assets/images/projects/scoville/scoville_cover.jpg" alt="Scoville">
+                      <Image src={scovilleCover} alt="Scoville" />
                   </div>
                   <div class="project-title">Scoville</div>
                   <p class="project-description">A spicy ice cream designed twice — the first version was killed by

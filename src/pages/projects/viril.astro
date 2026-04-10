@@ -1,6 +1,13 @@
 ---
+import { Image } from 'astro:assets';
 import ProjectLayout from '../../layouts/ProjectLayout.astro';
 import Footer from '../../components/Footer.astro';
+
+import viril1 from '../../assets/images/projects/viril/viril1.png';
+import viril2 from '../../assets/images/projects/viril/viril2.png';
+import viril3 from '../../assets/images/projects/viril/viril3.png';
+import viril4 from '../../assets/images/projects/viril/viril4.png';
+import viril5 from '../../assets/images/projects/viril/viril5.png';
 ---
 
 <ProjectLayout
@@ -85,24 +92,19 @@ import Footer from '../../components/Footer.astro';
 
             <div class="gallery-grid">
                 <div class="gallery-item">
-                    <img src="/assets/images/projects/viril/viril1.jpg" alt="Viril — image 1" loading="lazy"
-                        decoding="async">
+                    <Image src={viril1} alt="Viril — image 1" loading="lazy" decoding="async" />
                 </div>
                 <div class="gallery-item">
-                    <img src="/assets/images/projects/viril/viril2.jpg" alt="Viril — image 2" loading="lazy"
-                        decoding="async">
+                    <Image src={viril2} alt="Viril — image 2" loading="lazy" decoding="async" />
                 </div>
                 <div class="gallery-item">
-                    <img src="/assets/images/projects/viril/viril3.jpg" alt="Viril — image 3" loading="lazy"
-                        decoding="async">
+                    <Image src={viril3} alt="Viril — image 3" loading="lazy" decoding="async" />
                 </div>
                 <div class="gallery-item">
-                    <img src="/assets/images/projects/viril/viril4.jpg" alt="Viril — image 4" loading="lazy"
-                        decoding="async">
+                    <Image src={viril4} alt="Viril — image 4" loading="lazy" decoding="async" />
                 </div>
                 <div class="gallery-item">
-                    <img src="/assets/images/projects/viril/viril5.jpg" alt="Viril — image 5" loading="lazy"
-                        decoding="async">
+                    <Image src={viril5} alt="Viril — image 5" loading="lazy" decoding="async" />
                 </div>
             </div>
         </section>

@@ -1,6 +1,13 @@
 ---
+import { Image } from 'astro:assets';
 import ProjectLayout from '../../layouts/ProjectLayout.astro';
 import Footer from '../../components/Footer.astro';
+
+import scoville1 from '../../assets/images/projects/scoville/scoville1.png';
+import scoville2 from '../../assets/images/projects/scoville/scoville2.png';
+import scoville3 from '../../assets/images/projects/scoville/scoville3.png';
+import scoville4 from '../../assets/images/projects/scoville/scoville4.png';
+import scoville5 from '../../assets/images/projects/scoville/scoville5.png';
 ---
 
 <ProjectLayout
@@ -75,24 +82,19 @@ import Footer from '../../components/Footer.astro';
 
             <div class="gallery-grid">
                 <div class="gallery-item">
-                    <img src="/assets/images/projects/scoville/scoville1.jpg" alt="Scoville — image 1" loading="lazy"
-                        decoding="async">
+                    <Image src={scoville1} alt="Scoville — image 1" loading="lazy" decoding="async" />
                 </div>
                 <div class="gallery-item">
-                    <img src="/assets/images/projects/scoville/scoville2.jpg" alt="Scoville — image 2" loading="lazy"
-                        decoding="async">
+                    <Image src={scoville2} alt="Scoville — image 2" loading="lazy" decoding="async" />
                 </div>
                 <div class="gallery-item">
-                    <img src="/assets/images/projects/scoville/scoville3.jpg" alt="Scoville — image 3" loading="lazy"
-                        decoding="async">
+                    <Image src={scoville3} alt="Scoville — image 3" loading="lazy" decoding="async" />
                 </div>
                 <div class="gallery-item">
-                    <img src="/assets/images/projects/scoville/scoville4.jpg" alt="Scoville — image 4" loading="lazy"
-                        decoding="async">
+                    <Image src={scoville4} alt="Scoville — image 4" loading="lazy" decoding="async" />
                 </div>
                 <div class="gallery-item">
-                    <img src="/assets/images/projects/scoville/scoville5.jpg" alt="Scoville — image 5" loading="lazy"
-                        decoding="async">
+                    <Image src={scoville5} alt="Scoville — image 5" loading="lazy" decoding="async" />
                 </div>
             </div>
         </section>

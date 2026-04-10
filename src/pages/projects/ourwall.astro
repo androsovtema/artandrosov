@@ -1,0 +1,165 @@
+---
+import { Image } from 'astro:assets';
+import ProjectLayout from '../../layouts/ProjectLayout.astro';
+import Footer from '../../components/Footer.astro';
+
+import ourwall1 from '../../assets/images/projects/ourwall/ourwall1.png';
+import ourwall2 from '../../assets/images/projects/ourwall/ourwall2.png';
+import ourwall3 from '../../assets/images/projects/ourwall/ourwall3.png';
+import ourwall4 from '../../assets/images/projects/ourwall/ourwall4.png';
+import ourwall5 from '../../assets/images/projects/ourwall/ourwall5.png';
+import ourwall6 from '../../assets/images/projects/ourwall/ourwall6.png';
+---
+
+<ProjectLayout
+  title="Our Wall - Artem Androsov"
+  description="Our Wall — an anonymous social network designed around one premise: remove identity and people say what they actually think."
+  activePage="projects"
+>
+        <div class="back-nav">
+            <a href="/" class="back-link">Back to projects</a>
+        </div>
+
+        <section class="project-hero" id="hero">
+            <div class="section-label">Case study</div>
+            <h1>Our Wall</h1>
+            <p class="project-brief">A social network built on one premise: people lie online because they're afraid.
+                Remove the identity — and the wall shows what people actually think. I designed the product logic, built
+                the first version with AI-generated code, survived a public attack on launch day, and shipped a rebuilt
+                v2 with a developer who fixed it for free because he believed in the idea.</p>
+
+            <div class="project-meta">
+                <div class="meta-item">
+                    <span class="meta-label">My role</span>
+                    <span class="meta-value">Product, UX</span>
+                </div>
+                <div class="meta-item">
+                    <span class="meta-label">Areas</span>
+                    <div class="meta-tags">
+                        <span class="meta-tag">Product Strategy</span>
+                        <span class="meta-tag">UX Design</span>
+                        <span class="meta-tag">Community Design</span>
+                        <span class="meta-tag">Pet Project</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="project-concept" id="concept">
+            <div class="www-grid">
+                <div class="www-column">
+                    <h2 class="www-title">Why</h2>
+                    <p class="www-text">Social networks optimise for performance. People post what gets engagement, not
+                        what they actually think. In Russia especially — where political tension makes honest public
+                        speech risky — the gap between what people feel and what they say online is enormous. I wanted to
+                        build the opposite: a space with no profiles, no followers, no reputation to protect. Just
+                        thoughts, appearing and disappearing like chalk on a wall. The anonymity isn't a feature — it's
+                        the entire product premise. No identity means no incentive to lie.</p>
+                </div>
+                <div class="www-column">
+                    <h2 class="www-title">What</h2>
+                    <p class="www-text">I designed the full product logic before writing a single line of code: the
+                        ephemeral timeline, the mood system, the reaction mechanics, the moderation threshold. The UI
+                        followed from the logic — a blank canvas with text cards, each carrying a mood colour, an emoji,
+                        a 24-hour lifespan. When the first version launched publicly via a YouTube video, it was attacked
+                        within hours: DDoS, spam flooding, explicit image injections. I took the server down. A
+                        developer in the comments — one of those who'd broken in — reached out and offered to rebuild it
+                        properly. He rewrote the entire codebase in React. Our Wall v2 launched. Nobody broke it again.
+                    </p>
+                </div>
+                <div class="www-column">
+                    <h2 class="www-title">How</h2>
+                    <p class="www-text">The 24-hour lifespan was a product decision I iterated on deliberately. First
+                        version: everything deleted at midnight Moscow time. Problem: unfair to users who posted at
+                        23:50. Solution: each post lives its own 24 hours from publication. Later, as organic traffic
+                        slowed and the wall risked going empty, I extended it to one week — preserving the FOMO mechanic
+                        without letting the product feel dead. Every one of these was a product call, not a technical
+                        one. The mood system — colour-coded emotional tags that make the wall visually readable at a
+                        glance — came from thinking about what makes an anonymous space feel human rather than chaotic.
+                        1,084 unique users wrote 1,269 thoughts. Purely organic, all from one YouTube video.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="project-gallery" id="gallery">
+            <div class="section-label">Process &amp; outcome</div>
+            <h2>What it looks like</h2>
+
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <Image src={ourwall1} alt="Our Wall — image 1" loading="lazy" decoding="async" />
+                </div>
+                <div class="gallery-item">
+                    <Image src={ourwall2} alt="Our Wall — image 2" loading="lazy" decoding="async" />
+                </div>
+                <div class="gallery-item">
+                    <Image src={ourwall3} alt="Our Wall — image 3" loading="lazy" decoding="async" />
+                </div>
+                <div class="gallery-item">
+                    <Image src={ourwall4} alt="Our Wall — image 4" loading="lazy" decoding="async" />
+                </div>
+                <div class="gallery-item">
+                    <Image src={ourwall5} alt="Our Wall — image 5" loading="lazy" decoding="async" />
+                </div>
+                <div class="gallery-item">
+                    <Image src={ourwall6} alt="Our Wall — image 6" loading="lazy" decoding="async" />
+                </div>
+            </div>
+        </section>
+
+        <section class="project-results" id="results">
+            <div class="section-label">Results</div>
+            <h2>What we delivered</h2>
+
+            <div class="metrics-grid">
+                <div class="metric-card">
+                    <span class="metric-number">1,084</span>
+                    <span class="metric-label">Unique users</span>
+                    <p class="metric-description">100% organic — one YouTube video, zero paid distribution</p>
+                </div>
+                <div class="metric-card">
+                    <span class="metric-number">1,269</span>
+                    <span class="metric-label">Thoughts written</span>
+                    <p class="metric-description">Active engagement across the full lifetime of the product</p>
+                </div>
+                <div class="metric-card">
+                    <span class="metric-number">2</span>
+                    <span class="metric-label">Versions shipped</span>
+                    <p class="metric-description">v1 built and launched; v2 rebuilt after public attack — stronger
+                        architecture</p>
+                </div>
+                <div class="metric-card">
+                    <span class="metric-number">0</span>
+                    <span class="metric-label">Budget</span>
+                    <p class="metric-description">Designed, built, and relaunched without spending a dollar</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="project-shipped" id="shipped">
+            <div class="section-label">What shipped</div>
+            <p class="shipped-text">ourwall.ru is live. The product is on pause pending investment for continued
+                development and distribution. The next phase is clear: private walls for communities, geo-tagged mood
+                mapping, and a monetisation layer for analytics access. The core mechanic works — the question is scale.
+            </p>
+        </section>
+
+        <section class="next-project" id="next">
+            <div class="section-label">Next project</div>
+            <a href="/projects/gabarshop" class="next-project-link">
+                <span class="next-project-name">GABARSHOP</span>
+                <span class="next-project-arrow">→</span>
+            </a>
+        </section>
+
+        <section class="cta-section" id="cta">
+            <h2>Have an idea that needs product thinking?</h2>
+            <p class="contact-subtitle contact-subtitle-margin">
+                Tell me about it — I'll help you find the logic inside it.
+            </p>
+            <a href="https://t.me/androsovart" target="_blank" class="btn-primary" rel="noopener noreferrer">Get in
+                touch</a>
+        </section>
+
+        <Footer />
+</ProjectLayout>

@@ -46,7 +46,7 @@ src/
     projects/
       viril.astro          ← /projects/viril
       talent.astro         ← /projects/talent
-      wall.astro           ← /projects/wall
+      ourwall.astro        ← /projects/ourwall
       gabarshop.astro      ← /projects/gabarshop
       wef2025.astro        ← /projects/wef2025
       loyobondar.astro     ← /projects/loyobondar
@@ -70,7 +70,7 @@ public/
 | /about.html                   | /about                   |
 | /projects/viril.html          | /projects/viril          |
 | /projects/talent.html         | /projects/talent         |
-| /projects/wall.html           | /projects/wall           |
+| /projects/wall.html           | /projects/ourwall        |
 | /projects/gabarshop.html      | /projects/gabarshop      |
 | /projects/wef2025.html        | /projects/wef2025        |
 | /projects/loyobondar.html     | /projects/loyobondar     |
@@ -91,7 +91,7 @@ Do not rewrite CSS during migration — visual output must be identical.
 - `talent.html` references gallery images that don't exist:
   talent-1.jpg through talent-N.jpg — remove broken <img> tags or
   replace with a placeholder
-- `wall.html` same issue with wall-1.jpg etc.
+- `ourwall.astro` same issue with ourwall-1.jpg etc.
 
 ---
 
@@ -106,7 +106,7 @@ About page → "about"
 
 ## 9. Next Project Sequence (for NextProject.astro)
 
-viril → talent → wall → gabarshop → wef2025 → loyobondar → eazyenergy → scoville → viril
+viril → talent → ourwall → gabarshop → wef2025 → loyobondar → eazyenergy → scoville → viril
 
 ---
 
