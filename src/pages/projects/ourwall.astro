@@ -23,10 +23,10 @@ import ourwall6 from '../../assets/images/projects/ourwall/ourwall6.png';
         <section class="project-hero" id="hero">
             <div class="section-label">Case study</div>
             <h1>Our Wall</h1>
-            <p class="project-brief">A social network built on one premise: people lie online because they're afraid.
-                Remove the identity — and the wall shows what people actually think. I designed the product logic, built
-                the first version with AI-generated code, survived a public attack on launch day, and shipped a rebuilt
-                v2 with a developer who fixed it for free because he believed in the idea.</p>
+            <p class="project-brief">An anonymous social network built on one premise: people perform online because
+                they're afraid. Remove identity — and the wall shows what people actually think. Designed the product
+                logic, built v1 with AI-assisted code in one week, survived a public attack on launch day, and shipped
+                v2 with a developer who broke in and then offered to rebuild it properly.</p>
 
             <div class="project-meta">
                 <div class="meta-item">
@@ -50,33 +50,38 @@ import ourwall6 from '../../assets/images/projects/ourwall/ourwall6.png';
                 <div class="www-column">
                     <h2 class="www-title">Why</h2>
                     <p class="www-text">Social networks optimise for performance. People post what gets engagement, not
-                        what they actually think. In Russia especially — where political tension makes honest public
-                        speech risky — the gap between what people feel and what they say online is enormous. I wanted to
-                        build the opposite: a space with no profiles, no followers, no reputation to protect. Just
-                        thoughts, appearing and disappearing like chalk on a wall. The anonymity isn't a feature — it's
-                        the entire product premise. No identity means no incentive to lie.</p>
+                        what they actually think — a curated version of themselves. The gap between what people feel and
+                        what they say online is enormous, and it's not a Russian problem or a political problem: it's a
+                        human one. Threads fills with fake income screenshots. Instagram with highlight reels. Twitter
+                        with takes performed for an audience. I wanted to build the opposite: a space with no profiles,
+                        no followers, no reputation to protect. Just thoughts, appearing and disappearing — like chalk
+                        on a wall. The anonymity isn't a feature. It's the entire product premise.</p>
                 </div>
                 <div class="www-column">
                     <h2 class="www-title">What</h2>
                     <p class="www-text">I designed the full product logic before writing a single line of code: the
-                        ephemeral timeline, the mood system, the reaction mechanics, the moderation threshold. The UI
-                        followed from the logic — a blank canvas with text cards, each carrying a mood colour, an emoji,
-                        a 24-hour lifespan. When the first version launched publicly via a YouTube video, it was attacked
-                        within hours: DDoS, spam flooding, explicit image injections. I took the server down. A
-                        developer in the comments — one of those who'd broken in — reached out and offered to rebuild it
-                        properly. He rewrote the entire codebase in React. Our Wall v2 launched. Nobody broke it again.
-                    </p>
+                        ephemeral timeline, the mood system, the reaction mechanics, the community moderation threshold.
+                        The mood system lets you tag each thought with an emotional state — each mood has an emoji, a
+                        colour, and a colour-coded card on the wall. Reactions work like Telegram — a set of emojis, no
+                        like counts. Moderation is crowdsourced: five reports removes a post automatically, no admin
+                        required. The FOMO mechanic was deliberate: posts disappear after a set window, creating urgency
+                        to read now rather than scroll later. I iterated on the window length — starting at midnight
+                        deletion, moving to 24-hour personal timers per post, then extending to one week as organic
+                        traffic stabilised. Each change was a product decision, not a technical one.</p>
                 </div>
                 <div class="www-column">
                     <h2 class="www-title">How</h2>
-                    <p class="www-text">The 24-hour lifespan was a product decision I iterated on deliberately. First
-                        version: everything deleted at midnight Moscow time. Problem: unfair to users who posted at
-                        23:50. Solution: each post lives its own 24 hours from publication. Later, as organic traffic
-                        slowed and the wall risked going empty, I extended it to one week — preserving the FOMO mechanic
-                        without letting the product feel dead. Every one of these was a product call, not a technical
-                        one. The mood system — colour-coded emotional tags that make the wall visually readable at a
-                        glance — came from thinking about what makes an anonymous space feel human rather than chaotic.
-                        1,084 unique users wrote 1,269 thoughts. Purely organic, all from one YouTube video.</p>
+                    <p class="www-text">Product logic came first — I mapped every mechanic before opening a code
+                        editor. Then built v1 in one week using AI-assisted development: described the product to the
+                        model, iterated on the output, adjusted visual and logic, deployed to server. The process was
+                        the subject of a YouTube video showing that a working social network MVP could be built without
+                        prior coding knowledge. The video brought the first users — and the first attack. Within hours
+                        of launch: DDoS flood, spam injection, explicit image overwrites. I took the server down. In
+                        the comments of the video, one of the people who had broken in left a public message: he'd
+                        found the vulnerability, and he could fix it. We talked. He rewrote the entire codebase in
+                        React. Our Wall v2 launched — with an admin panel, server health monitoring, and a moderation
+                        system that held. Nobody broke it again. The project attracted a developer not through a job
+                        posting, but through the quality of the idea.</p>
                 </div>
             </div>
         </section>
@@ -113,35 +118,36 @@ import ourwall6 from '../../assets/images/projects/ourwall/ourwall6.png';
 
             <div class="metrics-grid">
                 <div class="metric-card">
-                    <span class="metric-number">1,084</span>
-                    <span class="metric-label">Unique users</span>
-                    <p class="metric-description">100% organic — one YouTube video, zero paid distribution</p>
+                    <span class="metric-number">1 week</span>
+                    <span class="metric-label">Time to v1</span>
+                    <p class="metric-description">Full social network MVP — product logic, UI, and deployment — built solo with AI-assisted code</p>
                 </div>
                 <div class="metric-card">
-                    <span class="metric-number">1,269</span>
-                    <span class="metric-label">Thoughts written</span>
-                    <p class="metric-description">Active engagement across the full lifetime of the product</p>
+                    <span class="metric-number">v2</span>
+                    <span class="metric-label">Rebuilt under pressure</span>
+                    <p class="metric-description">Attacked on launch day, rebuilt in React by a developer who found the project through the YouTube video</p>
                 </div>
                 <div class="metric-card">
-                    <span class="metric-number">2</span>
-                    <span class="metric-label">Versions shipped</span>
-                    <p class="metric-description">v1 built and launched; v2 rebuilt after public attack — stronger
-                        architecture</p>
+                    <span class="metric-number">3</span>
+                    <span class="metric-label">Iterated mechanics</span>
+                    <p class="metric-description">FOMO window evolved: midnight delete → 24h personal timer → 7-day window. Each change driven by user behaviour, not preference</p>
                 </div>
                 <div class="metric-card">
-                    <span class="metric-number">0</span>
-                    <span class="metric-label">Budget</span>
-                    <p class="metric-description">Designed, built, and relaunched without spending a dollar</p>
+                    <span class="metric-number">5</span>
+                    <span class="metric-label">Reports to remove</span>
+                    <p class="metric-description">Crowdsourced moderation — no admin action needed. Community self-regulates at threshold</p>
                 </div>
             </div>
         </section>
 
         <section class="project-shipped" id="shipped">
             <div class="section-label">What shipped</div>
-            <p class="shipped-text">ourwall.ru is live. The product is on pause pending investment for continued
-                development and distribution. The next phase is clear: private walls for communities, geo-tagged mood
-                mapping, and a monetisation layer for analytics access. The core mechanic works — the question is scale.
-            </p>
+            <p class="shipped-text">Our Wall is live at ourwall.ru — organic traffic only, zero marketing budget.
+                Users still post. The mood system, reactions, comments, and community reporting all work in production.
+                The product direction beyond v2 is clear: location-based walls (by café, university, neighbourhood),
+                mood aggregation as a real-time sentiment layer, private community walls for events and organisations.
+                The infrastructure for that exists. What's missing is investment to continue development.</p>
+            <a href="https://ourwall.ru" target="_blank" rel="noopener noreferrer" style="display: inline-block; margin-top: 12px; color: inherit; text-decoration: underline; font-weight: 500;">View live product →</a>
         </section>
 
         <section class="next-project" id="next">
