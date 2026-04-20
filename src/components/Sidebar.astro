@@ -1,15 +1,21 @@
 ---
 interface Props {
   activePage: 'projects' | 'about';
+  lang?: 'en' | 'ru';
 }
 
-const { activePage } = Astro.props;
+const { activePage, lang = 'en' } = Astro.props;
+
+const homeHref = lang === 'ru' ? '/ru/' : '/';
+const aboutHref = lang === 'ru' ? '/ru/about' : '/about';
+const projectsLabel = lang === 'ru' ? 'Проекты' : 'Projects';
+const aboutLabel = lang === 'ru' ? 'Обо мне' : 'About';
 ---
 
 <div class="sidebar">
-    <a href="/"><img src="/assets/icons/ArtLogo.svg" alt="Art Logo" class="logo"></a>
+    <a href={homeHref}><img src="/assets/icons/ArtLogo.svg" alt="Art Logo" class="logo"></a>
     <nav class="nav-links">
-        <a href="/" class={activePage === 'projects' ? 'active' : ''}>Projects</a>
-        <a href="/about" class={activePage === 'about' ? 'active' : ''}>About</a>
+        <a href={homeHref} class={activePage === 'projects' ? 'active' : ''}>{projectsLabel}</a>
+        <a href={aboutHref} class={activePage === 'about' ? 'active' : ''}>{aboutLabel}</a>
     </nav>
 </div>

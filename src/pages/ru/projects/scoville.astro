@@ -1,0 +1,133 @@
+---
+import { Image } from 'astro:assets';
+import ProjectLayout from '../../../layouts/ProjectLayout.astro';
+import Footer from '../../../components/Footer.astro';
+
+import scoville1 from '../../../assets/images/projects/scoville/scoville1.png';
+import scoville2 from '../../../assets/images/projects/scoville/scoville2.png';
+import scoville3 from '../../../assets/images/projects/scoville/scoville3.png';
+import scoville4 from '../../../assets/images/projects/scoville/scoville4.png';
+import scoville5 from '../../../assets/images/projects/scoville/scoville5.png';
+import scoville6 from '../../../assets/images/projects/scoville/scoville6.png';
+---
+
+<ProjectLayout
+  title="Scoville — Артём Андросов"
+  description="Scoville — дизайн упаковки острого мороженого в Самокате. Два полных дизайна за две недели."
+  activePage="projects"
+  lang="ru"
+>
+        <div class="back-nav">
+            <a href="/ru/" class="back-link">Назад к проектам</a>
+        </div>
+
+        <section class="project-hero" id="hero">
+            <div class="section-label">Кейс</div>
+            <h1>Scoville</h1>
+            <p class="project-brief">Острое мороженое для крупного сервиса экспресс-доставки — разработанное дважды. Первая версия была готова, утверждена и остановлена ретейлером. Вторую пришлось собирать почти с нуля за считаные дни — не потеряв характер продукта по ходу.</p>
+
+            <div class="project-meta">
+                <div class="meta-item">
+                    <span class="meta-label">Моя роль</span>
+                    <span class="meta-value">Продукт, дизайн упаковки</span>
+                </div>
+                <div class="meta-item">
+                    <span class="meta-label">Направления</span>
+                    <div class="meta-tags">
+                        <span class="meta-tag">Дизайн упаковки</span>
+                        <span class="meta-tag">Визуальная концепция</span>
+                        <span class="meta-tag">Ретейл</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="project-concept" id="concept">
+            <div class="www-grid">
+                <div class="www-column">
+                    <h2 class="www-title">Зачем</h2>
+                    <p class="www-text">Scoville — бренд соусов, известный остротой, — решил зайти в категорию мороженого с провокационным продуктом: ванильное мороженое с острым гранатовым топпингом. Цель по дистрибуции — Самокат, один из крупнейших сервисов экспресс-доставки на рынке. Бриф был ясен: упаковка, которая заслуживает места на полке и передаёт противоречие в сердце продукта — холодное и острое, нежное и агрессивное.</p>
+                </div>
+                <div class="www-column">
+                    <h2 class="www-title">Что</h2>
+                    <p class="www-text">Мы тщательно изучили категорию до того, как коснуться любого инструмента, — онлайн-референсы и выезды в офлайн, с картой всех существующих форматов мороженого на рынке. Первая версия была построена вокруг центрального персонажа — иллюстрации в стиле "Симпсонов", которая держала весь визуальный концепт. Когда Самокат отклонил коллаборацию из-за ассоциации с автором, дизайн потерял фокус. Не просто лицо — пришлось перестраивать всю визуальную иерархию. Что остаётся, что становится новым якорем, что передаёт остроту бренда без персонажа, вокруг которого он был собран. Мы справились. Финальная упаковка ушла в производство, попала в каталог Самоката и продаётся.</p>
+                </div>
+                <div class="www-column">
+                    <h2 class="www-title">Как</h2>
+                    <p class="www-text">Настоящим дизайн-вызовом был поворот. Начать заново — это не самое сложное. Сложное — начать заново, сохранив характер продукта. Напряжение "холодное-острое", которое определяло первую версию, должно было читаться и во второй — через другие средства. Я направлял редизайн снаружи: смотрел на каждом шаге, выделял, что работает, а что нет, держал живой энергию оригинального концепта в совершенно другом исполнении. Две недели всего — одна на версию, которая не отгрузилась, одна на ту, что отгрузилась. Ограничение не ослабило результат. Оно его заточило.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="project-gallery" id="gallery">
+            <div class="section-label">Процесс и результат</div>
+            <h2>Как это выглядит</h2>
+
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <Image src={scoville1} alt="Scoville — изображение 1" loading="lazy" decoding="async" />
+                </div>
+                <div class="gallery-item">
+                    <Image src={scoville2} alt="Scoville — изображение 2" loading="lazy" decoding="async" />
+                </div>
+                <div class="gallery-item">
+                    <Image src={scoville3} alt="Scoville — изображение 3" loading="lazy" decoding="async" />
+                </div>
+                <div class="gallery-item">
+                    <Image src={scoville4} alt="Scoville — изображение 4" loading="lazy" decoding="async" />
+                </div>
+                <div class="gallery-item">
+                    <Image src={scoville5} alt="Scoville — изображение 5" loading="lazy" decoding="async" />
+                </div>
+                <div class="gallery-item">
+                    <Image src={scoville6} alt="Scoville — изображение 6" loading="lazy" decoding="async" />
+                </div>
+            </div>
+        </section>
+
+        <section class="project-results" id="results">
+            <div class="section-label">Результаты</div>
+            <h2>Что сделано</h2>
+
+            <div class="metrics-grid">
+                <div class="metric-card">
+                    <span class="metric-number">2</span>
+                    <span class="metric-label">Полных дизайна</span>
+                    <p class="metric-description">Один остановлен в процессе, один отгружен — оба собраны с нуля</p>
+                </div>
+                <div class="metric-card">
+                    <span class="metric-number">2 недели</span>
+                    <span class="metric-label">Общие сроки</span>
+                    <p class="metric-description">Включая полный пивот и пересборку после отказа ретейлера</p>
+                </div>
+                <div class="metric-card">
+                    <span class="metric-number">Самокат</span>
+                    <span class="metric-label">Ретейл</span>
+                    <p class="metric-description">Живёт в каталоге, расширяется список магазинов</p>
+                </div>
+                <div class="metric-card">
+                    <span class="metric-number">1</span>
+                    <span class="metric-label">Ключевое напряжение</span>
+                    <p class="metric-description">Холодное и острое — должно было пережить полный визуальный перезапуск</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="next-project" id="next">
+            <div class="section-label">Следующий проект</div>
+            <a href="/ru/projects/viril" class="next-project-link">
+                <span class="next-project-name">Viril</span>
+                <span class="next-project-arrow">→</span>
+            </a>
+        </section>
+
+        <section class="cta-section" id="cta">
+            <h2>Нужна упаковка, которая выделяется?</h2>
+            <p class="contact-subtitle contact-subtitle-margin">
+                Расскажи о продукте — найду его визуальный голос.
+            </p>
+            <a href="https://t.me/androsovart" target="_blank" class="btn-primary" rel="noopener noreferrer">Связаться</a>
+        </section>
+
+        <Footer />
+</ProjectLayout>

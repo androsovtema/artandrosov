@@ -1,0 +1,140 @@
+---
+import { Image } from 'astro:assets';
+import ProjectLayout from '../../../layouts/ProjectLayout.astro';
+import Footer from '../../../components/Footer.astro';
+
+import ourwall1 from '../../../assets/images/projects/ourwall/ourwall1.png';
+import ourwall2 from '../../../assets/images/projects/ourwall/ourwall2.png';
+import ourwall3 from '../../../assets/images/projects/ourwall/ourwall3.png';
+import ourwall4 from '../../../assets/images/projects/ourwall/ourwall4.png';
+import ourwall5 from '../../../assets/images/projects/ourwall/ourwall5.png';
+import ourwall6 from '../../../assets/images/projects/ourwall/ourwall6.png';
+---
+
+<ProjectLayout
+  title="Our Wall — Артём Андросов"
+  description="Our Wall — анонимная соцсеть, построенная на одной предпосылке: убери идентичность, и люди скажут, что думают на самом деле."
+  activePage="projects"
+  lang="ru"
+>
+        <div class="back-nav">
+            <a href="/ru/" class="back-link">Назад к проектам</a>
+        </div>
+
+        <section class="project-hero" id="hero">
+            <div class="section-label">Кейс</div>
+            <h1>Our Wall</h1>
+            <p class="project-brief">Анонимная соцсеть на одной предпосылке: люди играют онлайн, потому что боятся. Убери идентичность — и стена покажет, что люди думают на самом деле. Я спроектировал продуктовую логику, собрал v1 c помощью AI-кода за неделю, пережил публичную атаку в день запуска и выпустил v2 с разработчиком, который сначала взломал проект, а потом предложил пересобрать его нормально.</p>
+
+            <div class="project-meta">
+                <div class="meta-item">
+                    <span class="meta-label">Моя роль</span>
+                    <span class="meta-value">Продукт, UX</span>
+                </div>
+                <div class="meta-item">
+                    <span class="meta-label">Направления</span>
+                    <div class="meta-tags">
+                        <span class="meta-tag">Продуктовая стратегия</span>
+                        <span class="meta-tag">UX-дизайн</span>
+                        <span class="meta-tag">Комьюнити-дизайн</span>
+                        <span class="meta-tag">Pet-проект</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="project-concept" id="concept">
+            <div class="www-grid">
+                <div class="www-column">
+                    <h2 class="www-title">Зачем</h2>
+                    <p class="www-text">Соцсети оптимизированы под перформанс. Люди постят то, что даёт вовлечение, а не то, что реально думают, — отредактированную версию себя. Разрыв между тем, что люди чувствуют, и тем, что говорят онлайн, огромный — и это не российская и не политическая проблема, а человеческая. Threads забит фейковыми скриншотами доходов. Instagram — хайлайтами. Twitter — мнениями, которые играют на аудиторию. Я хотел построить противоположное: пространство без профилей, без подписчиков, без репутации, которую надо беречь. Только мысли, которые появляются и исчезают — как мелом на стене. Анонимность здесь не фича. Это сам продукт.</p>
+                </div>
+                <div class="www-column">
+                    <h2 class="www-title">Что</h2>
+                    <p class="www-text">Я спроектировал всю продуктовую логику до первой строки кода: эфемерную ленту, систему настроений, механику реакций, порог модерации от сообщества. Система настроений даёт тегать каждую мысль эмоциональным состоянием — у каждого настроения свой эмодзи, цвет и цветная карточка на стене. Реакции как в Telegram — набор эмодзи, без счётчика лайков. Модерация краудсорсная: 5 жалоб — и пост удаляется автоматически, без участия админа. Механика FOMO была осознанной: посты исчезают через заданное окно, создавая срочность прочитать сейчас, а не скроллить потом. Длину окна я итерировал — начал с удаления в полночь, перешёл на 24-часовой таймер для каждого поста, потом продлил до недели, когда органический трафик стабилизировался. Каждое изменение — продуктовое решение, не техническое.</p>
+                </div>
+                <div class="www-column">
+                    <h2 class="www-title">Как</h2>
+                    <p class="www-text">Сначала — продуктовая логика: я описал каждую механику до того, как открыл редактор кода. Потом собрал v1 за неделю с AI-assisted разработкой: описывал продукт модели, итерировал вывод, правил визуал и логику, катил на сервер. Процесс стал сюжетом ролика на YouTube, показывающего, что работающий MVP соцсети можно собрать без навыков программирования. Ролик привёл первых пользователей — и первую атаку. Через несколько часов после запуска: DDoS, спам-инъекции, перезапись обложек взрослыми картинками. Я погасил сервер. В комментариях под роликом один из тех, кто пробил защиту, оставил публичное сообщение: он нашёл уязвимость и может её закрыть. Мы поговорили. Он переписал всю кодовую базу на React. Our Wall v2 запустился — с админкой, мониторингом сервера и модерацией, которая держит нагрузку. Больше никто не ломал. Проект привлёк разработчика не через вакансию, а через силу самой идеи.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="project-gallery" id="gallery">
+            <div class="section-label">Процесс и результат</div>
+            <h2>Как это выглядит</h2>
+
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <Image src={ourwall1} alt="Our Wall — изображение 1" loading="lazy" decoding="async" />
+                </div>
+                <div class="gallery-item">
+                    <Image src={ourwall2} alt="Our Wall — изображение 2" loading="lazy" decoding="async" />
+                </div>
+                <div class="gallery-item">
+                    <Image src={ourwall3} alt="Our Wall — изображение 3" loading="lazy" decoding="async" />
+                </div>
+                <div class="gallery-item">
+                    <Image src={ourwall4} alt="Our Wall — изображение 4" loading="lazy" decoding="async" />
+                </div>
+                <div class="gallery-item">
+                    <Image src={ourwall5} alt="Our Wall — изображение 5" loading="lazy" decoding="async" />
+                </div>
+                <div class="gallery-item">
+                    <Image src={ourwall6} alt="Our Wall — изображение 6" loading="lazy" decoding="async" />
+                </div>
+            </div>
+        </section>
+
+        <section class="project-results" id="results">
+            <div class="section-label">Результаты</div>
+            <h2>Что сделано</h2>
+
+            <div class="metrics-grid">
+                <div class="metric-card">
+                    <span class="metric-number">1 неделя</span>
+                    <span class="metric-label">До v1</span>
+                    <p class="metric-description">Полноценный MVP соцсети — логика, UI и деплой — собраны в одиночку с AI-кодом</p>
+                </div>
+                <div class="metric-card">
+                    <span class="metric-number">v2</span>
+                    <span class="metric-label">Пересобрано под давлением</span>
+                    <p class="metric-description">Атакован в день запуска, переписан на React разработчиком, который нашёл проект через YouTube-ролик</p>
+                </div>
+                <div class="metric-card">
+                    <span class="metric-number">3</span>
+                    <span class="metric-label">Итерации механики</span>
+                    <p class="metric-description">FOMO-окно эволюционировало: удаление в полночь → 24ч таймер → 7 дней. Каждое изменение — по поведению пользователей, а не по предпочтениям</p>
+                </div>
+                <div class="metric-card">
+                    <span class="metric-number">5</span>
+                    <span class="metric-label">Жалоб до удаления</span>
+                    <p class="metric-description">Краудсорсная модерация — без участия админа. Сообщество саморегулируется на пороге</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="project-shipped" id="shipped">
+            <div class="section-label">Что запущено</div>
+            <p class="shipped-text">Our Wall живёт на ourwall.ru — только органический трафик, нулевой маркетинговый бюджет. Пользователи продолжают постить. Система настроений, реакции, комментарии и жалобы работают в продакшне. Продуктовое направление после v2 понятно: стены по локациям (кафе, университет, район), агрегация настроений как real-time-слой сентимента, приватные стены для событий и организаций. Инфраструктура под это есть. Не хватает инвестиций, чтобы продолжать разработку.</p>
+            <a href="https://ourwall.ru" target="_blank" rel="noopener noreferrer" style="display: inline-block; margin-top: 12px; color: inherit; text-decoration: underline; font-weight: 500;">Смотреть живой продукт →</a>
+        </section>
+
+        <section class="next-project" id="next">
+            <div class="section-label">Следующий проект</div>
+            <a href="/ru/projects/gabarshop" class="next-project-link">
+                <span class="next-project-name">GABARSHOP</span>
+                <span class="next-project-arrow">→</span>
+            </a>
+        </section>
+
+        <section class="cta-section" id="cta">
+            <h2>Есть идея, которой нужен продуктовый подход?</h2>
+            <p class="contact-subtitle contact-subtitle-margin">
+                Расскажи — помогу найти логику внутри.
+            </p>
+            <a href="https://t.me/androsovart" target="_blank" class="btn-primary" rel="noopener noreferrer">Связаться</a>
+        </section>
+
+        <Footer />
+</ProjectLayout>

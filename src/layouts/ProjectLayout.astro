@@ -6,14 +6,15 @@ interface Props {
   title: string;
   description: string;
   activePage: 'projects' | 'about';
+  lang?: 'en' | 'ru';
 }
 
-const { title, description, activePage } = Astro.props;
+const { title, description, activePage, lang = 'en' } = Astro.props;
 ---
 
-<BaseLayout title={title} description={description}>
+<BaseLayout title={title} description={description} lang={lang}>
   <link slot="head" rel="stylesheet" href="/assets/css/project.css">
-  <Sidebar activePage={activePage} />
+  <Sidebar activePage={activePage} lang={lang} />
   <div class="main-content">
     <slot />
   </div>

@@ -1,0 +1,148 @@
+---
+import { Image } from 'astro:assets';
+import ProjectLayout from '../../../layouts/ProjectLayout.astro';
+import Footer from '../../../components/Footer.astro';
+
+import talent1 from '../../../assets/images/projects/talent/talent1.png';
+import talent2 from '../../../assets/images/projects/talent/talent2.png';
+import talent3 from '../../../assets/images/projects/talent/talent3.png';
+import talent4 from '../../../assets/images/projects/talent/talent4.png';
+import talent5 from '../../../assets/images/projects/talent/talent5.png';
+import talent6 from '../../../assets/images/projects/talent/talent6.png';
+import talent7 from '../../../assets/images/projects/talent/talent7.png';
+import talent8 from '../../../assets/images/projects/talent/talent8.png';
+---
+
+<ProjectLayout
+  title="Talent — Артём Андросов"
+  description="Talent — платформа лицензирования мультиформатного контента для независимых авторов. 45 экранов, интерактивный прототип в Figma, уникальная категория лицензирования текстов."
+  activePage="projects"
+  lang="ru"
+>
+        <div class="back-nav">
+            <a href="/ru/" class="back-link">Назад к проектам</a>
+        </div>
+
+        <section class="project-hero" id="hero">
+            <div class="section-label">Кейс</div>
+            <h1>Talent</h1>
+            <p class="project-brief">Платформа лицензирования мультиформатного контента для независимых авторов — одно место для видеоряда, музыки, звуковых эффектов, изображений и лицензируемых сценариев. Собрана с нуля как концепция, которую я вынашивал два года и нигде на рынке не находил.</p>
+
+            <div class="project-meta">
+                <div class="meta-item">
+                    <span class="meta-label">Моя роль</span>
+                    <span class="meta-value">Продукт, UX/UI</span>
+                </div>
+                <div class="meta-item">
+                    <span class="meta-label">Направления</span>
+                    <div class="meta-tags">
+                        <span class="meta-tag">Продуктовая стратегия</span>
+                        <span class="meta-tag">UX/UI</span>
+                        <span class="meta-tag">Figma</span>
+                        <span class="meta-tag">Pet-проект</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="project-concept" id="concept">
+            <div class="www-grid">
+                <div class="www-column">
+                    <h2 class="www-title">Зачем</h2>
+                    <p class="www-text">Я много лет работал с YouTube-авторами и продакшен-командами на разных проектах. У всех один и тот же фрагментированный воркфлоу: Artlist для музыки, Freepik для картинок, Envato для видеоряда, отдельный сервис для звуковых эффектов — четыре подписки, четыре интерфейса, четыре лицензионных соглашения на проект. Я искал платформу, которая объединила бы всё это под одной крышей. Её не существовало. Artlist покрывает музыку. Freepik — изображения. Никто не собрал все четыре типа вместе — и никто вообще не трогал лицензируемый текст (сценарии, копии для озвучки) как категорию. Этот последний пробел я нигде не видел. Проблему стало невозможно игнорировать, когда всё креативное сообщество, с которым я работал, за ночь потеряло доступ к своему стандартному инструментарию. Обходной путь — не продукт. Я решил спроектировать продукт.</p>
+                </div>
+                <div class="www-column">
+                    <h2 class="www-title">Что</h2>
+                    <p class="www-text">Я спроектировал Talent с нуля: мультиформатный маркетплейс лицензирования, охватывающий видеоряд, музыку, звуковые эффекты, изображения и текст (сценарии, копии для озвучки) под одной крышей. Центральная UX-идея — режим Mix: сквозной запрос, который одновременно возвращает контекстно совпадающие результаты во всех типах контента. Ищешь "атмосфера леса" в Mix — получаешь съёмку с дрона, эмбиент, звуки птиц, ветер — цельным набором, а не четырьмя отдельными поисками. Бизнес-модель соединяет две механики, изученные у конкурентов: логику покупки Envato (эксклюзивный выкуп убирает работу с платформы — сигнал редкости) и простоту подписок Artlist (тарифы по категориям или all-access). Текстовую категорию — сценарии и копии для озвучки как лицензируемые активы — я добавил сам. Нигде такого не встречал. Итог: 45 экранов, 17 модальных состояний и интерактивных потоков, полный прототип в Figma с реалистичным контентом.</p>
+                </div>
+                <div class="www-column">
+                    <h2 class="www-title">Как</h2>
+                    <p class="www-text">Анализ конкурентов до любого дизайна: архитектура монетизации Envato, UX тегирования и discovery у Artlist, мультиформатная навигация Freepik. Каждый дал один паттерн, который я взял, изучил и улучшил. Главный вызов IA — объединить принципиально разные типы контента — видео (вертикальное и горизонтальное), аудио (музыка и SFX), картинки и текст — в единой навигации, которая ощущается цельной, а не склеенной. Режиму Mix понадобилась собственная логика: контекстный запрос должен понимать, что "nature atmosphere" — это одновременно съёмка + эмбиент + окружающие SFX. Я сразу проектировал систему тегов под кросс-тип запросы. Концепт привлёк инвесторский интерес ещё до завершения дизайна — проект не пошёл дальше из-за смены приоритетов инвестора, а не из-за product-market fit. Сеньор-дизайнер, который смотрел прототип, назвал его самым сильным кейсом, что он видел — и сам такой сложности ничего не собирал.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="project-gallery" id="gallery">
+            <div class="section-label">Процесс и результат</div>
+            <h2>Как это выглядит</h2>
+
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <Image src={talent1} alt="Talent — изображение 1" loading="lazy" decoding="async" />
+                </div>
+                <div class="gallery-item">
+                    <Image src={talent2} alt="Talent — изображение 2" loading="lazy" decoding="async" />
+                </div>
+                <div class="gallery-item">
+                    <Image src={talent3} alt="Talent — изображение 3" loading="lazy" decoding="async" />
+                </div>
+                <div class="gallery-item">
+                    <Image src={talent4} alt="Talent — изображение 4" loading="lazy" decoding="async" />
+                </div>
+                <div class="gallery-item">
+                    <Image src={talent5} alt="Talent — изображение 5" loading="lazy" decoding="async" />
+                </div>
+                <div class="gallery-item">
+                    <Image src={talent6} alt="Talent — изображение 6" loading="lazy" decoding="async" />
+                </div>
+                <div class="gallery-item">
+                    <Image src={talent7} alt="Talent — изображение 7" loading="lazy" decoding="async" />
+                </div>
+                <div class="gallery-item">
+                    <Image src={talent8} alt="Talent — изображение 8" loading="lazy" decoding="async" />
+                </div>
+            </div>
+        </section>
+
+        <section class="project-results" id="results">
+            <div class="section-label">Результаты</div>
+            <h2>Что сделано</h2>
+
+            <div class="metrics-grid">
+                <div class="metric-card">
+                    <span class="metric-number">45</span>
+                    <span class="metric-label">Экранов</span>
+                    <p class="metric-description">Desktop — полный флоу подписки, покупки, загрузки для авторов и Mix-discovery</p>
+                </div>
+                <div class="metric-card">
+                    <span class="metric-number">17</span>
+                    <span class="metric-label">Состояний и модалок</span>
+                    <p class="metric-description">Ошибки, загрузки, модальные окна — каждый интерактивный слой в прототипе</p>
+                </div>
+                <div class="metric-card">
+                    <span class="metric-number">5</span>
+                    <span class="metric-label">Типов контента</span>
+                    <p class="metric-description">Видео · аудио · картинки · SFX · текст — в единой IA и единой модели лицензирования</p>
+                </div>
+                <div class="metric-card">
+                    <span class="metric-number">1</span>
+                    <span class="metric-label">Уникальная категория</span>
+                    <p class="metric-description">Лицензируемые сценарии и копии для озвучки — тип контента, которого нет ни у одного крупного конкурента</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="project-shipped" id="shipped">
+            <div class="section-label">Что запущено</div>
+            <p class="shipped-text">Полностью интерактивный прототип в Figma — desktop-first, под профессиональный воркфлоу автора. Прототип покрывает весь пользовательский путь: discovery через поиск и Mix-режим, флоу подписки и разовой покупки, загрузка и профиль автора. Мобильной версии нет — осознанное решение по скоупу. Через два года после оригинальной идеи ни один прямой конкурент в этой нише не запустился. Ниша всё ещё открыта.</p>
+            <a href="https://www.figma.com/proto/gStDRj2VJso77ljBK1r7U5/Talant?node-id=671-12594&p=f&viewport=685%2C355%2C0.04&t=E8RBR5hKNfLVn6X4-8&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=385%3A908&page-id=0%3A1&hide-ui=1" target="_blank" rel="noopener noreferrer" style="display: inline-block; margin-top: 12px; color: inherit; text-decoration: underline; font-weight: 500;">Смотреть интерактивный прототип →</a>
+        </section>
+
+        <section class="next-project" id="next">
+            <div class="section-label">Следующий проект</div>
+            <a href="/ru/projects/ourwall" class="next-project-link">
+                <span class="next-project-name">Our Wall</span>
+                <span class="next-project-arrow">→</span>
+            </a>
+        </section>
+
+        <section class="cta-section" id="cta">
+            <h2>Начинаешь с нуля?</h2>
+            <p class="contact-subtitle contact-subtitle-margin">
+                Белый лист — там, где я работаю лучше всего. Расскажи о продукте.
+            </p>
+            <a href="https://t.me/androsovart" target="_blank" class="btn-primary" rel="noopener noreferrer">Связаться</a>
+        </section>
+
+        <Footer />
+</ProjectLayout>

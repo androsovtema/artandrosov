@@ -1,0 +1,146 @@
+---
+import { Image } from 'astro:assets';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Sidebar from '../../components/Sidebar.astro';
+
+import virilCover from '../../assets/images/projects/viril/viril_cover.png';
+import talentCover from '../../assets/images/projects/talent/talent-cover.png';
+import ourwallCover from '../../assets/images/projects/ourwall/ourwall_cover.png';
+import gabarshopCover from '../../assets/images/projects/gabarshop/gabarshop_cover.png';
+import imtechinvestCover from '../../assets/images/projects/emtechinvest/imtechinvest_cover.png';
+import loyobondarCover from '../../assets/images/projects/loyobondar/loyobondar_cover.png';
+import eazyenergyCover from '../../assets/images/projects/eazyenergy/eazyenergy_cover.png';
+import scovilleCover from '../../assets/images/projects/scoville/scoville_cover.png';
+---
+
+<BaseLayout
+  title="Проекты — Артём Андросов"
+  description="Портфолио Артёма Андросова — продуктовый дизайнер, который решает реальные задачи пользователей через UX, бренд-стратегию и арт-дирекшн."
+  lang="ru"
+>
+  <link slot="head" rel="stylesheet" href="/assets/css/index.css">
+  <Sidebar activePage="projects" lang="ru" />
+
+  <div class="main-content">
+      <div class="projects-grid">
+          <a href="/ru/projects/viril">
+              <div class="project-card">
+                  <div class="project-image">
+                      <Image src={virilCover} alt="Viril" />
+                  </div>
+                  <div class="project-title">Viril</div>
+                  <p class="project-description">Бренд мужского здоровья, собранный с чистого листа — нейминг, бренд-стратегия и 64 UX/UI-экрана в четырёх версиях. Пять недель, один человек, без перезапусков.</p>
+                  <div class="project-tags">
+                      <span class="project-tag">UX/UI</span>
+                      <span class="project-tag">Продукт</span>
+                      <span class="project-tag">Брендинг</span>
+                  </div>
+              </div>
+          </a>
+
+          <a href="/ru/projects/talent">
+              <div class="project-card">
+                  <div class="project-image">
+                      <Image src={talentCover} alt="Talent" />
+                  </div>
+                  <div class="project-title">Talent</div>
+                  <p class="project-description">Платформа лицензирования для авторов — изображения, видео, аудио и сценарии в одном месте.</p>
+                  <div class="project-tags">
+                      <span class="project-tag">UX/UI</span>
+                      <span class="project-tag">Продукт</span>
+                      <span class="project-tag pet">Pet-проект</span>
+                  </div>
+              </div>
+          </a>
+
+          <a href="/ru/projects/ourwall">
+              <div class="project-card">
+                  <div class="project-image">
+                      <Image src={ourwallCover} alt="Our Wall" />
+                  </div>
+                  <div class="project-title">Our Wall</div>
+                  <p class="project-description">Анонимная социальная сеть, где мысли появляются и исчезают. Собрана, атакована, пересобрана и работает — 1 084 пользователя пришли с одного ролика на YouTube.
+                  </p>
+                  <div class="project-tags">
+                      <span class="project-tag">Продукт</span>
+                      <span class="project-tag">UX</span>
+                      <span class="project-tag pet">Pet-проект</span>
+                  </div>
+              </div>
+          </a>
+
+          <a href="/ru/projects/gabarshop">
+              <div class="project-card">
+                  <div class="project-image">
+                      <Image src={gabarshopCover} alt="Gabarshop" />
+                  </div>
+                  <div class="project-title">Gabarshop</div>
+                  <p class="project-description">Мерч-магазин блогера, который я построил, вёл и из которого так и не ушёл полностью. Четыре года внутри команды — от упаковки коробок до редизайна всего продукта.</p>
+                  <div class="project-tags">
+                      <span class="project-tag">Продукт</span>
+                      <span class="project-tag">E-commerce</span>
+                      <span class="project-tag">Арт-дирекшн</span>
+                  </div>
+              </div>
+          </a>
+
+          <a href="/ru/projects/wef2025">
+              <div class="project-card">
+                  <div class="project-image">
+                      <Image src={imtechinvestCover} alt="WEF 2025" />
+                  </div>
+                  <div class="project-title">WEF 2025</div>
+                  <p class="project-description">Закрытое инвестиционное событие в Давосе без бренд-гайдлайнов и с 66 участниками со своими индивидуальными требованиями. Я превратил неопределённость в систему, которая выдержала давление.
+                  </p>
+                  <div class="project-tags">
+                      <span class="project-tag">Продукт</span>
+                      <span class="project-tag">Арт-дирекшн</span>
+                  </div>
+              </div>
+          </a>
+
+          <a href="/ru/projects/loyobondar">
+              <div class="project-card">
+                  <div class="project-image">
+                      <Image src={loyobondarCover} alt="LOYO &amp; BONDAR" />
+                  </div>
+                  <div class="project-title">LOYO &amp; BONDAR</div>
+                  <p class="project-description">Премиальный застройщик на Бали без брифов. Я расшифровывал каждый запрос до того, как он доходил до дизайнера, и держал 100+ слайдов в неделю на треке.</p>
+                  <div class="project-tags">
+                      <span class="project-tag">Продукт</span>
+                      <span class="project-tag">Арт-дирекшн</span>
+                  </div>
+              </div>
+          </a>
+
+          <a href="/ru/projects/eazy-energy">
+              <div class="project-card">
+                  <div class="project-image">
+                      <Image src={eazyenergyCover} alt="Eazy Energy" />
+                  </div>
+                  <div class="project-title">Eazy Energy</div>
+                  <p class="project-description">Бренд энергетика, запущенный на пересечении производственной инфраструктуры и настоящего доверия аудитории.</p>
+                  <div class="project-tags">
+                      <span class="project-tag">Продукт</span>
+                      <span class="project-tag">Брендинг</span>
+                      <span class="project-tag">Арт-дирекшн</span>
+                  </div>
+              </div>
+          </a>
+
+          <a href="/ru/projects/scoville">
+              <div class="project-card">
+                  <div class="project-image">
+                      <Image src={scovilleCover} alt="Scoville" />
+                  </div>
+                  <div class="project-title">Scoville</div>
+                  <p class="project-description">Острое мороженое, разработанное дважды — первую версию ретейлер отменил сразу по личным причинам. Вторая отгрузилась за неделю и сегодня продаётся в Самокате.</p>
+                  <div class="project-tags">
+                      <span class="project-tag">Упаковка</span>
+                      <span class="project-tag">Брендинг</span>
+                  </div>
+              </div>
+          </a>
+      </div>
+  </div>
+</BaseLayout>

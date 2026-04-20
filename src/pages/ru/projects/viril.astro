@@ -1,0 +1,149 @@
+---
+import { Image } from 'astro:assets';
+import ProjectLayout from '../../../layouts/ProjectLayout.astro';
+import Footer from '../../../components/Footer.astro';
+
+import viril1 from '../../../assets/images/projects/viril/viril1.png';
+import viril2 from '../../../assets/images/projects/viril/viril2.png';
+import viril3 from '../../../assets/images/projects/viril/viril3.png';
+import viril4 from '../../../assets/images/projects/viril/viril4.png';
+import viril5 from '../../../assets/images/projects/viril/viril5.png';
+import viril6 from '../../../assets/images/projects/viril/viril6.png';
+---
+
+<ProjectLayout
+  title="Viril — Артём Андросов"
+  description="Viril — бренд мужского здоровья, собранный с нуля. Бренд-стратегия, нейминг, UX/UI и 64 экрана в четырёх версиях."
+  activePage="projects"
+  lang="ru"
+>
+        <div class="back-nav">
+            <a href="/ru/" class="back-link">Назад к проектам</a>
+        </div>
+
+        <section class="project-hero" id="hero">
+            <div class="section-label">Кейс</div>
+            <h1>Viril</h1>
+            <p class="project-brief">Бренд мужского здоровья для европейского рынка — собран с чистого листа за пять недель. Главный продуктовый вызов был не визуальным: как провести пользователя, который не знает, что ему нужно, к правильному продукту — и не потерять его доверие по пути.</p>
+
+            <div class="project-meta">
+                <div class="meta-item">
+                    <span class="meta-label">Дата</span>
+                    <span class="meta-value">Октябрь 2024</span>
+                </div>
+                <div class="meta-item">
+                    <span class="meta-label">Моя роль</span>
+                    <span class="meta-value">Продукт, бренд-стратегия, UX/UI</span>
+                </div>
+                <div class="meta-item">
+                    <span class="meta-label">Клиент</span>
+                    <span class="meta-value">EU-бренд мужского здоровья</span>
+                </div>
+                <div class="meta-item">
+                    <span class="meta-label">Направления</span>
+                    <div class="meta-tags">
+                        <span class="meta-tag">Бренд-стратегия</span>
+                        <span class="meta-tag">Нейминг</span>
+                        <span class="meta-tag">UX/UI</span>
+                        <span class="meta-tag">Figma</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="project-concept" id="concept">
+            <div class="www-grid">
+                <div class="www-column">
+                    <h2 class="www-title">Зачем</h2>
+                    <p class="www-text">Клиент пришёл с продуктом — БАДы для мужского здоровья на европейский рынок — и без бренда. У ниши есть хорошо задокументированный паттерн провала: бренды либо уходят в клинический холод, либо в таблоидную дешевизну. Ни то, ни другое не строит доверие, необходимое для такой личной покупки. Я разобрал трёх прямых конкурентов — Hims, Roman и BlueChew — задокументировал весь их пользовательский путь: точку входа, сигналы доверия, презентацию продукта, трения в чекауте. Вывод был одинаковый: все бренды исходят из того, что пользователь уже знает, что ему нужно. Большинство — не знают. Это не проблема сообщения — это проблема архитектуры продукта.</p>
+                </div>
+                <div class="www-column">
+                    <h2 class="www-title">Что</h2>
+                    <p class="www-text">Я прошёл полный цикл в одиночку: анализ конкурентов → позиционирование → нейминг → tone of voice → визуальная система → UX-архитектура → UI в Figma. Центр — квиз из 7 вопросов, который подбирает нужный продукт по тому, что реально важно: переносимость побочных эффектов, длительность действия, контроль эякуляции и то, планирует ли пользователь заранее или действует спонтанно. Квиз заменяет самодиагностику управляемым выбором. Помимо квиза — 64 экрана в четырёх версиях (EN/ES × desktop/mobile), весь пользовательский путь от лендинга до постпокупочного опыта. Нейминг, бренд-платформа и каждый экран — от начала до конца.</p>
+                </div>
+                <div class="www-column">
+                    <h2 class="www-title">Как</h2>
+                    <p class="www-text">Анализ конкурентов шёл первым — три бренда, каждый экран, каждый сигнал доверия задокументирован. Это стало фильтром: если что-то уже сломано на рынке, я это не повторяю. Архитектура квиза потребовала работы в обратном направлении — от продуктовой логики: понять, какие переменные реально определяют правильный выбор БАДа, а потом построить поток вопросов, который их выявляет, не превращаясь в медицинскую анкету. Перед сдачей провёл юзабилити-сессии с 5 мужчинами — проверил понимание вопросов и ясность потока. По фидбеку упростил два вопроса и переставил последовательность. Клиент утвердил UX-архитектуру с первого захода — ноль структурных правок. Сроки: 3 дня исследования · 1 неделя бренд · 2 недели UX · 2 недели UI.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="project-gallery" id="gallery">
+            <div class="section-label">Процесс и результат</div>
+            <h2>Как это выглядит</h2>
+
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <Image src={viril1} alt="Viril — изображение 1" loading="lazy" decoding="async" />
+                </div>
+                <div class="gallery-item">
+                    <Image src={viril2} alt="Viril — изображение 2" loading="lazy" decoding="async" />
+                </div>
+                <div class="gallery-item">
+                    <Image src={viril3} alt="Viril — изображение 3" loading="lazy" decoding="async" />
+                </div>
+                <div class="gallery-item">
+                    <Image src={viril4} alt="Viril — изображение 4" loading="lazy" decoding="async" />
+                </div>
+                <div class="gallery-item">
+                    <Image src={viril5} alt="Viril — изображение 5" loading="lazy" decoding="async" />
+                </div>
+                <div class="gallery-item">
+                    <Image src={viril6} alt="Viril — изображение 6" loading="lazy" decoding="async" />
+                </div>
+            </div>
+        </section>
+
+        <section class="project-results" id="results">
+            <div class="section-label">Результаты</div>
+            <h2>Что сделано</h2>
+
+            <div class="metrics-grid">
+                <div class="metric-card">
+                    <span class="metric-number">64</span>
+                    <span class="metric-label">Экрана</span>
+                    <p class="metric-description">Полный продукт: 16 экранов × EN/ES × desktop/mobile</p>
+                </div>
+                <div class="metric-card">
+                    <span class="metric-number">5 недель</span>
+                    <span class="metric-label">Полный цикл</span>
+                    <p class="metric-description">Исследование → стратегия → нейминг → бренд → UX → UI</p>
+                </div>
+                <div class="metric-card">
+                    <span class="metric-number">7</span>
+                    <span class="metric-label">Вопросов квиза</span>
+                    <p class="metric-description">Каждый вопрос привязан к клинической переменной — побочные эффекты, длительность, контроль, спонтанность — и определяет точную рекомендацию продукта</p>
+                </div>
+                <div class="metric-card">
+                    <span class="metric-number">0</span>
+                    <span class="metric-label">UX-правок</span>
+                    <p class="metric-description">Архитектура утверждена с первого захода — правки только визуальные</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="project-shipped" id="shipped">
+            <div class="section-label">Что запущено</div>
+            <p class="shipped-text">Продукт запущен и работает. Квиз-рекомендатель, пользовательские потоки и голос бренда перешли в продакшн без потерь. Финальная сборка на WordPress визуально отличается от оригинальной Figma-спецификации по точности — типичное ограничение, когда клиент после сдачи переходит на шаблонную реализацию. UX-архитектура и продуктовая логика устояли.
+            </p>
+            <a href="https://viril.live" target="_blank" rel="noopener noreferrer" style="display: inline-block; margin-top: 12px; color: inherit; text-decoration: underline; font-weight: 500;">Смотреть сайт →</a>
+        </section>
+
+        <section class="next-project" id="next">
+            <div class="section-label">Следующий проект</div>
+            <a href="/ru/projects/talent" class="next-project-link">
+                <span class="next-project-name">Talent</span>
+                <span class="next-project-arrow">→</span>
+            </a>
+        </section>
+
+        <section class="cta-section" id="cta">
+            <h2>Начинаешь с нуля?</h2>
+            <p class="contact-subtitle contact-subtitle-margin">
+                Белый лист — там, где я работаю лучше всего. Расскажи о продукте.
+            </p>
+            <a href="https://t.me/androsovart" target="_blank" class="btn-primary" rel="noopener noreferrer">Связаться</a>
+        </section>
+
+        <Footer />
+</ProjectLayout>

@@ -1,0 +1,147 @@
+---
+import { Image } from 'astro:assets';
+import ProjectLayout from '../../../layouts/ProjectLayout.astro';
+import Footer from '../../../components/Footer.astro';
+
+import gabarshop1 from '../../../assets/images/projects/gabarshop/gabarshop1.png';
+import gabarshop2 from '../../../assets/images/projects/gabarshop/gabarshop2.png';
+import gabarshop3 from '../../../assets/images/projects/gabarshop/gabarshop3.png';
+import gabarshop4 from '../../../assets/images/projects/gabarshop/gabarshop4.png';
+import gabarshop5 from '../../../assets/images/projects/gabarshop/gabarshop5.png';
+import gabarshop6 from '../../../assets/images/projects/gabarshop/gabarshop6.png';
+import gabarshop7 from '../../../assets/images/projects/gabarshop/gabarshop7.png';
+import gabarshop8 from '../../../assets/images/projects/gabarshop/gabarshop8.png';
+---
+
+<ProjectLayout
+  title="Gabarshop — Артём Андросов"
+  description="GABARSHOP — магазин мерча автора, который я построил, вёл и переделал за четыре года. 40+ SKU и 100 000+ проданных единиц."
+  activePage="projects"
+  lang="ru"
+>
+        <div class="back-nav">
+            <a href="/ru/" class="back-link">Назад к проектам</a>
+        </div>
+
+        <section class="project-hero" id="hero">
+            <div class="section-label">Кейс</div>
+            <h1>GABARSHOP</h1>
+            <p class="project-brief">Мерч-магазин автора, который я построил, вёл и из которого так и не ушёл полностью. Четыре года внутри команды — от упаковки коробок до редизайна всего продуктового опыта. Магазин до сих пор возвращается, когда нужно сделать что-то по-настоящему новое. Сейчас живёт на gabarshop.ru.</p>
+
+            <div class="project-meta">
+                <div class="meta-item">
+                    <span class="meta-label">Период</span>
+                    <span class="meta-value">2020–2024 · по запросу</span>
+                </div>
+                <div class="meta-item">
+                    <span class="meta-label">Моя роль</span>
+                    <span class="meta-value">Продукт, e-commerce</span>
+                </div>
+                <div class="meta-item">
+                    <span class="meta-label">Направления</span>
+                    <div class="meta-tags">
+                        <span class="meta-tag">Продуктовая стратегия</span>
+                        <span class="meta-tag">E-commerce</span>
+                        <span class="meta-tag">Дизайн мерча</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="project-concept" id="concept">
+            <div class="www-grid">
+                <div class="www-column">
+                    <h2 class="www-title">Зачем</h2>
+                    <p class="www-text">Я пришёл в команду топового YouTube-автора — миллионы подписчиков, высокая скорость мерч-операций — в 2020 году делать всё, что требовалось, в том числе физически собирать заказы. Эта близость к продукту и была обучением. Я видел, что люди заказывают, что возвращают, о чём спрашивают, чем гордятся, когда владеют. Когда витрине понадобился редизайн, я был очевидным выбором — не потому что был единственным доступным дизайнером, а потому что знал продукт глубже, чем кто-либо, кого можно было ввести в курс дела.</p>
+                </div>
+                <div class="www-column">
+                    <h2 class="www-title">Что</h2>
+                    <p class="www-text">Я пересобрал UX и UI магазина с нуля. Изначально сайт был плоским каталогом — без структуры, без истории, без причины оставаться. Я выстроил информационную архитектуру, которая дала магазину характер: блоки про команду, производственный процесс, закулисный контент. Мерч, который выглядел как с фабрики, стал мерчем, который выглядит как от людей. Параллельно я вёл Telegram-канал магазина — вырастил его до 10 000 подписчиков через контент-микс: кадры с производства, опросы по материалам, голосования за дизайны и розыгрыши, движимые аудиторией. Один из повторяющихся форматов: подписчики присылали дизайны футболок — рисованные или цифровые — мы проводили голосование, победителя отправляли в производство. Аудитория не просто покупала продукт — она его соавторила. Когда другой дизайнер пришёл с предложением освежить UI, я работал как продуктовый лид: мы вместе проверили и скорректировали его направление, потом выпустили апдейт. Без эго, но лучшим продуктом.</p>
+                </div>
+                <div class="www-column">
+                    <h2 class="www-title">Как</h2>
+                    <p class="www-text">Канал был слоем исследования. Каждый опрос про материалы, каждая реакция на фото прототипа, каждый вопрос в комментариях — сигнал. Я использовал этот сигнал для продуктовых решений — что добавить в каталог, что снять, в каком формате делать следующий розыгрыш. Глубина магазина (40+ SKU, оформленная упаковка, подарочные сертификаты, сезонные дропы) — это не стратегический документ, это результат постоянного фидбека между продуктом и аудиторией. После ухода из команды на фултайм в 2024-м я остался on-call коллаборатором для новых линеек — конкретно там, где брифу нужно больше, чем новый цвет.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="project-gallery" id="gallery">
+            <div class="section-label">Процесс и результат</div>
+            <h2>Как это выглядит</h2>
+
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <Image src={gabarshop1} alt="GABARSHOP — изображение 1" loading="lazy" decoding="async" />
+                </div>
+                <div class="gallery-item">
+                    <Image src={gabarshop2} alt="GABARSHOP — изображение 2" loading="lazy" decoding="async" />
+                </div>
+                <div class="gallery-item">
+                    <Image src={gabarshop3} alt="GABARSHOP — изображение 3" loading="lazy" decoding="async" />
+                </div>
+                <div class="gallery-item">
+                    <Image src={gabarshop4} alt="GABARSHOP — изображение 4" loading="lazy" decoding="async" />
+                </div>
+                <div class="gallery-item">
+                    <Image src={gabarshop5} alt="GABARSHOP — изображение 5" loading="lazy" decoding="async" />
+                </div>
+                <div class="gallery-item">
+                    <Image src={gabarshop6} alt="GABARSHOP — изображение 6" loading="lazy" decoding="async" />
+                </div>
+                <div class="gallery-item">
+                    <Image src={gabarshop7} alt="GABARSHOP — изображение 7" loading="lazy" decoding="async" />
+                </div>
+                <div class="gallery-item">
+                    <Image src={gabarshop8} alt="GABARSHOP — изображение 8" loading="lazy" decoding="async" />
+                </div>
+            </div>
+        </section>
+
+        <section class="project-results" id="results">
+            <div class="section-label">Результаты</div>
+            <h2>Что сделано</h2>
+
+            <div class="metrics-grid">
+                <div class="metric-card">
+                    <span class="metric-number">40+</span>
+                    <span class="metric-label">SKU</span>
+                    <p class="metric-description">Полная ответственность за каталог — 80% разработано мной</p>
+                </div>
+                <div class="metric-card">
+                    <span class="metric-number">10K</span>
+                    <span class="metric-label">Подписчиков канала</span>
+                    <p class="metric-description">Telegram-сообщество, построенное вокруг соавторства, а не анонсов
+                    </p>
+                </div>
+                <div class="metric-card">
+                    <span class="metric-number">100K+</span>
+                    <span class="metric-label">Продано единиц</span>
+                    <p class="metric-description">За четыре года непрерывной работы</p>
+                </div>
+                <div class="metric-card">
+                    <span class="metric-number">2024→</span>
+                    <span class="metric-label">Всё ещё активно</span>
+                    <p class="metric-description">Продолжающиеся заказы после ухода — зовут под новые типы продуктов, а не повторы</p>
+                </div>
+            </div>
+            <a href="https://gabarshop.ru" target="_blank" rel="noopener noreferrer" style="display: inline-block; margin-top: 12px; color: inherit; text-decoration: underline; font-weight: 500;">Смотреть магазин →</a>
+        </section>
+
+        <section class="next-project" id="next">
+            <div class="section-label">Следующий проект</div>
+            <a href="/ru/projects/wef2025" class="next-project-link">
+                <span class="next-project-name">EmTech Invest × Davos</span>
+                <span class="next-project-arrow">→</span>
+            </a>
+        </section>
+
+        <section class="cta-section" id="cta">
+            <h2>Нужен продукт, который связан с аудиторией?</h2>
+            <p class="contact-subtitle contact-subtitle-margin">
+                Расскажи, кто они — скажу, что им нужно увидеть.
+            </p>
+            <a href="https://t.me/androsovart" target="_blank" class="btn-primary" rel="noopener noreferrer">Связаться</a>
+        </section>
+
+        <Footer />
+</ProjectLayout>

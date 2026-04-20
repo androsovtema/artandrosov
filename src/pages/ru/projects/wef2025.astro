@@ -1,0 +1,151 @@
+---
+import { Image } from 'astro:assets';
+import ProjectLayout from '../../../layouts/ProjectLayout.astro';
+import Footer from '../../../components/Footer.astro';
+
+import imtechinvest1 from '../../../assets/images/projects/emtechinvest/imtechinvest1.png';
+import imtechinvest2 from '../../../assets/images/projects/emtechinvest/imtechinvest2.png';
+import imtechinvest3 from '../../../assets/images/projects/emtechinvest/imtechinvest3.png';
+import imtechinvest4 from '../../../assets/images/projects/emtechinvest/imtechinvest4.png';
+import imtechinvest5 from '../../../assets/images/projects/emtechinvest/imtechinvest5.png';
+import imtechinvest6 from '../../../assets/images/projects/emtechinvest/imtechinvest6.png';
+import imtechinvest7 from '../../../assets/images/projects/emtechinvest/imtechinvest7.png';
+import imtechinvest8 from '../../../assets/images/projects/emtechinvest/imtechinvest8.png';
+---
+
+<ProjectLayout
+  title="WEF 2025 — Артём Андросов"
+  description="EmTech Invest × Davos — арт-дирекшн и визуальная система для закрытого инвестиционного события на WEF. Собрано с нуля за шесть недель."
+  activePage="projects"
+  lang="ru"
+>
+        <div class="back-nav">
+            <a href="/ru/" class="back-link">Назад к проектам</a>
+        </div>
+
+        <section class="project-hero" id="hero">
+            <div class="section-label">Кейс</div>
+            <h1>EmTech Invest × Davos</h1>
+            <p class="project-brief">Закрытое инвестиционное событие в Давосе — без брендбука, с двумя ЛПР, которые не могли сформулировать, что им нужно, 66 участниками с индивидуальными запросами и шестинедельным окном. Моя задача — превратить неопределённость в систему и держать дизайнера в движении, пока хаос продолжается.</p>
+
+            <div class="project-meta">
+                <div class="meta-item">
+                    <span class="meta-label">Дата</span>
+                    <span class="meta-value">Январь 2026</span>
+                </div>
+                <div class="meta-item">
+                    <span class="meta-label">Моя роль</span>
+                    <span class="meta-value">Продукт, арт-дирекшн</span>
+                </div>
+                <div class="meta-item">
+                    <span class="meta-label">Клиент</span>
+                    <span class="meta-value">MaYu / EmTech Invest</span>
+                </div>
+                <div class="meta-item">
+                    <span class="meta-label">Направления</span>
+                    <div class="meta-tags">
+                        <span class="meta-tag">Продуктовая стратегия</span>
+                        <span class="meta-tag">Визуальная система</span>
+                        <span class="meta-tag">Event-дизайн</span>
+                        <span class="meta-tag">Арт-дирекшн</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="project-concept" id="concept">
+            <div class="www-grid">
+                <div class="www-column">
+                    <h2 class="www-title">Зачем</h2>
+                    <p class="www-text">EmTech Invest — швейцарская компания из двух человек, проводящая закрытые инвестиционные события для техлидеров и C-level. У них не было бренд-системы — только несколько несогласованных ассетов от прежнего дизайнера. Бриф был ясен в одном: результат должен выглядеть так, как будто он на своём месте на World Economic Forum. Всё остальное — визуальное направление, тон, приоритеты, что делать в первую очередь — было не определено. Размытые брифы такого масштаба не дают плохого дизайна. Они дают паралич.</p>
+                </div>
+                <div class="www-column">
+                    <h2 class="www-title">Что</h2>
+                    <p class="www-text">Я вошёл как арт-директор. Моя роль была выше исполнения: интерпретировать то, что клиенту реально нужно, в отличие от того, что он просит; определить визуальную и коммуникационную систему, внутри которой дизайнер может работать; принимать решения по приоритетам, когда всё кажется одинаково срочным. Мы собрали бренд почти с нуля — цветовая система, типографика, тон голоса, визуальная логика, благодаря которой финтех-событие ощущается швейцарским без стерильности. Поверх этого фундамента: 66 индивидуальных профилей участников, пресс-волл, баннеры, бейджи, ассеты для сайта, контент в соцсетях — по всему жизненному циклу события.</p>
+                </div>
+                <div class="www-column">
+                    <h2 class="www-title">Как</h2>
+                    <p class="www-text">Реальная дизайн-задача была не визуальной, а структурной. Клиент работал без внутренней синхронизации: брифы приходили фрагментарно, менялись по ходу, без иерархии важности. Моя задача — абсорбировать эту неопределённость до того, как она дошла до дизайнера. Я переводил каждый входящий запрос в конкретную выполнимую задачу с понятным definition of done. Выставлял последовательность — что должно быть закончено прежде, чем двигается что-то другое, — чтобы постоянные изменения не разваливали таймлайн. Одни профили участников были упражнением в управлении хаосом: пропавшие фото, ретушь, биографии в последний момент, вылеты. У каждой истории был свой путь через систему. Событие состоялось. Всё было готово.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="project-gallery" id="gallery">
+            <div class="section-label">Процесс и результат</div>
+            <h2>Как это выглядит</h2>
+
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <Image src={imtechinvest1} alt="EmTech Invest × Davos — изображение 1" loading="lazy" decoding="async" />
+                </div>
+                <div class="gallery-item">
+                    <Image src={imtechinvest2} alt="EmTech Invest × Davos — изображение 2" loading="lazy" decoding="async" />
+                </div>
+                <div class="gallery-item">
+                    <Image src={imtechinvest3} alt="EmTech Invest × Davos — изображение 3" loading="lazy" decoding="async" />
+                </div>
+                <div class="gallery-item">
+                    <Image src={imtechinvest4} alt="EmTech Invest × Davos — изображение 4" loading="lazy" decoding="async" />
+                </div>
+                <div class="gallery-item">
+                    <Image src={imtechinvest5} alt="EmTech Invest × Davos — изображение 5" loading="lazy" decoding="async" />
+                </div>
+                <div class="gallery-item">
+                    <Image src={imtechinvest6} alt="EmTech Invest × Davos — изображение 6" loading="lazy" decoding="async" />
+                </div>
+                <div class="gallery-item">
+                    <Image src={imtechinvest7} alt="EmTech Invest × Davos — изображение 7" loading="lazy" decoding="async" />
+                </div>
+                <div class="gallery-item">
+                    <Image src={imtechinvest8} alt="EmTech Invest × Davos — изображение 8" loading="lazy" decoding="async" />
+                </div>
+            </div>
+        </section>
+
+        <section class="project-results" id="results">
+            <div class="section-label">Результаты</div>
+            <h2>Что сделано</h2>
+
+            <div class="metrics-grid">
+                <div class="metric-card">
+                    <span class="metric-number">66</span>
+                    <span class="metric-label">Профилей участников</span>
+                    <p class="metric-description">Каждый индивидуально, многие с поиском фото и ретушью</p>
+                </div>
+                <div class="metric-card">
+                    <span class="metric-number">0</span>
+                    <span class="metric-label">Готовых брендбуков</span>
+                    <p class="metric-description">Визуальная система собрана с нуля — цвет, шрифт, тон, логика</p>
+                </div>
+                <div class="metric-card">
+                    <span class="metric-number">6 недель</span>
+                    <span class="metric-label">Сроки</span>
+                    <p class="metric-description">От брифа до пост-контента, с постоянными изменениями скоупа
+                    </p>
+                </div>
+                <div class="metric-card">
+                    <span class="metric-number">3</span>
+                    <span class="metric-label">Сегмента аудитории</span>
+                    <p class="metric-description">Участники, спонсоры, пресса — своя коммуникационная логика под каждого</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="next-project" id="next">
+            <div class="section-label">Следующий проект</div>
+            <a href="/ru/projects/loyobondar" class="next-project-link">
+                <span class="next-project-name">LOYO &amp; BONDAR</span>
+                <span class="next-project-arrow">→</span>
+            </a>
+        </section>
+
+        <section class="cta-section" id="cta">
+            <h2>Нужен человек с продуктовым мышлением в команду?</h2>
+            <p class="contact-subtitle contact-subtitle-margin">
+                Расскажи про задачу — скажу, с чего начать.
+            </p>
+            <a href="https://t.me/androsovart" target="_blank" class="btn-primary" rel="noopener noreferrer">Связаться</a>
+        </section>
+
+        <Footer />
+</ProjectLayout>
