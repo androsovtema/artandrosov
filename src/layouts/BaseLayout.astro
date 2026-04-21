@@ -3,9 +3,12 @@ interface Props {
   title: string;
   description: string;
   lang?: 'en' | 'ru';
+  ogImage?: string;
 }
 
-const { title, description, lang = 'en' } = Astro.props;
+const { title, description, lang = 'en', ogImage = '/og/projects.jpg' } = Astro.props;
+const ogImageUrl = new URL(ogImage, Astro.site).href;
+const canonicalUrl = new URL(Astro.url.pathname, Astro.site).href;
 ---
 
 <!DOCTYPE html>
@@ -15,8 +18,15 @@ const { title, description, lang = 'en' } = Astro.props;
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content={description}>
     {lang === 'ru' && <meta name="robots" content="noindex, nofollow" />}
+    <meta property="og:type" content="website">
     <meta property="og:title" content={title}>
     <meta property="og:description" content={description}>
+    <meta property="og:image" content={ogImageUrl}>
+    <meta property="og:url" content={canonicalUrl}>
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content={title}>
+    <meta name="twitter:description" content={description}>
+    <meta name="twitter:image" content={ogImageUrl}>
     <title>{title}</title>
     <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/favicon-16x16.png">

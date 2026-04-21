@@ -7,12 +7,13 @@ interface Props {
   description: string;
   activePage: 'projects' | 'about';
   lang?: 'en' | 'ru';
+  ogImage?: string;
 }
 
-const { title, description, activePage, lang = 'en' } = Astro.props;
+const { title, description, activePage, lang = 'en', ogImage } = Astro.props;
 ---
 
-<BaseLayout title={title} description={description} lang={lang}>
+<BaseLayout title={title} description={description} lang={lang} ogImage={ogImage}>
   <link slot="head" rel="stylesheet" href="/assets/css/project.css">
   <Sidebar activePage={activePage} lang={lang} />
   <div class="main-content">
