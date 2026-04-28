@@ -35,7 +35,7 @@
     font-weight: var(--font-weight-medium);
     line-height: 1.3;
     letter-spacing: -0.3px;
-    margin-bottom: var(--space-md);
+    margin-bottom: var(--space-xl);
 }
 
 /* Section headings */
@@ -72,6 +72,12 @@
     color: var(--color-text-tertiary);
 }
 
+/* Contacts — last element in hero-text */
+.hero-text p:last-child {
+    margin-top: var(--space-2xl);
+    margin-bottom: 0;
+}
+
 .hero-text a {
     color: var(--color-text-primary);
     text-decoration: none;
@@ -91,7 +97,7 @@
     font-size: var(--font-size-sm);
     font-weight: var(--font-weight-light);
     color: var(--color-text-secondary);
-    margin-bottom: var(--space-md);
+    margin-bottom: var(--space-2xl);
     letter-spacing: 0.01em;
 }
 
