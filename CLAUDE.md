@@ -1,5 +1,15 @@
 # CLAUDE.md — Art Androsov Portfolio
 
+## 0. Read CONTEXT.md first
+
+**Before any conversational work, copywriting, or recommendation about positioning, read `/Users/prosto/Desktop/01_Projects/artandrosov/CONTEXT.md`.**
+
+CONTEXT.md is a living document about Art (the human): identity, goals, working principles, current clients, what he can/can't defend in interview, what NOT to claim, and the list of open site-work threads. Update it whenever a new fact, correction, or principle emerges from conversation — append to the relevant section, keep it current. Never duplicate its contents into chat unless Art asks.
+
+This CLAUDE.md handles the **technical migration plan** (Astro structure, URL mapping, etc.). CONTEXT.md handles **who Art is and what he wants the site to say**. Both are required for high-quality work on this project.
+
+---
+
 ## 1. Project Overview
 
 Personal portfolio site for Artem Androsov — UX/product designer.
