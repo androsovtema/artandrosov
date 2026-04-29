@@ -24,10 +24,7 @@ import ourwall6 from '../../assets/images/projects/ourwall/ourwall6.png';
         <section class="project-hero" id="hero">
             <div class="section-label">Case study</div>
             <h1>Our Wall</h1>
-            <p class="project-brief">An anonymous social network built on one premise: people perform online because
-                they're afraid. Remove identity — and the wall shows what people actually think. Designed the product
-                logic, built v1 with AI-assisted code in one week, survived a public attack on launch day, and shipped
-                v2 with a developer who broke in and then offered to rebuild it properly.</p>
+            <p class="project-brief">An anonymous social network built on one premise: people perform online because they're afraid. Remove identity, and the wall shows what people actually think. I designed the product logic, built v1 in a week with AI-assisted code, survived a launch-day attack, and shipped v2 with a developer who'd found the hole himself.</p>
 
             <div class="project-meta">
                 <div class="meta-item">
@@ -50,39 +47,15 @@ import ourwall6 from '../../assets/images/projects/ourwall/ourwall6.png';
             <div class="www-grid">
                 <div class="www-column">
                     <h2 class="www-title">Why</h2>
-                    <p class="www-text">Social networks optimise for performance. People post what gets engagement, not
-                        what they actually think — a curated version of themselves. The gap between what people feel and
-                        what they say online is enormous, and it's not a Russian problem or a political problem: it's a
-                        human one. Threads fills with fake income screenshots. Instagram with highlight reels. Twitter
-                        with takes performed for an audience. I wanted to build the opposite: a space with no profiles,
-                        no followers, no reputation to protect. Just thoughts, appearing and disappearing — like chalk
-                        on a wall. The anonymity isn't a feature. It's the entire product premise.</p>
+                    <p class="www-text">Social networks optimise for performance. People post what gets engagement, not what they actually think — a curated version of themselves. Threads fills with fake income screenshots. Instagram with highlight reels. X with takes performed for an audience. I wanted to build the opposite: no profiles, no followers, no reputation to protect. Just thoughts, appearing and disappearing — like chalk on a wall. Anonymity isn't an add-on here — it's the foundation of the product.</p>
                 </div>
                 <div class="www-column">
                     <h2 class="www-title">What</h2>
-                    <p class="www-text">I designed the full product logic before writing a single line of code: the
-                        ephemeral timeline, the mood system, the reaction mechanics, the community moderation threshold.
-                        The mood system lets you tag each thought with an emotional state — each mood has an emoji, a
-                        colour, and a colour-coded card on the wall. Reactions work like Telegram — a set of emojis, no
-                        like counts. Moderation is crowdsourced: five reports removes a post automatically, no admin
-                        required. The FOMO mechanic was deliberate: posts disappear after a set window, creating urgency
-                        to read now rather than scroll later. I iterated on the window length — starting at midnight
-                        deletion, moving to 24-hour personal timers per post, then extending to one week as organic
-                        traffic stabilised. Each change was a product decision, not a technical one.</p>
+                    <p class="www-text">Before a single line of code, I designed the full product logic: ephemeral timeline, mood system, reactions, crowdsourced moderation. The mood system tags every thought with an emotional state — each mood has its own emoji and colour-coded card on the wall. Reactions are a set of emojis with per-type counters. Moderation is crowdsourced: five reports auto-remove a post; the admin reviews flagged removals as a safety net against unfair triggers — a workable solution at current scale, but stronger architecture is needed for growth. The FOMO mechanic is deliberate: posts disappear after a set window, creating urgency to read now rather than scroll later. I iterated on the window length based on user behaviour: started with midnight deletion, moved to 24-hour personal timers, then extended to one week as organic traffic stabilised. Comments came after launch — I asked the users who'd shown up what was missing, and the answer was unanimous: comments. We shipped them.</p>
                 </div>
                 <div class="www-column">
                     <h2 class="www-title">How</h2>
-                    <p class="www-text">Product logic came first — I mapped every mechanic before opening a code
-                        editor. Then built v1 in one week using AI-assisted development: described the product to the
-                        model, iterated on the output, adjusted visual and logic, deployed to server. The process was
-                        the subject of a YouTube video showing that a working social network MVP could be built without
-                        prior coding knowledge. The video brought the first users — and the first attack. Within hours
-                        of launch: DDoS flood, spam injection, explicit image overwrites. I took the server down. In
-                        the comments of the video, one of the people who had broken in left a public message: he'd
-                        found the vulnerability, and he could fix it. We talked. He rewrote the entire codebase in
-                        React. Our Wall v2 launched — with an admin panel, server health monitoring, and a moderation
-                        system that held. Nobody broke it again. The project attracted a developer not through a job
-                        posting, but through the quality of the idea.</p>
+                    <p class="www-text">Logic first, then code. I mapped every mechanic before opening the editor. I shipped v1 in a week with AI-assisted development: described the product to the model, iterated on the output, adjusted visual and logic, deployed to server. The process became a YouTube video showing that a working social network MVP can be built without a full-stack background. The video brought the first users — and the first attack: DDoS, spam injection, site defacement via the vulnerability they found. I took the server down. In the comments under the video, one of the people who'd broken in left a public message: he'd found the hole and could fix it. We talked. He rewrote the codebase in React. v2 launched with an admin panel, server health monitoring, and a moderation system that held. The developer joined through the quality of the idea, not a job posting.</p>
                 </div>
             </div>
         </section>
@@ -124,9 +97,9 @@ import ourwall6 from '../../assets/images/projects/ourwall/ourwall6.png';
                     <p class="metric-description">Full social network MVP — product logic, UI, and deployment — built solo with AI-assisted code</p>
                 </div>
                 <div class="metric-card">
-                    <span class="metric-number">v2</span>
-                    <span class="metric-label">Rebuilt under pressure</span>
-                    <p class="metric-description">Attacked on launch day, rebuilt in React by a developer who found the project through the YouTube video</p>
+                    <span class="metric-number">1,132</span>
+                    <span class="metric-label">Organic users</span>
+                    <p class="metric-description">1,311 posts in the live feed · single YouTube video as the only traffic source · zero marketing spend</p>
                 </div>
                 <div class="metric-card">
                     <span class="metric-number">3</span>
@@ -136,19 +109,22 @@ import ourwall6 from '../../assets/images/projects/ourwall/ourwall6.png';
                 <div class="metric-card">
                     <span class="metric-number">5</span>
                     <span class="metric-label">Reports to remove</span>
-                    <p class="metric-description">Crowdsourced moderation — no admin action needed. Community self-regulates at threshold</p>
+                    <p class="metric-description">Crowdsourced moderation in production — 1,305 spam/inappropriate posts removed at this threshold, against 1,311 legitimate ones kept. Admin reviews flagged posts as a safety net while the user base scales.</p>
                 </div>
             </div>
         </section>
 
         <section class="project-shipped" id="shipped">
             <div class="section-label">What shipped</div>
-            <p class="shipped-text">Our Wall is live at ourwall.ru — organic traffic only, zero marketing budget.
-                Users still post. The mood system, reactions, comments, and community reporting all work in production.
-                The product direction beyond v2 is clear: location-based walls (by café, university, neighbourhood),
-                mood aggregation as a real-time sentiment layer, private community walls for events and organisations.
-                The infrastructure for that exists. What's missing is investment to continue development.</p>
+            <p class="shipped-text">Our Wall lives at ourwall.ru — organic traffic only, zero marketing budget. Today: 1,132 users and 1,311 posts in the live feed. The mood system, reactions, comments, and crowdsourced moderation all work in production. Active development continues with the developer who came in from the v1 video comments. Next focus: stronger auto-moderation, internationalisation, and organic social-first growth. Investment is optional, not required.</p>
             <a href="https://ourwall.ru" target="_blank" rel="noopener noreferrer" style="display: inline-block; margin-top: 12px; color: inherit; text-decoration: underline; font-weight: 500;">View live product →</a>
+        </section>
+
+        <section class="project-shipped" id="lessons">
+            <div class="section-label">What I'd do differently</div>
+            <p class="shipped-text">Security is the foundation, not the final step. In the MVP I leaned hard into features. I'd come at it from the other side now: protection against attacks (DDoS, injections, bots), backend access controls, authentication — designed at the architecture stage, not "later". The launch-day attack could have been prevented.</p>
+            <p class="shipped-text">Crowdsourced moderation works, but it's not enough. Five reports is a solid baseline, but it can't keep up with volume. An auto-detection algorithm at the post level — before content lands on the wall — is what's needed.</p>
+            <p class="shipped-text">Anonymity is a mode, not the foundation of the product. I built the product around anonymity as the central premise. Real user behaviour told a different story: many users want to be heard and seen as authors. If I were relaunching today, I'd ship both modes inside the same product — a toggle: "here I'm Alex, here I'm anonymous".</p>
         </section>
 
         <section class="next-project" id="next">
@@ -160,12 +136,12 @@ import ourwall6 from '../../assets/images/projects/ourwall/ourwall6.png';
         </section>
 
         <section class="cta-section" id="cta">
-            <h2>Have an idea that needs product thinking?</h2>
+            <h2>Need to ship an MVP, not mock one up?</h2>
             <p class="contact-subtitle contact-subtitle-margin">
-                Tell me about it — I'll help you find the logic inside it.
+                AI-assisted prototyping + product thinking — from idea to live product in a week.
             </p>
-            <a href="https://t.me/androsovart" target="_blank" class="btn-primary" rel="noopener noreferrer">Get in
-                touch</a>
+            <a href="https://cal.com/artemandrosov/intro" target="_blank" class="btn-primary" rel="noopener noreferrer">Book an intro call</a>
+            <p style="margin-top: 14px; font-size: 0.875rem; opacity: 0.7;">or email <a href="mailto:art.androsov@gmail.com" style="color: inherit;">art.androsov@gmail.com</a></p>
         </section>
 
         <Footer />
