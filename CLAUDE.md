@@ -58,7 +58,7 @@ src/
       talent.astro         ← /projects/talent
       ourwall.astro        ← /projects/ourwall
       gabarshop.astro      ← /projects/gabarshop
-      wef2025.astro        ← /projects/wef2025
+      emtech-invest-davos-2026.astro  ← /projects/emtech-invest-davos-2026
       loyobondar.astro     ← /projects/loyobondar
       eazyenergy.astro     ← /projects/eazy-energy
       scoville.astro       ← /projects/scoville
@@ -82,7 +82,7 @@ public/
 | /projects/talent.html         | /projects/talent         |
 | /projects/wall.html           | /projects/ourwall        |
 | /projects/gabarshop.html      | /projects/gabarshop      |
-| /projects/wef2025.html        | /projects/wef2025        |
+| /projects/wef2025.html        | /projects/emtech-invest-davos-2026 |
 | /projects/loyobondar.html     | /projects/loyobondar     |
 | /projects/eazyenergy.html     | /projects/eazy-energy    |
 | /projects/scoville.html       | /projects/scoville       |
@@ -116,7 +116,7 @@ About page → "about"
 
 ## 9. Next Project Sequence (for NextProject.astro)
 
-viril → talent → ourwall → gabarshop → wef2025 → loyobondar → eazyenergy → scoville → viril
+viril → talent → ourwall → gabarshop → emtech-invest-davos-2026 → loyobondar → eazyenergy → scoville → viril
 
 ---
 
