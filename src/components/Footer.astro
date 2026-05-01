@@ -1,10 +1,22 @@
 ---
+interface Props {
+  lang?: 'en' | 'ru';
+}
+
+const { lang = 'en' } = Astro.props;
 ---
 
 <footer class="footer">
     <div class="footer-logo">Art Androsov</div>
     <div class="footer-links">
-        <a href="https://t.me/androsovart" target="_blank" rel="noopener noreferrer">Telegram</a>
-        <a href="https://www.youtube.com/@wedesignerz/" target="_blank" rel="noopener noreferrer">YouTube</a>
+        <a href="mailto:art.androsov@gmail.com">Email</a>
+        <a href="https://www.linkedin.com/in/artandrosov/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        {lang === 'ru' && (
+            <a href="https://t.me/androsovart" target="_blank" rel="noopener noreferrer">Telegram</a>
+        )}
+        {lang === 'ru' && (
+            <a href="https://www.youtube.com/@wedesignerz/" target="_blank" rel="noopener noreferrer">YouTube</a>
+        )}
+        <a href="https://cal.com/artemandrosov/intro" target="_blank" rel="noopener noreferrer">{lang === 'ru' ? 'Записаться на звонок' : 'Book a call'}</a>
     </div>
 </footer>
