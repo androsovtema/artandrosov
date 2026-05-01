@@ -310,37 +310,6 @@
     transform: scale(0.97);
 }
 
-/* ===== FOOTER ===== */
-.footer {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: var(--space-xl) 0;
-    border-top: 1px solid var(--color-border);
-}
-
-.footer-logo {
-    font-size: var(--font-size-md);
-    font-weight: var(--font-weight-regular);
-    color: var(--color-text-primary);
-}
-
-.footer-links {
-    display: flex;
-    gap: var(--space-lg);
-}
-
-.footer-links a {
-    font-size: var(--font-size-base);
-    font-weight: var(--font-weight-regular);
-    color: var(--color-text-tertiary);
-    text-decoration: none;
-    transition: color 0.2s ease;
-}
-
-.footer-links a:hover {
-    color: var(--color-text-primary);
-}
 
 /* =============================================
    RESPONSIVE
@@ -467,9 +436,4 @@
         font-size: var(--font-size-lg);
     }
 
-    .footer {
-        flex-direction: column;
-        gap: var(--space-md);
-        text-align: center;
-    }
 }
