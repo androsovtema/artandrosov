@@ -17,6 +17,8 @@ const { lang = 'en' } = Astro.props;
         {lang === 'ru' && (
             <a href="https://www.youtube.com/@wedesignerz/" target="_blank" rel="noopener noreferrer">YouTube</a>
         )}
-        <a href="https://cal.com/artemandrosov/intro" target="_blank" rel="noopener noreferrer">{lang === 'ru' ? 'Записаться на звонок' : 'Book a call'}</a>
+        {lang === 'en' && (
+            <a href="https://cal.com/artemandrosov/intro" target="_blank" rel="noopener noreferrer">Book a call</a>
+        )}
     </div>
 </footer>
