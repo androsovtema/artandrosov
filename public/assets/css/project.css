@@ -266,6 +266,10 @@
 }
 
 /* ===== CTA ===== */
+.footer {
+    margin-top: 0;
+}
+
 .cta-section {
     padding: var(--space-4xl) 0;
     text-align: center;
