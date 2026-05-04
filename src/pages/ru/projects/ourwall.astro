@@ -29,6 +29,10 @@ import ourwall6 from '../../../assets/images/ru/projects/ourwall/ourwall6.png';
 
             <div class="project-meta">
                 <div class="meta-item">
+                    <span class="meta-label">Дата</span>
+                    <span class="meta-value">Сентябрь 2025</span>
+                </div>
+                <div class="meta-item">
                     <span class="meta-label">Моя роль</span>
                     <span class="meta-value">Продукт, UX</span>
                 </div>
@@ -98,9 +102,9 @@ import ourwall6 from '../../../assets/images/ru/projects/ourwall/ourwall6.png';
                     <p class="metric-description">Полноценный MVP соцсети — логика, UI и деплой — собраны в одиночку с AI-кодом</p>
                 </div>
                 <div class="metric-card">
-                    <span class="metric-number">v2</span>
-                    <span class="metric-label">Пересобрано под давлением</span>
-                    <p class="metric-description">Атакован в день запуска, переписан на React разработчиком, который нашёл проект через YouTube-ролик</p>
+                    <span class="metric-number">1,132</span>
+                    <span class="metric-label">Органических пользователей</span>
+                    <p class="metric-description">1 311 постов в живой ленте · единственный источник трафика — один YouTube-ролик · нулевые маркетинговые расходы</p>
                 </div>
                 <div class="metric-card">
                     <span class="metric-number">3</span>
@@ -119,6 +123,13 @@ import ourwall6 from '../../../assets/images/ru/projects/ourwall/ourwall6.png';
             <div class="section-label">Что запущено</div>
             <p class="shipped-text">Our Wall живёт на ourwall.ru — только органический трафик, нулевой маркетинговый бюджет. Пользователи продолжают постить. Система настроений, реакции, комментарии и жалобы работают в продакшне. Продуктовое направление после v2 понятно: стены по локациям (кафе, университет, район), агрегация настроений как real-time-слой сентимента, приватные стены для событий и организаций. Инфраструктура под это есть. Не хватает инвестиций, чтобы продолжать разработку.</p>
             <a href="https://ourwall.ru" target="_blank" rel="noopener noreferrer" style="display: inline-block; margin-top: 12px; color: inherit; text-decoration: underline; font-weight: 500;">Смотреть живой продукт →</a>
+        </section>
+
+        <section class="project-shipped" id="lessons">
+            <div class="section-label">Что бы я сделал иначе</div>
+            <p class="shipped-text">Безопасность — это фундамент, а не финальный шаг. В MVP я делал упор на фичи. Теперь я подходил бы с другой стороны: защита от атак (DDoS, инъекции, боты), контроль доступа к бэкенду, аутентификация — спроектированные на этапе архитектуры, а не «потом». Атаку в день запуска можно было предотвратить.</p>
+            <p class="shipped-text">Краудсорсная модерация работает, но её недостаточно. Пять жалоб — хорошая базовая линия, но она не справляется с объёмом. Нужен алгоритм автодетекции на уровне поста — до того, как контент попадёт на стену.</p>
+            <p class="shipped-text">Анонимность — это режим, а не фундамент продукта. Я строил продукт вокруг анонимности как центральной предпосылки. Реальное поведение пользователей рассказало другую историю: многие хотят быть услышанными и узнанными как авторы. Если бы я перезапускался сегодня, я бы сделал оба режима в одном продукте — переключатель: «здесь я Алекс, здесь я анонимен».</p>
         </section>
 
         <section class="next-project" id="next">
