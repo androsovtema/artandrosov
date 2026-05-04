@@ -128,8 +128,8 @@
     color: var(--color-text-secondary);
 }
 
-.www-text p + p {
-    margin-top: var(--space-md);
+.www-text p+p {
+    margin-top: var(--space-sm);
 }
 
 /* ===== GALLERY ===== */
@@ -238,8 +238,8 @@
     margin-top: var(--space-md);
 }
 
-.shipped-text p + p {
-    margin-top: var(--space-md);
+.shipped-text p+p {
+    margin-top: var(--space-sm);
 }
 
 /* ===== NEXT PROJECT ===== */
