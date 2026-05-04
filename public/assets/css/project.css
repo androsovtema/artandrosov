@@ -55,6 +55,10 @@
     margin-bottom: var(--space-3xl);
 }
 
+.project-brief p+p {
+    margin-top: var(--space-md);
+}
+
 /* Project Meta */
 .project-meta {
     display: flex;
@@ -239,7 +243,7 @@
 }
 
 .shipped-text p+p {
-    margin-top: var(--space-sm);
+    margin-top: var(--space-md);
 }
 
 /* ===== NEXT PROJECT ===== */
