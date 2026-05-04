@@ -128,6 +128,10 @@
     color: var(--color-text-secondary);
 }
 
+.www-text p + p {
+    margin-top: var(--space-md);
+}
+
 /* ===== GALLERY ===== */
 .project-gallery {
     margin-bottom: var(--space-4xl);
@@ -231,6 +235,10 @@
     font-size: var(--font-size-body);
     line-height: 1.7;
     opacity: 0.75;
+    margin-top: var(--space-md);
+}
+
+.shipped-text p + p {
     margin-top: var(--space-md);
 }
 
