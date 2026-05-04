@@ -8,8 +8,10 @@ const { activePage, lang = 'en' } = Astro.props;
 
 const homeHref = lang === 'ru' ? '/ru/' : '/';
 const aboutHref = lang === 'ru' ? '/ru/about' : '/about';
+const cvHref = lang === 'ru' ? '/cv/ru/Art_Androsov_Resume_RU.docx' : '/cv/Art_Androsov_CV.pdf';
 const projectsLabel = lang === 'ru' ? 'Проекты' : 'Projects';
 const aboutLabel = lang === 'ru' ? 'Обо мне' : 'About';
+const cvLabel = lang === 'ru' ? 'Резюме' : 'CV';
 ---
 
 <div class="sidebar">
@@ -17,5 +19,6 @@ const aboutLabel = lang === 'ru' ? 'Обо мне' : 'About';
     <nav class="nav-links">
         <a href={homeHref} class={activePage === 'projects' ? 'active' : ''}>{projectsLabel}</a>
         <a href={aboutHref} class={activePage === 'about' ? 'active' : ''}>{aboutLabel}</a>
+        <a href={cvHref} download>{cvLabel}</a>
     </nav>
 </div>
