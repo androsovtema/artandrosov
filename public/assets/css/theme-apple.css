@@ -1,0 +1,334 @@
+/* ===================================================
+   APPLE THEME — Green Edition
+   Source: apple.com style reference, accent #5C7A54 hue
+   Load after base.css · remove <link> to disable
+   =================================================== */
+
+/* ===== DESIGN TOKENS — OVERRIDES ===== */
+:root {
+  /* Colors */
+  --color-text-primary:   #1d1d1f;
+  --color-text-secondary: #707070;
+  --color-text-tertiary:  #474747;
+  --color-text-muted:     #707070;
+  --color-bg-page:        #f5f5f7;
+  --color-bg-subtle:      #ffffff;
+  --color-border:         #e8e8ed;
+
+  /* Green accent system — H≈107° at Apple-level vibrancy */
+  --color-accent:         #1d8a00;   /* primary CTA — equiv of Apple #0071e3 */
+  --color-accent-hover:   #1f9600;   /* hover state */
+  --color-accent-link:    #146f00;   /* text links — equiv of Apple #0066cc  */
+
+  /* Typography — sizes */
+  --font-size-xs:   12px;
+  --font-size-sm:   12px;
+  --font-size-base: 14px;
+  --font-size-md:   17px;
+  --font-size-body: 17px;
+  --font-size-lg:   28px;
+  --font-size-h2:   32px;
+  --font-size-h1:   56px;
+
+  /* Spacing — Apple comfortable density */
+  --space-2xl: 40px;   /* 36 → 40, Apple spacing-40 */
+  --space-4xl: 80px;   /* 70 → 80, Apple section gap minimum */
+
+  /* Border radius */
+  --radius-sm:   10px;
+  --radius-md:   28px;
+  --radius-full: 999px;
+}
+
+/* ===== BASE ===== */
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Text', system-ui, sans-serif;
+  letter-spacing: -0.003em;
+  line-height: 1.47;
+}
+
+h1 { letter-spacing: -0.019em; font-weight: 700; }
+h2 { letter-spacing: -0.015em; font-weight: 700; }
+h3 { letter-spacing: -0.005em; font-weight: 600; }
+
+/* ===== SIDEBAR / NAV ===== */
+.nav-links a {
+  font-size: 14px;
+  letter-spacing: -0.003em;
+}
+
+.nav-links a:hover,
+.nav-links a:active,
+.nav-links a.active {
+  color: var(--color-accent);
+}
+
+/* ===== INDEX ===== */
+.page-intro h1 {
+  font-size: 28px;
+  font-weight: 700;
+  letter-spacing: -0.36px;
+  line-height: 1.2;
+}
+
+.page-intro p {
+  font-size: 17px;
+  font-weight: 300;
+  letter-spacing: -0.1px;
+  line-height: 1.5;
+}
+
+/* Project cards */
+.project-image {
+  border-radius: 28px;
+  background: #ffffff;
+}
+
+.project-card:hover .project-image {
+  transform: translateY(-6px) scale(1.01);
+  box-shadow: none;
+}
+
+.project-title {
+  font-size: 14px;
+  letter-spacing: -0.003em;
+  color: #1d1d1f;
+  padding-top: 12px;
+}
+
+.project-description {
+  font-size: 12px;
+  color: #707070;
+  letter-spacing: -0.003em;
+}
+
+/* Project tags */
+.project-tag {
+  font-size: 11px;
+  border-radius: 999px;
+  border: 1px solid rgba(29, 138, 0, 0.3);
+  color: var(--color-accent);
+  opacity: 1;
+  background: transparent;
+}
+
+.project-tag.pet {
+  border-color: rgba(29, 138, 0, 0.3);
+  color: var(--color-accent);
+  opacity: 1;
+}
+
+/* ===== PROJECT PAGE ===== */
+.project-hero h1 {
+  font-size: 56px;
+  font-weight: 700;
+  letter-spacing: -0.9px;
+  line-height: 1.07;
+}
+
+.project-brief {
+  font-size: 20px;
+  font-weight: 300;
+  letter-spacing: -0.2px;
+  line-height: 1.4;
+  color: #707070;
+}
+
+/* Meta */
+.meta-label {
+  font-size: 11px;
+  letter-spacing: 0.5px;
+  color: #707070;
+}
+
+.meta-value {
+  font-size: 14px;
+  letter-spacing: -0.003em;
+}
+
+.meta-tag {
+  font-size: 12px;
+  background: #f5f5f7;
+  border-radius: 999px;
+  color: #474747;
+}
+
+/* Section label */
+.section-label {
+  font-size: 11px;
+  letter-spacing: 0.5px;
+  color: #707070;
+}
+
+/* Why / What / How */
+.www-title {
+  font-size: 17px;
+  font-weight: 600;
+  letter-spacing: -0.003em;
+}
+
+.www-text {
+  font-size: 17px;
+  font-weight: 300;
+  letter-spacing: -0.1px;
+  line-height: 1.47;
+  color: #707070;
+}
+
+/* Gallery */
+.gallery-item {
+  border-radius: 28px;
+  background: #ffffff;
+}
+
+/* Metrics */
+.metric-card {
+  background: #ffffff;
+  border-radius: 28px;
+}
+
+.metric-number {
+  font-size: 32px;
+  font-weight: 700;
+  letter-spacing: -0.6px;
+  line-height: 1.17;
+}
+
+.metric-label {
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: -0.003em;
+}
+
+.metric-description {
+  font-size: 12px;
+  letter-spacing: -0.003em;
+}
+
+/* Shipped */
+.project-results h2,
+.project-gallery h2 {
+  font-size: 32px;
+  font-weight: 700;
+  letter-spacing: -0.6px;
+  line-height: 1.17;
+}
+
+.shipped-text {
+  font-size: 17px;
+  font-weight: 300;
+  letter-spacing: -0.1px;
+  line-height: 1.47;
+  opacity: 1;
+  color: #707070;
+}
+
+/* Next project */
+.next-project-name {
+  font-size: 28px;
+  font-weight: 700;
+  letter-spacing: -0.36px;
+}
+
+/* CTA */
+.cta-section h2 {
+  font-size: 40px;
+  font-weight: 700;
+  letter-spacing: -0.6px;
+  line-height: 1.17;
+}
+
+.contact-subtitle {
+  font-size: 17px;
+  font-weight: 300;
+  letter-spacing: -0.1px;
+  color: #707070;
+}
+
+.btn-primary {
+  background: var(--color-accent);
+  border-radius: 999px;
+  font-size: 17px;
+  font-weight: 400;
+  letter-spacing: -0.1px;
+  padding: 12px 28px;
+  transition: background 0.1s ease;
+}
+
+.btn-primary:hover {
+  background: var(--color-accent-hover);
+}
+
+/* ===== ABOUT PAGE ===== */
+.hero-text h1 {
+  font-size: 28px;
+  font-weight: 700;
+  letter-spacing: -0.36px;
+  line-height: 1.2;
+}
+
+.hero-text p {
+  font-size: 17px;
+  font-weight: 300;
+  letter-spacing: -0.1px;
+  line-height: 1.47;
+  color: #707070;
+}
+
+.hero-image {
+  border-radius: 28px;
+}
+
+.section h2 {
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: -0.003em;
+}
+
+.section-item h3 {
+  font-size: 17px;
+  font-weight: 400;
+  letter-spacing: -0.003em;
+}
+
+.section-item p {
+  font-size: 12px;
+  letter-spacing: -0.003em;
+  color: #707070;
+}
+
+body .hero-text a {
+  color: var(--color-accent-link);
+}
+
+body .hero-text a:hover {
+  color: var(--color-accent);
+}
+
+/* ===== BACK LINK ===== */
+.back-link {
+  font-size: 14px;
+  letter-spacing: -0.003em;
+  color: var(--color-accent-link);
+}
+
+.back-link:hover {
+  color: var(--color-accent);
+}
+
+/* ===== FOOTER ===== */
+.footer-logo {
+  font-size: 17px;
+  font-weight: 400;
+  letter-spacing: -0.003em;
+}
+
+.footer-links a {
+  font-size: 14px;
+  letter-spacing: -0.003em;
+  color: var(--color-accent-link);
+}
+
+.footer-links a:hover {
+  color: var(--color-accent);
+}
