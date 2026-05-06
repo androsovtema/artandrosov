@@ -326,6 +326,32 @@
     transform: scale(0.97);
 }
 
+/* ===== SECONDARY BUTTON ===== */
+.btn-secondary {
+    display: inline-block;
+    font-size: var(--font-size-md);
+    font-weight: var(--font-weight-regular);
+    padding: 10px var(--space-xl);
+    background: transparent;
+    color: var(--color-text-primary);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-full);
+    text-decoration: none;
+    transition: border-color 0.2s ease;
+}
+
+.btn-secondary:hover {
+    border-color: var(--color-text-tertiary);
+}
+
+/* ===== SHIPPED LINKS ===== */
+.shipped-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 20px;
+}
+
 
 /* =============================================
    RESPONSIVE

@@ -305,6 +305,17 @@ body .hero-text a:hover {
   color: var(--color-accent);
 }
 
+/* ===== SECONDARY BUTTON ===== */
+.btn-secondary {
+  font-size: 15px;
+  padding: 10px 22px;
+  border-color: #e8e8ed;
+}
+
+.btn-secondary:hover {
+  border-color: #adadb8;
+}
+
 /* ===== BACK LINK ===== */
 .back-link {
   font-size: 14px;
