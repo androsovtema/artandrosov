@@ -15,10 +15,35 @@ const cvLabel = lang === 'ru' ? 'Резюме' : 'CV';
 ---
 
 <div class="sidebar">
-    <a href={homeHref}><img src="/assets/icons/ArtLogo.svg" alt="Art Logo" class="logo"></a>
+    <a href={homeHref} class="logo-link">
+        <div class="logo" data-lottie="/assets/icons/ArtLogo-animation.json"></div>
+    </a>
     <nav class="nav-links">
         <a href={homeHref} class={activePage === 'projects' ? 'active' : ''}>{projectsLabel}</a>
         <a href={aboutHref} class={activePage === 'about' ? 'active' : ''}>{aboutLabel}</a>
         <a href={cvHref} download>{cvLabel}</a>
     </nav>
 </div>
+
+<script>
+import lottie from 'lottie-web';
+
+function initLottie() {
+  document.querySelectorAll<HTMLElement>('[data-lottie]').forEach(el => {
+    if (el.dataset.lottieInit) return;
+    el.dataset.lottieInit = '1';
+    const path = el.dataset.lottie;
+    if (path) {
+      lottie.loadAnimation({
+        container: el,
+        renderer: 'svg',
+        loop: false,
+        autoplay: true,
+        path,
+      });
+    }
+  });
+}
+
+document.addEventListener('astro:page-load', initLottie);
+</script>
