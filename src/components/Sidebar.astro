@@ -7,13 +7,14 @@ interface Props {
 const { activePage, lang = 'en' } = Astro.props;
 
 const homeHref = lang === 'ru' ? '/ru/' : '/';
-const aboutHref = lang === 'ru' ? '/ru/about' : '/about';
-const cvHref = lang === 'ru' ? '/cv/ru/Art_Androsov_CV_RU.pdf' : '/cv/Art_Androsov_CV.pdf';
+const designHref = lang === 'ru' ? '/ru/' : '/design';
+const aboutHref = lang === 'ru' ? '/ru/about' : '/';
 const videoHref = '/video';
-const projectsLabel = lang === 'ru' ? 'Проекты' : 'Projects';
+const cvHref = lang === 'ru' ? '/cv/ru/Art_Androsov_CV_RU.pdf' : '/cv/Art_Androsov_CV.pdf';
+const projectsLabel = lang === 'ru' ? 'Проекты' : 'Design';
 const aboutLabel = lang === 'ru' ? 'Обо мне' : 'About';
-const cvLabel = lang === 'ru' ? 'Резюме' : 'CV';
 const videoLabel = lang === 'ru' ? 'Видео' : 'Video';
+const cvLabel = lang === 'ru' ? 'Резюме' : 'CV';
 ---
 
 <div class="sidebar">
@@ -21,9 +22,9 @@ const videoLabel = lang === 'ru' ? 'Видео' : 'Video';
         <div class="logo" data-lottie="/assets/icons/ArtLogo-animation.json"></div>
     </a>
     <nav class="nav-links">
-        <a href={homeHref} class={activePage === 'projects' ? 'active' : ''}>{projectsLabel}</a>
-        <a href={aboutHref} class={activePage === 'about' ? 'active' : ''}>{aboutLabel}</a>
+        <a href={designHref} class={activePage === 'projects' ? 'active' : ''}>{projectsLabel}</a>
         <a href={videoHref} class={activePage === 'video' ? 'active' : ''}>{videoLabel}</a>
+        <a href={aboutHref} class={activePage === 'about' ? 'active' : ''}>{aboutLabel}</a>
         <a href={cvHref} download>{cvLabel}</a>
     </nav>
 </div>

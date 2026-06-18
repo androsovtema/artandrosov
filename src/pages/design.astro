@@ -1,0 +1,156 @@
+---
+import { Image } from 'astro:assets';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Sidebar from '../components/Sidebar.astro';
+import Footer from '../components/Footer.astro';
+
+import virilCover from '../assets/images/projects/viril/viril_cover.png';
+import talentCover from '../assets/images/projects/talent/talent_cover.png';
+import ourwallCover from '../assets/images/projects/ourwall/ourwall_cover.png';
+import gabarshopCover from '../assets/images/projects/gabarshop/gabarshop_cover.png';
+import imtechinvestCover from '../assets/images/projects/emtechinvest/imtechinvest_cover.png';
+import loyobondarCover from '../assets/images/projects/loyobondar/loyobondar_cover.png';
+import eazyenergyCover from '../assets/images/projects/eazyenergy/eazyenergy_cover.png';
+import scovilleCover from '../assets/images/projects/scoville/scoville_cover.png';
+---
+
+<BaseLayout
+  title="Design - Artem Androsov"
+  description="Portfolio of Artem Androsov — product designer focused on solving real user problems through UX, brand strategy, and art direction."
+  ogImage="/og/projects.jpg"
+>
+  <link slot="head" rel="stylesheet" href="/assets/css/index.css">
+  <Sidebar activePage="projects" />
+
+  <div class="main-content">
+      <section class="page-intro">
+          <h1>Selected work</h1>
+          <p>Eight projects across product, UX/UI, brand, and packaging. Client work from the UK, Switzerland, Latvia, Russia, and Indonesia — plus two self-initiated launches.</p>
+      </section>
+      <div class="projects-grid">
+          <a href="/projects/viril">
+              <div class="project-card">
+                  <div class="project-image">
+                      <Image src={virilCover} alt="Viril" />
+                  </div>
+                  <div class="project-title">Viril</div>
+                  <p class="project-description">A men's health brand built from a blank page — naming, brand
+                      strategy, and 64 UX/UI screens across four versions. Five weeks, one person, zero restarts.</p>
+                  <div class="project-tags">
+                      <span class="project-tag">UX/UI</span>
+                      <span class="project-tag">Product</span>
+                      <span class="project-tag">Branding</span>
+                  </div>
+              </div>
+          </a>
+
+          <a href="/projects/talent">
+              <div class="project-card">
+                  <div class="project-image">
+                      <Image src={talentCover} alt="Talent" />
+                  </div>
+                  <div class="project-title">Talent</div>
+                  <p class="project-description">A licensing platform for creators — images, video, audio, and scripts
+                      under one roof. Designed for a market that lost access to every major international service
+                      overnight.</p>
+                  <div class="project-tags">
+                      <span class="project-tag">UX/UI</span>
+                      <span class="project-tag">Product</span>
+                      <span class="project-tag pet">Self-initiated</span>
+                  </div>
+              </div>
+          </a>
+
+          <a href="/projects/ourwall">
+              <div class="project-card">
+                  <div class="project-image">
+                      <Image src={ourwallCover} alt="Our Wall" />
+                  </div>
+                  <div class="project-title">Our Wall</div>
+                  <p class="project-description">An anonymous social network where thoughts appear and disappear.
+                      Built, attacked, rebuilt, and live — with 1,132 users who found it from a single YouTube video.
+                  </p>
+                  <div class="project-tags">
+                      <span class="project-tag">Product</span>
+                      <span class="project-tag">UX</span>
+                      <span class="project-tag pet">Self-initiated</span>
+                  </div>
+              </div>
+          </a>
+
+          <a href="/projects/gabarshop">
+              <div class="project-card">
+                  <div class="project-image">
+                      <Image src={gabarshopCover} alt="Gabarshop" />
+                  </div>
+                  <div class="project-title">Gabarshop</div>
+                  <p class="project-description">A creator merch store I built, ran, and never fully left. Four years
+                      inside the team — from packing boxes to redesigning the full product experience.</p>
+                  <div class="project-tags">
+                      <span class="project-tag">Product</span>
+                      <span class="project-tag">E-commerce</span>
+                      <span class="project-tag">Art Direction</span>
+                  </div>
+              </div>
+          </a>
+
+          <a href="/projects/emtech-invest-davos-2026">
+              <div class="project-card">
+                  <div class="project-image">
+                      <Image src={imtechinvestCover} alt="EmTech Invest × Davos" />
+                  </div>
+                  <div class="project-title">EmTech Invest × Davos</div>
+                  <p class="project-description">A closed-door investment event held during Davos / WEF week 2026 — no brand guidelines, 66 participants with individual demands. I turned ambiguity into a system that held under pressure.</p>
+                  <div class="project-tags">
+                      <span class="project-tag">Product</span>
+                      <span class="project-tag">Art Direction</span>
+                  </div>
+              </div>
+          </a>
+
+          <a href="/projects/loyobondar">
+              <div class="project-card">
+                  <div class="project-image">
+                      <Image src={loyobondarCover} alt="LOYO &amp; BONDAR" />
+                  </div>
+                  <div class="project-title">LOYO &amp; BONDAR</div>
+                  <p class="project-description">A premium Bali developer with multiple stakeholders and competing priorities. I stepped in to systematize incoming requests, keeping design execution on track at 100+ slides per week.</p>
+                  <div class="project-tags">
+                      <span class="project-tag">Product</span>
+                      <span class="project-tag">Art Direction</span>
+                  </div>
+              </div>
+          </a>
+
+          <a href="/projects/eazy-energy">
+              <div class="project-card">
+                  <div class="project-image">
+                      <Image src={eazyenergyCover} alt="Eazy Energy" />
+                  </div>
+                  <div class="project-title">Eazy Energy</div>
+                  <p class="project-description">An energy drink launched on top of an existing factory and two creators' audiences. Creative direction across packaging, a 7-city tour, and racing sponsorships — 2 years from launch to national distribution.</p>
+                  <div class="project-tags">
+                      <span class="project-tag">Product</span>
+                      <span class="project-tag">Branding</span>
+                      <span class="project-tag">Art Direction</span>
+                  </div>
+              </div>
+          </a>
+
+          <a href="/projects/scoville">
+              <div class="project-card">
+                  <div class="project-image">
+                      <Image src={scovilleCover} alt="Scoville" />
+                  </div>
+                  <div class="project-title">Scoville</div>
+                  <p class="project-description">A spicy ice cream designed twice — the initial concept was rejected due to external partnership constraints. The pivot shipped in a week and is live on Samokat today.</p>
+                  <div class="project-tags">
+                      <span class="project-tag">Packaging</span>
+                      <span class="project-tag">Branding</span>
+                  </div>
+              </div>
+          </a>
+      </div>
+      <Footer />
+  </div>
+</BaseLayout>
