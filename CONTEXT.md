@@ -4,7 +4,7 @@
 > Read this first before any conversational or content work.
 > Update whenever a new fact, principle, or correction emerges.
 
-Last updated: 2026-04-29
+Last updated: 2026-06-17
 
 ---
 
@@ -77,6 +77,7 @@ These drive all his content choices. When in doubt, prefer the principle over th
 - **Primary topic: AI in work and life** (use cases, tools, prompt engineering, workflows)
 - **Secondary topic:** Design — UX/UI, product, game design teardowns
 - Run with his partner; not a company; not a team
+- New site direction: add a `/video` portfolio page for video-editing work, styled like a YouTube channel/feed because Art's media experience was YouTube-first. The page should feel creative for employers while staying clearly Art's portfolio, not an official YouTube property. Real videos will be added by Art later.
 
 When mentioning the channel in copy: lead with AI focus, mention design episodes as secondary. Don't position it as "UX education" alone — that's the old framing.
 
@@ -151,6 +152,7 @@ Things in progress or pending:
 - [ ] Replace anonymous quote on Talent page (or remove)
 - [ ] Soften client-blame language on EmTech Invest, LOYO & BONDAR cases
 - [ ] Fix LOYO slug → `/projects/loyo-and-bondar`
+- [ ] Finalise `/video` portfolio with real YouTube links, thumbnails, titles, and showreel copy once Art supplies the source videos
 
 ---
 

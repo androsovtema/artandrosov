@@ -1,0 +1,354 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import {
+  Bell,
+  Clock3,
+  Compass,
+  Film,
+  Home,
+  ListPlus,
+  Menu,
+  Mic,
+  MonitorPlay,
+  MoreVertical,
+  Play,
+  Plus,
+  Search,
+  UserRound,
+  UsersRound,
+} from '@lucide/astro';
+
+const videos = [
+  {
+    title: 'Какой ИИ лучше всех генерирует КАРТИНКИ в 2026? ChatGPT Qwen Nano Banana Copilot?',
+    meta: '343 views • 8 days ago',
+    duration: '24:45',
+    thumb: '/assets/images/video/thumb-ai-generator.jpg',
+    url: 'https://www.youtube.com/watch?v=zqDJkIUzrZs',
+  },
+  {
+    title: 'Китайская СЕНСАЦИЯ в мире ИИ | Лучше ChatGPT и Gemini вместе взятых!',
+    meta: '7.1K views • 2 months ago',
+    duration: '20:24',
+    thumb: '/assets/images/video/thumb-ai-china.jpg',
+    url: 'https://www.youtube.com/watch?v=WlzgPv8s37I',
+  },
+  {
+    title: 'ИИ уволит тебя в 2026 году? 4 сценария будущего',
+    meta: '18K views • 3 months ago',
+    duration: '22:34',
+    thumb: '/assets/images/video/thumb-stolen.jpg',
+    url: 'https://www.youtube.com/watch?v=vd35EW7THdo',
+  },
+  {
+    title: 'ЛУЧШИЙ ИИ 2026 года? Нейробаттл',
+    meta: '12K views • 4 months ago',
+    duration: '46:58',
+    thumb: '/assets/images/video/thumb-tools.jpg',
+    url: 'https://www.youtube.com/watch?v=0phr5X9A_rU',
+  },
+  {
+    title: 'Я загрузил блогеров в нейросеть!',
+    meta: '9.4K views • 5 months ago',
+    duration: '18:17',
+    thumb: '/assets/images/video/thumb-claude.jpg',
+    url: 'https://www.youtube.com/watch?v=go3pEpkzuT4',
+  },
+  {
+    title: 'А ты доверяешь НЕЙРОСЕТИ? Подкаст с роботом и психологом',
+    meta: '6.8K views • 6 months ago',
+    duration: '31:02',
+    thumb: '/assets/images/video/thumb-six.jpg',
+    url: 'https://www.youtube.com/watch?v=G7wj85lHLls',
+  },
+];
+
+const playlists = [
+  {
+    title: 'Creator-team edits',
+    meta: 'Long-form YouTube pacing',
+    thumb: '/assets/images/video/thumb-ai-generator.jpg',
+    count: '25M+',
+    url: 'mailto:art.androsov@gmail.com?subject=Creator-team%20edit%20reel',
+  },
+  {
+    title: 'Commercial integrations',
+    meta: 'Paid segments and launches',
+    thumb: '/assets/images/video/thumb-tools.jpg',
+    count: '2020-24',
+    url: 'mailto:art.androsov@gmail.com?subject=Commercial%20video%20reel',
+  },
+  {
+    title: 'Launch videos',
+    meta: 'Hooks, cuts, and retention',
+    thumb: '/assets/images/video/thumb-stolen.jpg',
+    count: 'Reel',
+    url: 'mailto:art.androsov@gmail.com?subject=Launch%20video%20reel',
+  },
+  {
+    title: 'Creator rhythm',
+    meta: 'Packaging and episode flow',
+    thumb: '/assets/images/video/thumb-ai-china.jpg',
+    count: 'Archive',
+    url: 'mailto:art.androsov@gmail.com?subject=Creator%20rhythm%20archive',
+  },
+];
+
+const shorts = [
+  {
+    title: 'AI workflows',
+    thumb: '/assets/images/video/thumb-ai-generator.jpg',
+    url: 'https://www.youtube.com/watch?v=zqDJkIUzrZs',
+  },
+  {
+    title: 'Editing hooks',
+    thumb: '/assets/images/video/thumb-ai-china.jpg',
+    url: 'https://www.youtube.com/watch?v=WlzgPv8s37I',
+  },
+  {
+    title: 'Launch cuts',
+    thumb: '/assets/images/video/thumb-stolen.jpg',
+    url: 'https://www.youtube.com/watch?v=vd35EW7THdo',
+  },
+  {
+    title: 'Creator rhythm',
+    thumb: '/assets/images/video/thumb-tools.jpg',
+    url: 'https://www.youtube.com/watch?v=0phr5X9A_rU',
+  },
+];
+---
+
+<BaseLayout
+  title="Video Portfolio - Artem Androsov"
+  description="Video editing portfolio by Artem Androsov: YouTube creator-team experience, long-form editing, launch content, and video work with 25M+ views."
+  ogImage="/og/projects.jpg"
+>
+  <link slot="head" rel="stylesheet" href="/assets/css/video.css">
+
+  <main class="yt-page">
+    <header class="yt-topbar" aria-label="YouTube-style navigation">
+      <div class="yt-topbar-start">
+        <details class="yt-main-menu">
+          <summary aria-label="Menu">
+            <Menu size={24} strokeWidth={2} />
+          </summary>
+          <div class="yt-main-menu-panel">
+            <a href="/design">
+              <Home size={20} strokeWidth={2} />
+              <span>Design portfolio</span>
+            </a>
+            <a href="/video">
+              <MonitorPlay size={20} strokeWidth={2} />
+              <span>Video portfolio</span>
+            </a>
+            <a href="/">
+              <UserRound size={20} strokeWidth={2} />
+              <span>About Art</span>
+            </a>
+            <a href="/cv/Art_Androsov_CV.pdf" download>
+              <Film size={20} strokeWidth={2} />
+              <span>Download CV</span>
+            </a>
+          </div>
+        </details>
+        <a class="yt-logo" href="/video" aria-label="Video Portfolio">
+          <span class="yt-logo-mark"><Play size={17} fill="#ffffff" strokeWidth={0} /></span>
+          <span class="yt-logo-text">YouTube</span>
+          <sup>ID</sup>
+        </a>
+      </div>
+
+      <form class="yt-search-wrap" action="https://www.youtube.com/results" method="get" target="_blank">
+        <label class="yt-search">
+          <input type="search" name="search_query" placeholder="Search" aria-label="Search">
+          <button class="yt-search-submit" type="submit" aria-label="Search">
+            <Search size={24} strokeWidth={2} />
+          </button>
+        </label>
+        <a class="yt-round-button" href="https://www.youtube.com/@wedesignerz/search" target="_blank" rel="noopener noreferrer" aria-label="Voice search">
+          <Mic size={21} strokeWidth={2.2} />
+        </a>
+      </form>
+
+      <div class="yt-topbar-actions">
+        <a class="yt-create-button" href="mailto:art.androsov@gmail.com?subject=Video%20work%20conversation">
+          <Plus size={18} strokeWidth={2.4} />
+          <span>Create</span>
+        </a>
+        <a class="yt-icon-button" href="https://www.youtube.com/@wedesignerz/" target="_blank" rel="noopener noreferrer" aria-label="Notifications">
+          <Bell size={21} strokeWidth={2} />
+        </a>
+        <a class="yt-user-avatar" href="/" aria-label="About Art">AA</a>
+      </div>
+    </header>
+
+    <aside class="yt-rail" aria-label="YouTube-style sections">
+      <a href="/" class="yt-rail-item">
+        <Home size={22} strokeWidth={2} />
+        <span>Home</span>
+      </a>
+      <a href="/video" class="yt-rail-item active">
+        <MonitorPlay size={22} strokeWidth={2} />
+        <span>Videos</span>
+      </a>
+      <a href="/projects/ourwall" class="yt-rail-item">
+        <Compass size={22} strokeWidth={2} />
+        <span>Explore</span>
+      </a>
+      <a href="/" class="yt-rail-item">
+        <UserRound size={22} strokeWidth={2} />
+        <span>You</span>
+      </a>
+    </aside>
+
+    <section class="yt-channel">
+      <div class="yt-channel-inner">
+        <div class="yt-banner">
+          <img src="/assets/images/video/wedesignerz-banner.jpg" alt="We Designerz YouTube channel banner">
+        </div>
+
+        <div class="yt-channel-head">
+          <img class="yt-channel-avatar" src="/assets/images/video/art-avatar.jpg" alt="Art Androsov channel avatar">
+          <div class="yt-channel-info">
+            <h1>Art Androsov</h1>
+            <div class="yt-channel-meta">
+              <span>@artandrosov</span>
+              <span>Video editing portfolio</span>
+              <span>25M+ edited views</span>
+            </div>
+            <p>Video editing, YouTube pacing, launch content, creator workflows, and the media background behind my product-design work.</p>
+            <div class="yt-channel-links">
+              <a href="https://www.youtube.com/@wedesignerz/" target="_blank" rel="noopener noreferrer">youtube.com/@wedesignerz</a>
+              <span>and</span>
+              <a href="mailto:art.androsov@gmail.com?subject=Video%20portfolio">email Art</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="yt-subscribe-row">
+          <a class="yt-subscribe" href="https://www.youtube.com/@wedesignerz?sub_confirmation=1" target="_blank" rel="noopener noreferrer">Subscribe</a>
+          <a class="yt-community" href="https://www.youtube.com/@wedesignerz/community" target="_blank" rel="noopener noreferrer">
+            <UsersRound size={20} strokeWidth={2.2} />
+            <span>Community</span>
+          </a>
+        </div>
+
+        <nav class="yt-tabs" aria-label="Channel tabs">
+          <a href="/video">Home</a>
+          <a class="active" href="#videos">Videos</a>
+          <a href="#shorts">Shorts</a>
+          <a href="#playlists">Playlists</a>
+          <a href="#posts">Posts</a>
+          <a class="yt-tab-search" href="https://www.youtube.com/@wedesignerz/search" target="_blank" rel="noopener noreferrer" aria-label="Search channel"><Search size={23} strokeWidth={2.1} /></a>
+        </nav>
+
+        <div class="yt-sort-row" aria-label="Video sort">
+          <a class="active" href="#videos">Latest</a>
+          <a href="https://www.youtube.com/@wedesignerz/videos?view=0&sort=p" target="_blank" rel="noopener noreferrer">Popular</a>
+          <a href="https://www.youtube.com/@wedesignerz/videos?view=0&sort=da" target="_blank" rel="noopener noreferrer">Oldest</a>
+        </div>
+
+        <div class="yt-video-grid" id="videos">
+          {videos.map((video) => (
+            <article class="yt-video-card">
+              <div class="yt-thumbnail-shell">
+                <a class="yt-thumbnail" href={video.url} target="_blank" rel="noopener noreferrer">
+                  <img src={video.thumb} alt={`${video.title} thumbnail`}>
+                  <span class="yt-duration">{video.duration}</span>
+                </a>
+                <div class="yt-thumbnail-actions">
+                  <a class="yt-hover-action" href={video.url} target="_blank" rel="noopener noreferrer" aria-label={`Watch later: ${video.title}`} data-tooltip="Watch later">
+                    <Clock3 size={18} strokeWidth={2.2} />
+                  </a>
+                  <a class="yt-hover-action" href={video.url} target="_blank" rel="noopener noreferrer" aria-label={`Add to queue: ${video.title}`} data-tooltip="Add to queue">
+                    <ListPlus size={18} strokeWidth={2.2} />
+                  </a>
+                </div>
+              </div>
+              <div class="yt-video-body">
+                <h3>{video.title}</h3>
+                <details class="yt-card-menu">
+                  <summary aria-label="More actions">
+                    <MoreVertical size={19} strokeWidth={2.2} />
+                  </summary>
+                  <div class="yt-card-menu-panel">
+                    <a href={video.url} target="_blank" rel="noopener noreferrer">Open video</a>
+                    <a href={`mailto:art.androsov@gmail.com?subject=Video%20reel%20request&body=${encodeURIComponent(video.title)}`}>Ask about this edit</a>
+                  </div>
+                </details>
+                <span>{video.meta}</span>
+              </div>
+            </article>
+          ))}
+        </div>
+
+        <div class="yt-playlists" id="playlists">
+          <div class="yt-section-title">
+            <Film size={22} strokeWidth={2.1} />
+            <h2>Playlists</h2>
+          </div>
+
+          <div class="yt-shelves">
+            {playlists.map((playlist) => (
+              <a class="yt-shelf-card" href={playlist.url}>
+                <div class="yt-shelf-thumb">
+                  <img src={playlist.thumb} alt={`${playlist.title} playlist thumbnail`}>
+                  <span>{playlist.count}</span>
+                </div>
+                <h3>{playlist.title}</h3>
+                <p>{playlist.meta}</p>
+              </a>
+            ))}
+          </div>
+        </div>
+
+        <div class="yt-shorts" id="shorts">
+          <div class="yt-section-title">
+            <span class="yt-logo-mark small"><Play size={12} fill="#ffffff" strokeWidth={0} /></span>
+            <h2>Shorts</h2>
+          </div>
+          <div class="yt-short-row">
+            {shorts.map((short) => (
+              <a href={short.url} target="_blank" rel="noopener noreferrer" style={`--short-thumb: url("${short.thumb}")`}>
+                <span>{short.title}</span>
+              </a>
+            ))}
+          </div>
+        </div>
+
+        <section class="yt-posts" id="posts">
+          <article class="yt-post-card">
+            <img src="/assets/images/video/art-avatar.jpg" alt="Art Androsov">
+            <div>
+              <div class="yt-post-meta">
+                <strong>Art Androsov</strong>
+                <span>Media archive post</span>
+              </div>
+              <p>2018-2024 archive is available on request: creator-team edits, paid integrations, launch videos, and long-form YouTube work that reached 25M+ views.</p>
+              <a href="mailto:art.androsov@gmail.com?subject=Video%20media%20archive">Request the reel</a>
+            </div>
+          </article>
+        </section>
+      </div>
+    </section>
+
+    <nav class="yt-mobile-nav" aria-label="Mobile navigation">
+      <a href="/">
+        <Home size={22} strokeWidth={2} />
+        <span>Home</span>
+      </a>
+      <a href="#shorts">
+        <Play size={21} fill="currentColor" strokeWidth={0} />
+        <span>Shorts</span>
+      </a>
+      <a class="active" href="#videos">
+        <MonitorPlay size={22} strokeWidth={2} />
+        <span>Videos</span>
+      </a>
+      <a href="/">
+        <UserRound size={22} strokeWidth={2} />
+        <span>You</span>
+      </a>
+    </nav>
+  </main>
+</BaseLayout>
